@@ -22,6 +22,8 @@ public class LoginPageTest extends BaseTest {
         String pageTitle = new DashboardPage(getDriver())
                 .getPageTitle();
         Assert.assertEquals(pageTitle, "Dashboard");
+        new DashboardPage(getDriver())
+                .clickLogout();
     }
 
     @Test
@@ -30,7 +32,7 @@ public class LoginPageTest extends BaseTest {
                 .fillInUserNameField(invalidUserName)
                 .fillInPasswordField(validPassword)
                 .clickLoginBtn()
-                .isErrorMessageShown();
+                .isInvalidCredentialsMessageShown();
         Assert.assertTrue(isErrorMessageShown);
     }
 
@@ -40,7 +42,15 @@ public class LoginPageTest extends BaseTest {
                 .fillInUserNameField(validUserName)
                 .fillInPasswordField(invalidPassword)
                 .clickLoginBtn()
-                .isErrorMessageShown();
+                .isInvalidCredentialsMessageShown();
         Assert.assertTrue(isErrorMessageShown);
+    }
+    @Test
+    public void testLoginWithoutFillingInUserNameAndPasswordFields(){
+
+        boolean isRequiredMessagesShown = new LoginPage(getDriver())
+                .clickLoginBtn()
+                .isRequiredMessagesShown();
+        Assert.assertTrue(isRequiredMessagesShown);
     }
 }
