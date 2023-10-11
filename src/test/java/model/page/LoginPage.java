@@ -1,5 +1,6 @@
 package model.page;
 
+import com.github.javafaker.Faker;
 import model.base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -32,19 +33,34 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//a[contains(@href,'youtube')]")
     private WebElement youtubeIcon;
 
+    private final String invalidUserName = new Faker().name().firstName();
+    private final String invalidPassword = new Faker().internet().password();
 
     public LoginPage(WebDriver driver) {
         super(driver);
     }
 
-    public LoginPage fillInUserNameField(String userName) {
+    public LoginPage fillInValidUserName() {
+        String validUserName = "Admin";
         getWait10().until(ExpectedConditions.visibilityOf(userNameField));
-        userNameField.sendKeys(userName);
+        userNameField.sendKeys(validUserName);
         return this;
     }
 
-    public LoginPage fillInPasswordField(String password) {
-        passwordField.sendKeys(password);
+    public LoginPage fillInValidPassword() {
+        String validPassword = "admin123";
+        passwordField.sendKeys(validPassword);
+        return this;
+    }
+
+    public LoginPage fillInNotValidUserName() {
+        getWait10().until(ExpectedConditions.visibilityOf(userNameField));
+        userNameField.sendKeys(invalidUserName);
+        return this;
+    }
+
+    public LoginPage fillInNotValidPassword() {
+        passwordField.sendKeys(invalidPassword);
         return this;
     }
 

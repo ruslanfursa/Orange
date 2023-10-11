@@ -1,6 +1,5 @@
 package runner;
 
-import com.github.javafaker.Faker;
 import model.page.DashboardPage;
 import model.page.LoginPage;
 import model.page.ResetPasswordPage;
@@ -9,16 +8,11 @@ import org.testng.annotations.Test;
 import runner.base.BaseTest;
 
 public class LoginPageTest extends BaseTest {
-    private final String validUserName = "Admin";
-    private final String validPassword = "admin123";
-    private final String invalidUserName = new Faker().name().firstName();
-    private final String invalidPassword = new Faker().internet().password();
-
     @Test
     public void testLoginWithValidCredentials() {
         new LoginPage(getDriver())
-                .fillInUserNameField(validUserName)
-                .fillInPasswordField(validPassword)
+                .fillInValidUserName()
+                .fillInValidPassword()
                 .clickLoginBtn();
         String pageTitle = new DashboardPage(getDriver())
                 .getPageTitle();
@@ -30,8 +24,8 @@ public class LoginPageTest extends BaseTest {
     @Test
     public void testLoginWithInvalidUsername() {
         boolean isErrorMessageShown = new LoginPage(getDriver())
-                .fillInUserNameField(invalidUserName)
-                .fillInPasswordField(validPassword)
+                .fillInNotValidUserName()
+                .fillInValidPassword()
                 .clickLoginBtn()
                 .isInvalidCredentialsMessageShown();
         Assert.assertTrue(isErrorMessageShown);
@@ -40,8 +34,8 @@ public class LoginPageTest extends BaseTest {
     @Test
     public void testLoginWithInvalidPassword() {
         boolean isErrorMessageShown = new LoginPage(getDriver())
-                .fillInUserNameField(validUserName)
-                .fillInPasswordField(invalidPassword)
+                .fillInValidUserName()
+                .fillInNotValidPassword()
                 .clickLoginBtn()
                 .isInvalidCredentialsMessageShown();
         Assert.assertTrue(isErrorMessageShown);
