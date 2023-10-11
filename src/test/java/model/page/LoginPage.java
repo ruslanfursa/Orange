@@ -25,7 +25,12 @@ public class LoginPage extends BasePage {
     private WebElement forgotYourPasswordLink;
     @FindBy(xpath = "//a[contains(@href,'linkedin')]")
     private WebElement linkedinIcon;
-
+    @FindBy(xpath = "//a[contains(@href,'facebook')]")
+    private WebElement facebookIcon;
+    @FindBy(xpath = "//a[contains(@href,'twitter')]")
+    private WebElement twitterIcon;
+    @FindBy(xpath = "//a[contains(@href,'youtube')]")
+    private WebElement youtubeIcon;
 
 
     public LoginPage(WebDriver driver) {
@@ -55,36 +60,46 @@ public class LoginPage extends BasePage {
         return expectedErrorMessage.equals(actualErrorMessage);
     }
 
-    public boolean isRequiredMessagesShown(){
+    public boolean isRequiredMessagesShown() {
         String expectedMessage = "Required";
         getWait5().until(ExpectedConditions.visibilityOf(passwordRequiredMessage));
         return expectedMessage.equals(userNameRequiredMessage.getText()) &&
                 expectedMessage.equals(passwordRequiredMessage.getText());
     }
 
-    public ResetPasswordPage clickForgotYourPassword(){
+    public ResetPasswordPage clickForgotYourPassword() {
         getWait5().until(ExpectedConditions.elementToBeClickable(forgotYourPasswordLink)).click();
         return new ResetPasswordPage(getDriver());
     }
 
-    public LoginPage clickLinkedinIcon(){
+    public LoginPage clickLinkedinIcon() {
         getWait10().until(ExpectedConditions.elementToBeClickable(linkedinIcon)).click();
         return this;
     }
-    public LoginPage goToNewTab(){
+
+    public NewTabPage goToNewTab() {
         String currentTab = getDriver().getWindowHandle();
         Set<String> tabs = getDriver().getWindowHandles();
-        for(String s : tabs){
-            if(!currentTab.equals(s)){
+        for (String s : tabs) {
+            if (!currentTab.equals(s)) {
                 getDriver().switchTo().window(s);
             }
         }
+        return new NewTabPage(getDriver());
+    }
+
+    public LoginPage clickFacebookIcon() {
+        getWait10().until(ExpectedConditions.elementToBeClickable(facebookIcon)).click();
+        return new LoginPage(getDriver());
+    }
+
+    public LoginPage clickTwitterIcon() {
+        getWait10().until(ExpectedConditions.elementToBeClickable(twitterIcon)).click();
         return this;
     }
 
-    public boolean isLinkedinPageOpened(){
-//        String currentUrl = getDriver().getCurrentUrl();
-        return getDriver().getCurrentUrl().contains("linkedin");
-  //      return getWait10().until(ExpectedConditions.urlMatches("https://ru.linkedin.com/company/orangehrm"));
+    public LoginPage clickYoutubeIcon() {
+        getWait10().until(ExpectedConditions.elementToBeClickable(youtubeIcon)).click();
+        return this;
     }
 }
