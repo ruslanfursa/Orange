@@ -3,6 +3,7 @@ package runner;
 import com.github.javafaker.Faker;
 import model.page.DashboardPage;
 import model.page.LoginPage;
+import model.page.ResetPasswordPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import runner.base.BaseTest;
@@ -52,5 +53,13 @@ public class LoginPageTest extends BaseTest {
                 .clickLoginBtn()
                 .isRequiredMessagesShown();
         Assert.assertTrue(isRequiredMessagesShown);
+    }
+    @Test
+    public void testForgotYourPassword(){
+        Assert.assertEquals(new LoginPage(getDriver())
+                .clickForgotYourPassword()
+                .getPageTitle(), "Reset Password");
+        new ResetPasswordPage(getDriver())
+                .clickCancelBtn();
     }
 }
