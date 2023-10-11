@@ -19,6 +19,8 @@ public class LoginPage extends BasePage {
     private WebElement userNameRequiredMessage;
     @FindBy(xpath = "//form[@class = 'oxd-form']//following::span[2]")
     private WebElement passwordRequiredMessage;
+    @FindBy(xpath = "//div[@class = 'orangehrm-login-forgot']")
+    private WebElement forgotYourPasswordLink;
 
 
 
@@ -54,5 +56,10 @@ public class LoginPage extends BasePage {
         getWait5().until(ExpectedConditions.visibilityOf(passwordRequiredMessage));
         return expectedMessage.equals(userNameRequiredMessage.getText()) &&
                 expectedMessage.equals(passwordRequiredMessage.getText());
+    }
+
+    public ResetPasswordPage clickForgotYourPassword(){
+        getWait5().until(ExpectedConditions.elementToBeClickable(forgotYourPasswordLink)).click();
+        return new ResetPasswordPage(getDriver());
     }
 }
