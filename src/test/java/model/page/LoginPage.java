@@ -13,26 +13,34 @@ public class LoginPage extends BasePage {
     private WebElement passwordField;
     @FindBy(xpath = "//button[@type = 'submit']")
     private WebElement loginBtn;
+    @FindBy(xpath = "//p[@class = 'oxd-text oxd-text--p oxd-alert-content-text']")
+    private WebElement errorMessage;
+
 
     public LoginPage(WebDriver driver) {
         super(driver);
     }
 
-    public LoginPage fillInUserNameField() {
-        String userName = "Admin";
+    public LoginPage fillInUserNameField(String userName) {
         getWait10().until(ExpectedConditions.visibilityOf(userNameField));
         userNameField.sendKeys(userName);
         return this;
     }
 
-    public LoginPage fillInPasswordField() {
-        String password = "admin123";
+    public LoginPage fillInPasswordField(String password) {
         passwordField.sendKeys(password);
         return this;
     }
 
-    public DashboardPage clickLoginBtn() {
+    public LoginPage clickLoginBtn() {
         loginBtn.click();
-        return new DashboardPage(getDriver());
+        return this;
+    }
+
+    public boolean isErrorMessageShown() {
+        String expectedErrorMessage = "Invalid credentials";
+        getWait5().until(ExpectedConditions.visibilityOf(errorMessage));
+        String actualErrorMessage = errorMessage.getText();
+        return expectedErrorMessage.equals(actualErrorMessage);
     }
 }
