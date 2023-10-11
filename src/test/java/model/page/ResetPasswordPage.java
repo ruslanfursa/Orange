@@ -11,14 +11,16 @@ public class ResetPasswordPage extends BasePage {
     private WebElement pageTitle;
     @FindBy(xpath = "//button[@type = 'button']")
     private WebElement cancelBtn;
+
     public ResetPasswordPage(WebDriver driver) {
         super(driver);
     }
-    public String getPageTitle(){
+
+    public String getPageTitle() {
         return getWait2().until(ExpectedConditions.visibilityOf(pageTitle)).getText();
     }
 
-    public LoginPage clickCancelBtn(){
+    public LoginPage clickCancelBtn() {
         cancelBtn.click();
         return new LoginPage(getDriver());
     }
