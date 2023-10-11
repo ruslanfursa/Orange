@@ -15,6 +15,11 @@ public class LoginPage extends BasePage {
     private WebElement loginBtn;
     @FindBy(xpath = "//p[@class = 'oxd-text oxd-text--p oxd-alert-content-text']")
     private WebElement errorMessage;
+    @FindBy(xpath = "//form[@class = 'oxd-form']//following::span")
+    private WebElement userNameRequiredMessage;
+    @FindBy(xpath = "//form[@class = 'oxd-form']//following::span[2]")
+    private WebElement passwordRequiredMessage;
+
 
 
     public LoginPage(WebDriver driver) {
@@ -33,14 +38,21 @@ public class LoginPage extends BasePage {
     }
 
     public LoginPage clickLoginBtn() {
-        loginBtn.click();
+        getWait2().until(ExpectedConditions.elementToBeClickable(loginBtn)).click();
         return this;
     }
 
-    public boolean isErrorMessageShown() {
+    public boolean isInvalidCredentialsMessageShown() {
         String expectedErrorMessage = "Invalid credentials";
         getWait5().until(ExpectedConditions.visibilityOf(errorMessage));
         String actualErrorMessage = errorMessage.getText();
         return expectedErrorMessage.equals(actualErrorMessage);
+    }
+
+    public boolean isRequiredMessagesShown(){
+        String expectedMessage = "Required";
+        getWait5().until(ExpectedConditions.visibilityOf(passwordRequiredMessage));
+        return expectedMessage.equals(userNameRequiredMessage.getText()) &&
+                expectedMessage.equals(passwordRequiredMessage.getText());
     }
 }
