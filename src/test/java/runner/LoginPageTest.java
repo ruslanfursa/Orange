@@ -62,4 +62,13 @@ public class LoginPageTest extends BaseTest {
         new ResetPasswordPage(getDriver())
                 .clickCancelBtn();
     }
+
+    @Test
+    public void testTransitionToLinkedinPage(){
+        boolean isLinkedinPageOpened = new LoginPage(getDriver())
+                .clickLinkedinIcon()
+                .goToNewTab()
+                .isLinkedinPageOpened();
+        Assert.assertTrue(isLinkedinPageOpened);
+    }
 }

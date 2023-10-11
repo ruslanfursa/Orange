@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.Set;
+
 public class LoginPage extends BasePage {
     @FindBy(xpath = "//input[@name = 'username']")
     private WebElement userNameField;
@@ -21,6 +23,8 @@ public class LoginPage extends BasePage {
     private WebElement passwordRequiredMessage;
     @FindBy(xpath = "//div[@class = 'orangehrm-login-forgot']")
     private WebElement forgotYourPasswordLink;
+    @FindBy(xpath = "//a[contains(@href,'linkedin')]")
+    private WebElement linkedinIcon;
 
 
 
@@ -61,5 +65,26 @@ public class LoginPage extends BasePage {
     public ResetPasswordPage clickForgotYourPassword(){
         getWait5().until(ExpectedConditions.elementToBeClickable(forgotYourPasswordLink)).click();
         return new ResetPasswordPage(getDriver());
+    }
+
+    public LoginPage clickLinkedinIcon(){
+        getWait10().until(ExpectedConditions.elementToBeClickable(linkedinIcon)).click();
+        return this;
+    }
+    public LoginPage goToNewTab(){
+        String currentTab = getDriver().getWindowHandle();
+        Set<String> tabs = getDriver().getWindowHandles();
+        for(String s : tabs){
+            if(!currentTab.equals(s)){
+                getDriver().switchTo().window(s);
+            }
+        }
+        return this;
+    }
+
+    public boolean isLinkedinPageOpened(){
+//        String currentUrl = getDriver().getCurrentUrl();
+        return getDriver().getCurrentUrl().contains("linkedin");
+  //      return getWait10().until(ExpectedConditions.urlMatches("https://ru.linkedin.com/company/orangehrm"));
     }
 }
