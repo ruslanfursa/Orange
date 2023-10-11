@@ -27,7 +27,6 @@ public class LoginPage extends BasePage {
     private WebElement linkedinIcon;
 
 
-
     public LoginPage(WebDriver driver) {
         super(driver);
     }
@@ -55,36 +54,37 @@ public class LoginPage extends BasePage {
         return expectedErrorMessage.equals(actualErrorMessage);
     }
 
-    public boolean isRequiredMessagesShown(){
+    public boolean isRequiredMessagesShown() {
         String expectedMessage = "Required";
         getWait5().until(ExpectedConditions.visibilityOf(passwordRequiredMessage));
         return expectedMessage.equals(userNameRequiredMessage.getText()) &&
                 expectedMessage.equals(passwordRequiredMessage.getText());
     }
 
-    public ResetPasswordPage clickForgotYourPassword(){
+    public ResetPasswordPage clickForgotYourPassword() {
         getWait5().until(ExpectedConditions.elementToBeClickable(forgotYourPasswordLink)).click();
         return new ResetPasswordPage(getDriver());
     }
 
-    public LoginPage clickLinkedinIcon(){
+    public LoginPage clickLinkedinIcon() {
         getWait10().until(ExpectedConditions.elementToBeClickable(linkedinIcon)).click();
         return this;
     }
-    public LoginPage goToNewTab(){
+
+    public LoginPage goToNewTab() {
         String currentTab = getDriver().getWindowHandle();
         Set<String> tabs = getDriver().getWindowHandles();
-        for(String s : tabs){
-            if(!currentTab.equals(s)){
+        for (String s : tabs) {
+            if (!currentTab.equals(s)) {
                 getDriver().switchTo().window(s);
             }
         }
         return this;
     }
 
-    public boolean isLinkedinPageOpened(){
+    public boolean isLinkedinPageOpened() {
 //        String currentUrl = getDriver().getCurrentUrl();
         return getDriver().getCurrentUrl().contains("linkedin");
-  //      return getWait10().until(ExpectedConditions.urlMatches("https://ru.linkedin.com/company/orangehrm"));
+        //      return getWait10().until(ExpectedConditions.urlMatches("https://ru.linkedin.com/company/orangehrm"));
     }
 }

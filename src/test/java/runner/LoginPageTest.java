@@ -38,7 +38,7 @@ public class LoginPageTest extends BaseTest {
     }
 
     @Test
-    public void testLoginWithInvalidPassword(){
+    public void testLoginWithInvalidPassword() {
         boolean isErrorMessageShown = new LoginPage(getDriver())
                 .fillInUserNameField(validUserName)
                 .fillInPasswordField(invalidPassword)
@@ -46,16 +46,18 @@ public class LoginPageTest extends BaseTest {
                 .isInvalidCredentialsMessageShown();
         Assert.assertTrue(isErrorMessageShown);
     }
+
     @Test
-    public void testLoginWithoutFillingInUserNameAndPasswordFields(){
+    public void testLoginWithoutFillingInUserNameAndPasswordFields() {
 
         boolean isRequiredMessagesShown = new LoginPage(getDriver())
                 .clickLoginBtn()
                 .isRequiredMessagesShown();
         Assert.assertTrue(isRequiredMessagesShown);
     }
+
     @Test
-    public void testForgotYourPassword(){
+    public void testForgotYourPassword() {
         Assert.assertEquals(new LoginPage(getDriver())
                 .clickForgotYourPassword()
                 .getPageTitle(), "Reset Password");
@@ -64,7 +66,7 @@ public class LoginPageTest extends BaseTest {
     }
 
     @Test
-    public void testTransitionToLinkedinPage(){
+    public void testTransitionToLinkedinPage() {
         boolean isLinkedinPageOpened = new LoginPage(getDriver())
                 .clickLinkedinIcon()
                 .goToNewTab()
