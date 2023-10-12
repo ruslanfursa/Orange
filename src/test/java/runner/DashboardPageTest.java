@@ -36,4 +36,8 @@ public class DashboardPageTest extends BaseTest {
                 .clickLogout();
         Assert.assertTrue(isHelpPageOpened);
     }
+    @Test
+    public void testOrangeLinkInFooter(){
+
+    }
 }
