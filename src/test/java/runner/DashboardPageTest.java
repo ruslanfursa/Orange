@@ -36,8 +36,16 @@ public class DashboardPageTest extends BaseTest {
                 .clickLogout();
         Assert.assertTrue(isHelpPageOpened);
     }
-    @Test
-    public void testOrangeLinkInFooter(){
 
+    @Test
+    public void testOrangeLinkInFooter() {
+        boolean isOrangeProductSiteOpened = new LoginPage(getDriver())
+                .login()
+                .clickOrangeLinkInFooter()
+                .goToNewTab()
+                .isPageOpened("https://www.orangehrm.com/");
+        new DashboardPage(getDriver())
+                .clickLogout();
+        Assert.assertTrue(isOrangeProductSiteOpened);
     }
 }

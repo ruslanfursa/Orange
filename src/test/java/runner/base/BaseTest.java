@@ -5,7 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeSuite;
+
 
 import java.time.Duration;
 
@@ -32,7 +33,7 @@ public class BaseTest {
         return wait10;
     }
 
-    @BeforeTest
+    @BeforeSuite
     protected void openSite() {
         getDriver().get("https://opensource-demo.orangehrmlive.com/");
     }

@@ -4,11 +4,13 @@ import model.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class DashboardPage extends BasePage {
 
@@ -22,6 +24,8 @@ public class DashboardPage extends BasePage {
     private WebElement gridOfSheets;
     @FindBy(xpath = "//button[@title = 'Help']")
     private WebElement questionIcon;
+    @FindBy(xpath = "//a[@target = '_blank']")
+    private WebElement orangeLinkInFooter;
 
     public DashboardPage(WebDriver driver) {
         super(driver);
@@ -49,8 +53,29 @@ public class DashboardPage extends BasePage {
         return takeSheetsNamesFromDashboard().contains(name);
     }
 
-    public LoginPage clickQuestionIcon() {
+    public DashboardPage clickQuestionIcon() {
         getWait5().until(ExpectedConditions.elementToBeClickable(questionIcon)).click();
-        return new LoginPage(getDriver());
+        return this;
+    }
+
+    public NewTabPage goToNewTab() {
+        String currentTab = getDriver().getWindowHandle();
+        Set<String> tabs = getDriver().getWindowHandles();
+        for (String s : tabs) {
+            if (!currentTab.equals(s)) {
+                getDriver().switchTo().window(s);
+            }
+        }
+        return new NewTabPage(getDriver());
+    }
+
+    public DashboardPage clickOrangeLinkInFooter() {
+        getWait10().until(ExpectedConditions.visibilityOf(orangeLinkInFooter));
+        Actions action = new Actions(getDriver());
+        action
+                .moveToElement(orangeLinkInFooter)
+                .click()
+                .perform();
+        return this;
     }
 }
