@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.util.Set;
 
 public class LoginPage extends BasePage {
+
     @FindBy(xpath = "//input[@name = 'username']")
     private WebElement userNameField;
     @FindBy(xpath = "//input[@name = 'password']")
