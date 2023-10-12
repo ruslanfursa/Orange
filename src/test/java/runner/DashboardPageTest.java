@@ -17,14 +17,23 @@ public class DashboardPageTest extends BaseTest {
 
     @Test(dataProvider = "expectedNames")
     public void testDashboardSheetsNames(String expectedName) {
-        new LoginPage(getDriver())
-                .fillInValidUserName()
-                .fillInValidPassword()
-                .clickLoginBtn();
-        boolean isNamePresent = new DashboardPage(getDriver())
+        boolean isNamePresent = new LoginPage(getDriver())
+                .login()
                 .isSheetsPresent(expectedName);
         Assert.assertTrue(isNamePresent);
         new DashboardPage(getDriver())
                 .clickLogout();
+    }
+
+    @Test
+    public void testQuestionIcon() {
+        boolean isHelpPageOpened = new LoginPage(getDriver())
+                .login()
+                .clickQuestionIcon()
+                .goToNewTab()
+                .isPageOpened("starterhelp");
+        new DashboardPage(getDriver())
+                .clickLogout();
+        Assert.assertTrue(isHelpPageOpened);
     }
 }

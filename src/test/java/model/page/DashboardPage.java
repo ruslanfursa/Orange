@@ -8,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class DashboardPage extends BasePage {
@@ -21,6 +20,8 @@ public class DashboardPage extends BasePage {
     private WebElement logoutInDropdownMenu;
     @FindBy(xpath = "//div[@class = 'orangehrm-dashboard-widget-header']")
     private WebElement gridOfSheets;
+    @FindBy(xpath = "//button[@title = 'Help']")
+    private WebElement questionIcon;
 
     public DashboardPage(WebDriver driver) {
         super(driver);
@@ -32,7 +33,7 @@ public class DashboardPage extends BasePage {
     }
 
     public void clickLogout() {
-        userProfileTab.click();
+        getWait5().until(ExpectedConditions.elementToBeClickable(userProfileTab)).click();
         getWait5().until(ExpectedConditions.elementToBeClickable(logoutInDropdownMenu)).click();
     }
 
@@ -46,5 +47,10 @@ public class DashboardPage extends BasePage {
 
     public boolean isSheetsPresent(String name) {
         return takeSheetsNamesFromDashboard().contains(name);
+    }
+
+    public LoginPage clickQuestionIcon() {
+        getWait5().until(ExpectedConditions.elementToBeClickable(questionIcon)).click();
+        return new LoginPage(getDriver());
     }
 }

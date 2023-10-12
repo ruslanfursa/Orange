@@ -119,4 +119,11 @@ public class LoginPage extends BasePage {
         getWait10().until(ExpectedConditions.elementToBeClickable(youtubeIcon)).click();
         return this;
     }
+
+    public DashboardPage login(){
+        fillInValidUserName();
+        fillInValidPassword();
+        clickLoginBtn();
+        return new DashboardPage(getDriver());
+    }
 }
