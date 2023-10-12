@@ -1,5 +1,7 @@
 package runner;
 
+import model.base.SideBarMenu;
+import model.page.AdminPage;
 import model.page.DashboardPage;
 import model.page.LoginPage;
 import org.testng.Assert;
@@ -47,5 +49,14 @@ public class DashboardPageTest extends BaseTest {
         new DashboardPage(getDriver())
                 .clickLogout();
         Assert.assertTrue(isOrangeProductSiteOpened);
+    }
+
+    @Test
+    public void testTransitionToAdminPAge() {
+        boolean isCorrectTitle = new LoginPage(getDriver())
+                .login()
+                .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.ADMIN, new AdminPage(getDriver()))
+                .isTitleCorrect("Admin");
+        Assert.assertTrue(isCorrectTitle);
     }
 }

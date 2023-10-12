@@ -1,12 +1,14 @@
 package model.base;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class BasePage implements SideBarMenu{
+public class BasePage implements SideBarMenu {
     private WebDriverWait wait2;
     private WebDriverWait wait5;
     private WebDriverWait wait10;
@@ -44,7 +46,8 @@ public class BasePage implements SideBarMenu{
 
     @Override
     public <Page extends BasePage> Page clickLinkFromSidebarMenu(LinkFromSidebarMenu link, Page page) {
-        link.getLocator(getDriver()).click();
+        WebElement element = link.getLocator(getWait10());
+        element.click();
         return page;
     }
 }
