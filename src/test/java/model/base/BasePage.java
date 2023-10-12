@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class BasePage {
+public class BasePage implements SideBarMenu{
     private WebDriverWait wait2;
     private WebDriverWait wait5;
     private WebDriverWait wait10;
@@ -40,5 +40,11 @@ public class BasePage {
             wait10 = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
         }
         return wait10;
+    }
+
+    @Override
+    public <Page extends BasePage> Page clickLinkFromSidebarMenu(LinkFromSidebarMenu link, Page page) {
+        link.getLocator(getDriver()).click();
+        return page;
     }
 }
