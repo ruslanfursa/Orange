@@ -120,7 +120,7 @@ public class LoginPage extends BasePage {
         return this;
     }
 
-    public DashboardPage login(){
+    public DashboardPage login() {
         fillInValidUserName();
         fillInValidPassword();
         clickLoginBtn();
