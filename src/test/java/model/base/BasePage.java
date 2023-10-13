@@ -1,7 +1,9 @@
 package model.base;
 
+import model.page.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,6 +15,11 @@ public class BasePage implements SideBarMenu {
     private WebDriverWait wait5;
     private WebDriverWait wait10;
     private final WebDriver driver;
+
+    @FindBy(xpath = "//span[@class = 'oxd-userdropdown-tab']")
+    private WebElement userProfileTab;
+    @FindBy(xpath = "//a[@href = '/web/index.php/auth/logout']")
+    private WebElement logoutInDropdownMenu;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -49,5 +56,11 @@ public class BasePage implements SideBarMenu {
         WebElement element = link.getLocator(getWait10());
         element.click();
         return page;
+    }
+
+    public LoginPage clickLogout(){
+        getWait5().until(ExpectedConditions.elementToBeClickable(userProfileTab)).click();
+        getWait5().until(ExpectedConditions.elementToBeClickable(logoutInDropdownMenu)).click();
+        return new LoginPage(getDriver());
     }
 }
