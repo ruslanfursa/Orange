@@ -16,7 +16,12 @@ public class ResetPasswordPage extends BasePage {
         super(driver);
     }
 
-    public String getPageTitle() {
+    @Override
+    public WebElement getPageTitle() {
+        return null;
+    }
+
+    public String getPageTitleString() {
         return getWait2().until(ExpectedConditions.visibilityOf(pageTitle)).getText();
     }
 

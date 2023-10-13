@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class BasePage implements SideBarMenu {
+public abstract class BasePage implements SideBarMenu {
     private WebDriverWait wait2;
     private WebDriverWait wait5;
     private WebDriverWait wait10;
@@ -20,6 +20,7 @@ public class BasePage implements SideBarMenu {
     private WebElement userProfileTab;
     @FindBy(xpath = "//a[@href = '/web/index.php/auth/logout']")
     private WebElement logoutInDropdownMenu;
+
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -58,9 +59,17 @@ public class BasePage implements SideBarMenu {
         return page;
     }
 
-    public LoginPage clickLogout(){
+    public LoginPage clickLogout() {
         getWait5().until(ExpectedConditions.elementToBeClickable(userProfileTab)).click();
         getWait5().until(ExpectedConditions.elementToBeClickable(logoutInDropdownMenu)).click();
         return new LoginPage(getDriver());
     }
+
+    public boolean isTitleCorrect(String str) {
+        getWait10().until(ExpectedConditions.visibilityOf(getPageTitle()));
+        return str.equals(getPageTitle().getText());
+    }
+
+    public abstract WebElement getPageTitle();
+
 }
