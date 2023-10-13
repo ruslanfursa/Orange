@@ -22,6 +22,8 @@ public class DashboardPage extends BasePage {
     private WebElement questionIcon;
     @FindBy(xpath = "//a[@target = '_blank']")
     private WebElement orangeLinkInFooter;
+    @FindBy(xpath = "//input[@placeholder = 'Search']")
+    private WebElement searchField;
 
     public DashboardPage(WebDriver driver) {
         super(driver);
@@ -73,5 +75,26 @@ public class DashboardPage extends BasePage {
     @Override
     public WebElement getPageTitle() {
         return pageTitle;
+    }
+
+    public DashboardPage typeSymbolInSearchField(String s) {
+        getWait10().until(ExpectedConditions.visibilityOf(searchField)).sendKeys(s);
+        return this;
+    }
+
+    public boolean isSymbolPresentInSearchResult(String str) {
+        for (String s : takeSearchResult()) {
+            if (s.contains(str)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private ArrayList<String> takeSearchResult() {
+        List<WebElement> elements = getDriver().findElements(By.xpath("//ul[@class = 'oxd-main-menu']"));
+        ArrayList<String> searchResults = new ArrayList<>();
+        elements.forEach(element -> searchResults.add(element.getText()));
+        return searchResults;
     }
 }

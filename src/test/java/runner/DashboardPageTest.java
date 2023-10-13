@@ -15,6 +15,11 @@ public class DashboardPageTest extends BaseTest {
                 {"Buzz Latest Posts"}, {"Employees on Leave Today"}, {"Employee Distribution by Location"}};
     }
 
+    @DataProvider(name = "searchSymbols")
+    public Object[][] providerSearchSymbols() {
+        return new Object[][]{{"a"}, {"m"}, {"o"}};
+    }
+
     @Test(dataProvider = "expectedNames")
     public void testDashboardSheetsNames(String expectedName) {
         boolean isNamePresent = new LoginPage(getDriver())
@@ -47,6 +52,17 @@ public class DashboardPageTest extends BaseTest {
         new DashboardPage(getDriver())
                 .clickLogout();
         Assert.assertTrue(isOrangeProductSiteOpened);
+    }
+
+    @Test(dataProvider = "searchSymbols")
+    public void testSearchInSidebarMenu(String symbol) {
+        boolean isSymbolPresent = new LoginPage(getDriver())
+                .login()
+                .typeSymbolInSearchField(symbol)
+                .isSymbolPresentInSearchResult(symbol);
+        new DashboardPage(getDriver())
+                .clickLogout();
+        Assert.assertTrue(isSymbolPresent);
     }
 
     @Test
