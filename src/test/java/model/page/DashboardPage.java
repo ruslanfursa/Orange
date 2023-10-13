@@ -16,10 +16,10 @@ public class DashboardPage extends BasePage {
 
     @FindBy(xpath = "//h6[@class = 'oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module']")
     private WebElement pageTitle;
-    @FindBy(xpath = "//span[@class = 'oxd-userdropdown-tab']")
-    private WebElement userProfileTab;
-    @FindBy(xpath = "//a[@href = '/web/index.php/auth/logout']")
-    private WebElement logoutInDropdownMenu;
+//    @FindBy(xpath = "//span[@class = 'oxd-userdropdown-tab']")
+//    private WebElement userProfileTab;
+//    @FindBy(xpath = "//a[@href = '/web/index.php/auth/logout']")
+//    private WebElement logoutInDropdownMenu;
     @FindBy(xpath = "//div[@class = 'orangehrm-dashboard-widget-header']")
     private WebElement gridOfSheets;
     @FindBy(xpath = "//button[@title = 'Help']")
@@ -36,10 +36,10 @@ public class DashboardPage extends BasePage {
         return pageTitle.getText();
     }
 
-    public void clickLogout() {
-        getWait5().until(ExpectedConditions.elementToBeClickable(userProfileTab)).click();
-        getWait5().until(ExpectedConditions.elementToBeClickable(logoutInDropdownMenu)).click();
-    }
+//    public void clickLogout() {
+//        getWait5().until(ExpectedConditions.elementToBeClickable(userProfileTab)).click();
+//        getWait5().until(ExpectedConditions.elementToBeClickable(logoutInDropdownMenu)).click();
+//    }
 
     private ArrayList<String> takeSheetsNamesFromDashboard() {
         List<WebElement> sheets = getWait5().until(ExpectedConditions.visibilityOf(gridOfSheets)).findElements(By
