@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import runner.base.BaseTest;
 
-public class DashboardPageTest extends BaseTest {
+public class DashboardTest extends BaseTest {
 
     @DataProvider(name = "expectedNames")
     public Object[][] providerExpectedNames() {

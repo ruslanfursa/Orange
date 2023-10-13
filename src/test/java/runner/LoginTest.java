@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import runner.base.BaseTest;
 
-public class LoginPageTest extends BaseTest {
+public class LoginTest extends BaseTest {
     @Test
     public void testLoginWithValidCredentials() {
         new LoginPage(getDriver())
