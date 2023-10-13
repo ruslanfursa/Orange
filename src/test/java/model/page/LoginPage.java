@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.Set;
 
-public class LoginPage extends BasePage  {
+public class LoginPage extends BasePage {
 
     @FindBy(xpath = "//input[@name = 'username']")
     private WebElement userNameField;
@@ -41,6 +41,11 @@ public class LoginPage extends BasePage  {
         super(driver);
     }
 
+    @Override
+    public WebElement getPageTitle() {
+        return null;
+    }
+
     public LoginPage fillInValidUserName() {
         String validUserName = "Admin";
         getWait10().until(ExpectedConditions.visibilityOf(userNameField));
@@ -50,7 +55,7 @@ public class LoginPage extends BasePage  {
 
     public LoginPage fillInValidPassword() {
         String validPassword = "admin123";
-        passwordField.sendKeys(validPassword);
+        getWait10().until(ExpectedConditions.visibilityOf(passwordField)).sendKeys(validPassword);
         return this;
     }
 

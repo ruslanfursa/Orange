@@ -15,7 +15,7 @@ public class LoginPageTest extends BaseTest {
                 .fillInValidPassword()
                 .clickLoginBtn();
         String pageTitle = new DashboardPage(getDriver())
-                .getPageTitle();
+                .getPageName();
         Assert.assertEquals(pageTitle, "Dashboard");
         new DashboardPage(getDriver())
                 .clickLogout();
@@ -53,7 +53,7 @@ public class LoginPageTest extends BaseTest {
     public void testForgotYourPassword() {
         Assert.assertEquals(new LoginPage(getDriver())
                 .clickForgotYourPassword()
-                .getPageTitle(), "Reset Password");
+                .getPageTitleString(), "Reset Password");
         new ResetPasswordPage(getDriver())
                 .clickCancelBtn();
     }
