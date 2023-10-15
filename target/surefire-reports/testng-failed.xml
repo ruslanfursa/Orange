@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="runner.LoginTest">
+        <methods>
+          <include name="testLoginWithValidCredentials"/>
+          <include name="testLoginWithoutFillingInUserNameAndPasswordFields"/>
+          <include name="testForgotYourPassword"/>
+          <include name="testTransitionToTwitterPage"/>
+          <include name="testLoginWithInvalidUsername"/>
+          <include name="closeDriver"/>
+          <include name="testTransitionToYoutubePage"/>
+          <include name="openSite"/>
+          <include name="testTransitionToLinkedinPage"/>
+          <include name="testTransitionToFacebookPage"/>
+          <include name="testLoginWithInvalidPassword"/>
+        </methods>
+      </class> <!-- runner.LoginTest -->
+      <class name="runner.PimTest">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="openSite"/>
+          <include name="testAddEmployee"/>
+        </methods>
+      </class> <!-- runner.PimTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

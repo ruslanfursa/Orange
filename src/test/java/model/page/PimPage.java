@@ -67,6 +67,8 @@ public class PimPage extends BasePage {
     }
 
     public boolean isUserCreated() {
+        System.out.println(getNameFromUserCard());
+        System.out.println(firstName + " " + lastName + "ER");
         return (firstName + " " + lastName).equals(getNameFromUserCard());
 
     }
