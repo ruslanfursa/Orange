@@ -2,12 +2,12 @@
 <testng-results ignored="6" total="40" passed="24" failed="10" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-15T14:51:41 MSK" name="Surefire suite" finished-at="2023-10-15T14:56:32 MSK" duration-ms="290957">
+  <suite started-at="2023-10-15T16:06:53 MSK" name="Surefire suite" finished-at="2023-10-15T16:11:36 MSK" duration-ms="282928">
     <groups>
     </groups>
-    <test started-at="2023-10-15T14:51:41 MSK" name="Surefire test" finished-at="2023-10-15T14:56:32 MSK" duration-ms="290957">
+    <test started-at="2023-10-15T16:06:53 MSK" name="Surefire test" finished-at="2023-10-15T16:11:36 MSK" duration-ms="282928">
       <class name="runner.LoginTest">
-        <test-method signature="testForgotYourPassword()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T14:55:11 MSK" name="testForgotYourPassword" finished-at="2023-10-15T14:55:16 MSK" duration-ms="5539" status="FAIL">
+        <test-method signature="testForgotYourPassword()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T16:10:16 MSK" name="testForgotYourPassword" finished-at="2023-10-15T16:10:21 MSK" duration-ms="5056" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class = 'orangehrm-login-forgot']' (tried for 5 second(s) with 500 milliseconds interval)]]>
@@ -55,9 +55,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//div[@class = 'orangehrm-login-forgot']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//div[@class = 'orangehrm-login-forgot']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -89,7 +89,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testForgotYourPassword -->
-        <test-method signature="testLoginWithInvalidPassword()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T14:55:16 MSK" name="testLoginWithInvalidPassword" finished-at="2023-10-15T14:55:27 MSK" duration-ms="10490" status="FAIL">
+        <test-method signature="testLoginWithInvalidPassword()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T16:10:21 MSK" name="testLoginWithInvalidPassword" finished-at="2023-10-15T16:10:31 MSK" duration-ms="10538" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 10 second(s) with 500 milliseconds interval)]]>
@@ -137,9 +137,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//input[@name = 'username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//input[@name = 'username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -169,7 +169,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidPassword -->
-        <test-method signature="testLoginWithInvalidUsername()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T14:55:27 MSK" name="testLoginWithInvalidUsername" finished-at="2023-10-15T14:55:37 MSK" duration-ms="10460" status="FAIL">
+        <test-method signature="testLoginWithInvalidUsername()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T16:10:31 MSK" name="testLoginWithInvalidUsername" finished-at="2023-10-15T16:10:42 MSK" duration-ms="10463" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 10 second(s) with 500 milliseconds interval)]]>
@@ -217,9 +217,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//input[@name = 'username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//input[@name = 'username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -249,7 +249,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithInvalidUsername -->
-        <test-method signature="testLoginWithValidCredentials()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T14:55:37 MSK" name="testLoginWithValidCredentials" finished-at="2023-10-15T14:55:48 MSK" duration-ms="10387" status="FAIL">
+        <test-method signature="testLoginWithValidCredentials()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T16:10:42 MSK" name="testLoginWithValidCredentials" finished-at="2023-10-15T16:10:52 MSK" duration-ms="10531" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 10 second(s) with 500 milliseconds interval)]]>
@@ -297,9 +297,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//input[@name = 'username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//input[@name = 'username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -329,7 +329,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithValidCredentials -->
-        <test-method signature="testLoginWithoutFillingInUserNameAndPasswordFields()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T14:55:48 MSK" name="testLoginWithoutFillingInUserNameAndPasswordFields" finished-at="2023-10-15T14:55:50 MSK" duration-ms="2145" status="FAIL">
+        <test-method signature="testLoginWithoutFillingInUserNameAndPasswordFields()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T16:10:52 MSK" name="testLoginWithoutFillingInUserNameAndPasswordFields" finished-at="2023-10-15T16:10:54 MSK" duration-ms="2165" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[@type = 'submit']' (tried for 2 second(s) with 500 milliseconds interval)]]>
@@ -377,9 +377,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//button[@type = 'submit']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//button[@type = 'submit']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -411,7 +411,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginWithoutFillingInUserNameAndPasswordFields -->
-        <test-method signature="testTransitionToFacebookPage()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T14:55:50 MSK" name="testTransitionToFacebookPage" finished-at="2023-10-15T14:56:00 MSK" duration-ms="10425" status="FAIL">
+        <test-method signature="testTransitionToFacebookPage()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T16:10:54 MSK" name="testTransitionToFacebookPage" finished-at="2023-10-15T16:11:05 MSK" duration-ms="10445" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[contains(@href,'facebook')]' (tried for 10 second(s) with 500 milliseconds interval)]]>
@@ -459,9 +459,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//a[contains(@href,'facebook')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//a[contains(@href,'facebook')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -493,7 +493,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToFacebookPage -->
-        <test-method signature="testTransitionToLinkedinPage()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T14:56:00 MSK" name="testTransitionToLinkedinPage" finished-at="2023-10-15T14:56:11 MSK" duration-ms="10401" status="FAIL">
+        <test-method signature="testTransitionToLinkedinPage()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T16:11:05 MSK" name="testTransitionToLinkedinPage" finished-at="2023-10-15T16:11:15 MSK" duration-ms="10523" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[contains(@href,'linkedin')]' (tried for 10 second(s) with 500 milliseconds interval)]]>
@@ -541,9 +541,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//a[contains(@href,'linkedin')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//a[contains(@href,'linkedin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -575,7 +575,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToLinkedinPage -->
-        <test-method signature="testTransitionToTwitterPage()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T14:56:11 MSK" name="testTransitionToTwitterPage" finished-at="2023-10-15T14:56:21 MSK" duration-ms="10453" status="FAIL">
+        <test-method signature="testTransitionToTwitterPage()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T16:11:15 MSK" name="testTransitionToTwitterPage" finished-at="2023-10-15T16:11:26 MSK" duration-ms="10448" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[contains(@href,'twitter')]' (tried for 10 second(s) with 500 milliseconds interval)]]>
@@ -623,9 +623,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//a[contains(@href,'twitter')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//a[contains(@href,'twitter')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -657,7 +657,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToTwitterPage -->
-        <test-method signature="testTransitionToYoutubePage()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T14:56:21 MSK" name="testTransitionToYoutubePage" finished-at="2023-10-15T14:56:32 MSK" duration-ms="10437" status="FAIL">
+        <test-method signature="testTransitionToYoutubePage()[pri:0, instance:runner.LoginTest@236134a1]" started-at="2023-10-15T16:11:26 MSK" name="testTransitionToYoutubePage" finished-at="2023-10-15T16:11:36 MSK" duration-ms="10515" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[contains(@href,'youtube')]' (tried for 10 second(s) with 500 milliseconds interval)]]>
@@ -705,9 +705,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//a[contains(@href,'youtube')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//a[contains(@href,'youtube')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -741,11 +741,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
         </test-method> <!-- testTransitionToYoutubePage -->
       </class> <!-- runner.LoginTest -->
       <class name="runner.DashboardTest">
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:51:24 MSK" name="openSite" finished-at="2023-10-15T14:51:41 MSK" duration-ms="16885" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:06:37 MSK" name="openSite" finished-at="2023-10-15T16:06:53 MSK" duration-ms="16439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:51:41 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-15T14:52:14 MSK" duration-ms="33000" status="PASS">
+        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:06:53 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-15T16:07:25 MSK" duration-ms="31398" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -756,7 +756,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDashboardSheetsNames -->
-        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:52:14 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-15T14:52:23 MSK" duration-ms="8729" status="PASS">
+        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:07:25 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-15T16:07:33 MSK" duration-ms="8469" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -767,7 +767,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDashboardSheetsNames -->
-        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:52:23 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-15T14:52:28 MSK" duration-ms="5635" status="PASS">
+        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:07:33 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-15T16:07:39 MSK" duration-ms="5215" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -778,7 +778,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDashboardSheetsNames -->
-        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:52:28 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-15T14:52:34 MSK" duration-ms="5244" status="PASS">
+        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:07:39 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-15T16:07:44 MSK" duration-ms="4889" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -789,7 +789,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDashboardSheetsNames -->
-        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:52:34 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-15T14:52:41 MSK" duration-ms="7139" status="PASS">
+        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:07:44 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-15T16:07:48 MSK" duration-ms="4498" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -800,7 +800,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDashboardSheetsNames -->
-        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:52:41 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-15T14:52:49 MSK" duration-ms="8208" status="PASS">
+        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:07:48 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-15T16:07:55 MSK" duration-ms="6467" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -811,7 +811,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDashboardSheetsNames -->
-        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:52:49 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-15T14:52:57 MSK" duration-ms="7803" status="PASS">
+        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:07:55 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-15T16:08:01 MSK" duration-ms="6265" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -822,15 +822,15 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDashboardSheetsNames -->
-        <test-method signature="testOrangeLinkInFooter()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:52:57 MSK" name="testOrangeLinkInFooter" finished-at="2023-10-15T14:53:40 MSK" duration-ms="43059" status="PASS">
+        <test-method signature="testOrangeLinkInFooter()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:08:01 MSK" name="testOrangeLinkInFooter" finished-at="2023-10-15T16:08:41 MSK" duration-ms="39837" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOrangeLinkInFooter -->
-        <test-method signature="testQuestionIcon()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:53:40 MSK" name="testQuestionIcon" finished-at="2023-10-15T14:53:52 MSK" duration-ms="12117" status="PASS">
+        <test-method signature="testQuestionIcon()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:08:41 MSK" name="testQuestionIcon" finished-at="2023-10-15T16:08:55 MSK" duration-ms="14305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuestionIcon -->
-        <test-method signature="testSearchInSidebarMenu(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:53:52 MSK" name="testSearchInSidebarMenu" data-provider="searchSymbols" finished-at="2023-10-15T14:54:02 MSK" duration-ms="10297" status="PASS">
+        <test-method signature="testSearchInSidebarMenu(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:08:55 MSK" name="testSearchInSidebarMenu" data-provider="searchSymbols" finished-at="2023-10-15T16:09:02 MSK" duration-ms="7293" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -841,7 +841,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchInSidebarMenu -->
-        <test-method signature="testSearchInSidebarMenu(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:54:02 MSK" name="testSearchInSidebarMenu" data-provider="searchSymbols" finished-at="2023-10-15T14:54:10 MSK" duration-ms="7354" status="PASS">
+        <test-method signature="testSearchInSidebarMenu(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:09:02 MSK" name="testSearchInSidebarMenu" data-provider="searchSymbols" finished-at="2023-10-15T16:09:13 MSK" duration-ms="10234" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -852,7 +852,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchInSidebarMenu -->
-        <test-method signature="testSearchInSidebarMenu(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:54:10 MSK" name="testSearchInSidebarMenu" data-provider="searchSymbols" finished-at="2023-10-15T14:54:16 MSK" duration-ms="6136" status="PASS">
+        <test-method signature="testSearchInSidebarMenu(java.lang.String)[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:09:13 MSK" name="testSearchInSidebarMenu" data-provider="searchSymbols" finished-at="2023-10-15T16:09:17 MSK" duration-ms="4920" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -863,61 +863,61 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchInSidebarMenu -->
-        <test-method signature="testTransitionToAdminPage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:54:16 MSK" name="testTransitionToAdminPage" finished-at="2023-10-15T14:54:27 MSK" duration-ms="11052" status="PASS">
+        <test-method signature="testTransitionToAdminPage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:09:17 MSK" name="testTransitionToAdminPage" finished-at="2023-10-15T16:09:31 MSK" duration-ms="13371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToAdminPage -->
-        <test-method signature="testTransitionToPIMpage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:54:27 MSK" name="testTransitionToPIMpage" finished-at="2023-10-15T14:54:30 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage" duration-ms="2658" status="PASS">
+        <test-method signature="testTransitionToPIMpage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:09:31 MSK" name="testTransitionToPIMpage" finished-at="2023-10-15T16:09:34 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage" duration-ms="2694" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToPIMpage -->
-        <test-method signature="testTransitionToLeavePage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:54:30 MSK" name="testTransitionToLeavePage" finished-at="2023-10-15T14:54:33 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToPIMpage" duration-ms="3627" status="PASS">
+        <test-method signature="testTransitionToLeavePage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:09:34 MSK" name="testTransitionToLeavePage" finished-at="2023-10-15T16:09:37 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToPIMpage" duration-ms="3265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToLeavePage -->
-        <test-method signature="testTransitionToTimePage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:54:33 MSK" name="testTransitionToTimePage" finished-at="2023-10-15T14:54:37 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToPIMpage" duration-ms="4252" status="PASS">
+        <test-method signature="testTransitionToTimePage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:09:37 MSK" name="testTransitionToTimePage" finished-at="2023-10-15T16:09:40 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToPIMpage" duration-ms="3393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToTimePage -->
-        <test-method signature="testTransitionToRecruitmentPage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:54:37 MSK" name="testTransitionToRecruitmentPage" finished-at="2023-10-15T14:54:39 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage" duration-ms="2034" status="PASS">
+        <test-method signature="testTransitionToRecruitmentPage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:09:40 MSK" name="testTransitionToRecruitmentPage" finished-at="2023-10-15T16:09:43 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage" duration-ms="2301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToRecruitmentPage -->
-        <test-method signature="testTransitionToMyInfoPage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:54:40 MSK" name="testTransitionToMyInfoPage" finished-at="2023-10-15T14:54:44 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage, runner.DashboardTest.testTransitionToRecruitmentPage" duration-ms="4187" status="PASS">
+        <test-method signature="testTransitionToMyInfoPage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:09:43 MSK" name="testTransitionToMyInfoPage" finished-at="2023-10-15T16:09:46 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage, runner.DashboardTest.testTransitionToRecruitmentPage" duration-ms="2990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToMyInfoPage -->
-        <test-method signature="testTransitionToPerformancePage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:54:44 MSK" name="testTransitionToPerformancePage" finished-at="2023-10-15T14:54:46 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage, runner.DashboardTest.testTransitionToRecruitmentPage, runner.DashboardTest.testTransitionToMyInfoPage" duration-ms="2400" status="PASS">
+        <test-method signature="testTransitionToPerformancePage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:09:46 MSK" name="testTransitionToPerformancePage" finished-at="2023-10-15T16:09:48 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage, runner.DashboardTest.testTransitionToRecruitmentPage, runner.DashboardTest.testTransitionToMyInfoPage" duration-ms="2228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToPerformancePage -->
-        <test-method signature="testTransitionToDashboardPage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:54:46 MSK" name="testTransitionToDashboardPage" finished-at="2023-10-15T14:54:48 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage, runner.DashboardTest.testTransitionToRecruitmentPage, runner.DashboardTest.testTransitionToMyInfoPage, runner.DashboardTest.testTransitionToPerformancePage" duration-ms="2029" status="PASS">
+        <test-method signature="testTransitionToDashboardPage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:09:48 MSK" name="testTransitionToDashboardPage" finished-at="2023-10-15T16:09:49 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage, runner.DashboardTest.testTransitionToRecruitmentPage, runner.DashboardTest.testTransitionToMyInfoPage, runner.DashboardTest.testTransitionToPerformancePage" duration-ms="1350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToDashboardPage -->
-        <test-method signature="testTransitionToDirectoryPage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:54:48 MSK" name="testTransitionToDirectoryPage" finished-at="2023-10-15T14:54:51 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage, runner.DashboardTest.testTransitionToDashboardPage, runner.DashboardTest.testTransitionToRecruitmentPage, runner.DashboardTest.testTransitionToMyInfoPage, runner.DashboardTest.testTransitionToPerformancePage" duration-ms="2437" status="PASS">
+        <test-method signature="testTransitionToDirectoryPage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:09:49 MSK" name="testTransitionToDirectoryPage" finished-at="2023-10-15T16:09:51 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage, runner.DashboardTest.testTransitionToDashboardPage, runner.DashboardTest.testTransitionToRecruitmentPage, runner.DashboardTest.testTransitionToMyInfoPage, runner.DashboardTest.testTransitionToPerformancePage" duration-ms="1976" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToDirectoryPage -->
-        <test-method signature="testTransitionToMaintenancePage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:54:51 MSK" name="testTransitionToMaintenancePage" finished-at="2023-10-15T14:54:56 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage, runner.DashboardTest.testTransitionToDashboardPage, runner.DashboardTest.testTransitionToDirectoryPage, runner.DashboardTest.testTransitionToRecruitmentPage, runner.DashboardTest.testTransitionToMyInfoPage, runner.DashboardTest.testTransitionToPerformancePage" duration-ms="5497" status="PASS">
+        <test-method signature="testTransitionToMaintenancePage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:09:51 MSK" name="testTransitionToMaintenancePage" finished-at="2023-10-15T16:09:55 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage, runner.DashboardTest.testTransitionToDashboardPage, runner.DashboardTest.testTransitionToDirectoryPage, runner.DashboardTest.testTransitionToRecruitmentPage, runner.DashboardTest.testTransitionToMyInfoPage, runner.DashboardTest.testTransitionToPerformancePage" duration-ms="3954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToMaintenancePage -->
-        <test-method signature="testTransitionToClaimPage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:54:56 MSK" name="testTransitionToClaimPage" finished-at="2023-10-15T14:54:58 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage, runner.DashboardTest.testTransitionToDashboardPage, runner.DashboardTest.testTransitionToDirectoryPage, runner.DashboardTest.testTransitionToRecruitmentPage, runner.DashboardTest.testTransitionToMaintenancePage, runner.DashboardTest.testTransitionToMyInfoPage, runner.DashboardTest.testTransitionToPerformancePage" duration-ms="1813" status="PASS">
+        <test-method signature="testTransitionToClaimPage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:09:55 MSK" name="testTransitionToClaimPage" finished-at="2023-10-15T16:09:57 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage, runner.DashboardTest.testTransitionToDashboardPage, runner.DashboardTest.testTransitionToDirectoryPage, runner.DashboardTest.testTransitionToRecruitmentPage, runner.DashboardTest.testTransitionToMaintenancePage, runner.DashboardTest.testTransitionToMyInfoPage, runner.DashboardTest.testTransitionToPerformancePage" duration-ms="1819" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToClaimPage -->
-        <test-method signature="testTransitionToBuzzPage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:54:58 MSK" name="testTransitionToBuzzPage" finished-at="2023-10-15T14:55:00 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage, runner.DashboardTest.testTransitionToDashboardPage, runner.DashboardTest.testTransitionToDirectoryPage, runner.DashboardTest.testTransitionToRecruitmentPage, runner.DashboardTest.testTransitionToMaintenancePage, runner.DashboardTest.testTransitionToMyInfoPage, runner.DashboardTest.testTransitionToPerformancePage, runner.DashboardTest.testTransitionToClaimPage" duration-ms="2464" status="PASS">
+        <test-method signature="testTransitionToBuzzPage()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:09:57 MSK" name="testTransitionToBuzzPage" finished-at="2023-10-15T16:10:05 MSK" depends-on-methods="runner.DashboardTest.testTransitionToAdminPage, runner.DashboardTest.testTransitionToLeavePage, runner.DashboardTest.testTransitionToTimePage, runner.DashboardTest.testTransitionToPIMpage, runner.DashboardTest.testTransitionToDashboardPage, runner.DashboardTest.testTransitionToDirectoryPage, runner.DashboardTest.testTransitionToRecruitmentPage, runner.DashboardTest.testTransitionToMaintenancePage, runner.DashboardTest.testTransitionToMyInfoPage, runner.DashboardTest.testTransitionToPerformancePage, runner.DashboardTest.testTransitionToClaimPage" duration-ms="8193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToBuzzPage -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T14:56:32 MSK" name="closeDriver" finished-at="2023-10-15T14:56:32 MSK" duration-ms="365" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:runner.DashboardTest@393881f0]" started-at="2023-10-15T16:11:37 MSK" name="closeDriver" finished-at="2023-10-15T16:11:37 MSK" duration-ms="173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- runner.DashboardTest -->
       <class name="runner.PimTest">
-        <test-method signature="testAddEmployee()[pri:0, instance:runner.PimTest@2098d37d]" started-at="2023-10-15T14:55:00 MSK" name="testAddEmployee" finished-at="2023-10-15T14:55:11 MSK" duration-ms="10330" status="FAIL">
+        <test-method signature="testAddEmployee()[pri:0, instance:runner.PimTest@2098d37d]" started-at="2023-10-15T16:10:05 MSK" name="testAddEmployee" finished-at="2023-10-15T16:10:16 MSK" duration-ms="10382" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 10 second(s) with 500 milliseconds interval)]]>
@@ -966,9 +966,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1d307515f87724b4f158afbd18db02e4, findElement {using=xpath, value=//input[@name = 'username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55390}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55390/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d307515f87724b4f158afbd18db02e4
+Command: [bcd98037c44344bac7a263a1f7fd8be7, findElement {using=xpath, value=//input[@name = 'username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52087}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52087/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bcd98037c44344bac7a263a1f7fd8be7
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="326.712" tests="34" errors="0" skipped="0" failures="10">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="309.263" tests="34" errors="0" skipped="0" failures="10">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BY"/>
     <property name="sun.boot.library.path" value="/Users/ruslanfursa/Library/Java/JavaVirtualMachines/corretto-19.0.2/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/ruslanfursa/IdeaProjects/Orange/target/surefire/surefirebooter-20231015145105816_3.jar /Users/ruslanfursa/IdeaProjects/Orange/target/surefire 2023-10-15T14-51-05_521-jvmRun1 surefire-20231015145105816_1tmp surefire_0-20231015145105816_2tmp"/>
+    <property name="sun.java.command" value="/Users/ruslanfursa/IdeaProjects/Orange/target/surefire/surefirebooter-20231015160627593_3.jar /Users/ruslanfursa/IdeaProjects/Orange/target/surefire 2023-10-15T16-06-27_317-jvmRun1 surefire-20231015160627593_1tmp surefire_0-20231015160627593_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/ruslanfursa/IdeaProjects/Orange/target/test-classes:/Users/ruslanfursa/IdeaProjects/Orange/target/classes:/Users/ruslanfursa/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/ruslanfursa/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/ruslanfursa/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/ruslanfursa/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/ruslanfursa/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/ruslanfursa/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/ruslanfursa/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/ruslanfursa/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-java/4.11.0/selenium-java-4.11.0.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-api/4.11.0/selenium-api-4.11.0.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.11.0/selenium-chrome-driver-4.11.0.jar:/Users/ruslanfursa/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/ruslanfursa/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/ruslanfursa/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/ruslanfursa/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/ruslanfursa/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/ruslanfursa/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/ruslanfursa/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/ruslanfursa/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.11.0/selenium-chromium-driver-4.11.0.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-json/4.11.0/selenium-json-4.11.0.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.11.0/selenium-manager-4.11.0.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v113/4.11.0/selenium-devtools-v113-4.11.0.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v114/4.11.0/selenium-devtools-v114-4.11.0.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v115/4.11.0/selenium-devtools-v115-4.11.0.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.11.0/selenium-devtools-v85-4.11.0.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.11.0/selenium-edge-driver-4.11.0.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.11.0/selenium-firefox-driver-4.11.0.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-http/4.11.0/selenium-http-4.11.0.jar:/Users/ruslanfursa/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.11.0/selenium-ie-driver-4.11.0.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.11.0/selenium-remote-driver-4.11.0.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-buffer/4.1.92.Final/netty-buffer-4.1.92.Final.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-codec-http/4.1.92.Final/netty-codec-http-4.1.92.Final.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-codec/4.1.92.Final/netty-codec-4.1.92.Final.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-handler/4.1.92.Final/netty-handler-4.1.92.Final.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-common/4.1.92.Final/netty-common-4.1.92.Final.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.92.Final/netty-transport-classes-epoll-4.1.92.Final.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.92.Final/netty-transport-classes-kqueue-4.1.92.Final.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-transport-native-epoll/4.1.92.Final/netty-transport-native-epoll-4.1.92.Final.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.92.Final/netty-transport-native-kqueue-4.1.92.Final.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.92.Final/netty-transport-native-unix-common-4.1.92.Final.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-transport/4.1.92.Final/netty-transport-4.1.92.Final.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-resolver/4.1.92.Final/netty-resolver-4.1.92.Final.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-api/1.26.0/opentelemetry-api-1.26.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-context/1.26.0/opentelemetry-context-1.26.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.26.0/opentelemetry-exporter-logging-1.26.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.26.0/opentelemetry-sdk-metrics-1.26.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.26.0-alpha/opentelemetry-extension-incubator-1.26.0-alpha.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.26.0-alpha/opentelemetry-sdk-logs-1.26.0-alpha.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.26.0-alpha/opentelemetry-api-logs-1.26.0-alpha.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.26.0-alpha/opentelemetry-api-events-1.26.0-alpha.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.26.0/opentelemetry-sdk-common-1.26.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.26.0/opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.26.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.26.0/opentelemetry-sdk-trace-1.26.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.26.0/opentelemetry-sdk-1.26.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.26.0-alpha/opentelemetry-semconv-1.26.0-alpha.jar:/Users/ruslanfursa/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/Users/ruslanfursa/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/ruslanfursa/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/ruslanfursa/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/ruslanfursa/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/ruslanfursa/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/ruslanfursa/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.11.0/selenium-safari-driver-4.11.0.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-support/4.11.0/selenium-support-4.11.0.jar:/Users/ruslanfursa/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.2/webdrivermanager-5.5.2.jar:/Users/ruslanfursa/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/ruslanfursa/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/Users/ruslanfursa/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/Users/ruslanfursa/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/Users/ruslanfursa/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/ruslanfursa/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/ruslanfursa/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/ruslanfursa/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/ruslanfursa/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/ruslanfursa/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/Users/ruslanfursa/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/Users/ruslanfursa/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/Users/ruslanfursa/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/ruslanfursa/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/Users/ruslanfursa/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/Users/ruslanfursa/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/ruslanfursa/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/ruslanfursa/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/ruslanfursa/.m2/repository/io/qameta/allure/allure-testng/2.23.0/allure-testng-2.23.0.jar:/Users/ruslanfursa/.m2/repository/io/qameta/allure/allure-java-commons/2.23.0/allure-java-commons-2.23.0.jar:/Users/ruslanfursa/.m2/repository/io/qameta/allure/allure-model/2.23.0/allure-model-2.23.0.jar:/Users/ruslanfursa/.m2/repository/io/qameta/allure/allure-test-filter/2.23.0/allure-test-filter-2.23.0.jar:/Users/ruslanfursa/.m2/repository/io/qameta/allure/allure-maven/2.8/allure-maven-2.8.jar:/Users/ruslanfursa/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/ruslanfursa/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/ruslanfursa/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/ruslanfursa/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar:/Users/ruslanfursa/.m2/repository/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar:/Users/ruslanfursa/.m2/repository/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar:/Users/ruslanfursa/.m2/repository/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar:/Users/ruslanfursa/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar:/Users/ruslanfursa/.m2/repository/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar:/Users/ruslanfursa/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/Users/ruslanfursa/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar:/Users/ruslanfursa/.m2/repository/com/google/inject/guice/4.0/guice-4.0-no_aop.jar:/Users/ruslanfursa/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/ruslanfursa/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/ruslanfursa/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar:/Users/ruslanfursa/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar:/Users/ruslanfursa/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.jar:/Users/ruslanfursa/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar:/Users/ruslanfursa/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar:/Users/ruslanfursa/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/reporting/maven-reporting-impl/2.4/maven-reporting-impl-2.4.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar:/Users/ruslanfursa/.m2/repository/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar:/Users/ruslanfursa/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar:/Users/ruslanfursa/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/ruslanfursa/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.6/doxia-sink-api-1.6.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.6/doxia-logging-api-1.6.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/doxia/doxia-core/1.6/doxia-core-1.6.jar:/Users/ruslanfursa/.m2/repository/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar:/Users/ruslanfursa/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/Users/ruslanfursa/.m2/repository/xmlunit/xmlunit/1.5/xmlunit-1.5.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.6/doxia-site-renderer-1.6.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.6/doxia-decoration-model-1.6.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.6/doxia-module-xhtml-1.6.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/doxia/doxia-module-fml/1.6/doxia-module-fml-1.6.jar:/Users/ruslanfursa/.m2/repository/org/codehaus/plexus/plexus-i18n/1.0-beta-7/plexus-i18n-1.0-beta-7.jar:/Users/ruslanfursa/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.jar:/Users/ruslanfursa/.m2/repository/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar:/Users/ruslanfursa/.m2/repository/commons-chain/commons-chain/1.1/commons-chain-1.1.jar:/Users/ruslanfursa/.m2/repository/dom4j/dom4j/1.1/dom4j-1.1.jar:/Users/ruslanfursa/.m2/repository/sslext/sslext/1.2-0/sslext-1.2-0.jar:/Users/ruslanfursa/.m2/repository/org/apache/struts/struts-core/1.3.8/struts-core-1.3.8.jar:/Users/ruslanfursa/.m2/repository/antlr/antlr/2.7.2/antlr-2.7.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/struts/struts-taglib/1.3.8/struts-taglib-1.3.8.jar:/Users/ruslanfursa/.m2/repository/org/apache/struts/struts-tiles/1.3.8/struts-tiles-1.3.8.jar:/Users/ruslanfursa/.m2/repository/commons-validator/commons-validator/1.4.1/commons-validator-1.4.1.jar:/Users/ruslanfursa/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/ruslanfursa/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar:/Users/ruslanfursa/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/ruslanfursa/.m2/repository/net/lingala/zip4j/zip4j/1.3.2/zip4j-1.3.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/plugins/maven-jxr-plugin/2.5/maven-jxr-plugin-2.5.jar:/Users/ruslanfursa/.m2/repository/org/apache/velocity/velocity/1.5/velocity-1.5.jar:/Users/ruslanfursa/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-jxr/2.5/maven-jxr-2.5.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0/wagon-provider-api-1.0.jar:/Users/ruslanfursa/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/Users/ruslanfursa/.m2/repository/xalan/xalan/2.7.0/xalan-2.7.0.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/ruslanfursa/IdeaProjects/Orange/target/surefire/surefirebooter-20231015145105816_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/ruslanfursa/IdeaProjects/Orange/target/surefire/surefirebooter-20231015160627593_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="19.0.2+7-FR"/>
@@ -59,44 +59,44 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="testDashboardSheetsNames[Time at Work](1)" classname="runner.DashboardTest" time="33.161">
+  <testcase name="testDashboardSheetsNames[Time at Work](1)" classname="runner.DashboardTest" time="31.539">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-окт. 15, 2023 2:51:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+окт. 15, 2023 4:06:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
-окт. 15, 2023 2:51:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+окт. 15, 2023 4:06:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
-окт. 15, 2023 2:51:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+окт. 15, 2023 4:06:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
-окт. 15, 2023 2:51:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+окт. 15, 2023 4:06:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 115
 ]]></system-err>
   </testcase>
-  <testcase name="testDashboardSheetsNames[My Actions](2)" classname="runner.DashboardTest" time="8.715"/>
-  <testcase name="testDashboardSheetsNames[Quick Launch](3)" classname="runner.DashboardTest" time="5.638"/>
-  <testcase name="testDashboardSheetsNames[Employee Distribution by Sub Unit](4)" classname="runner.DashboardTest" time="5.25"/>
-  <testcase name="testDashboardSheetsNames[Buzz Latest Posts](5)" classname="runner.DashboardTest" time="7.143"/>
-  <testcase name="testDashboardSheetsNames[Employees on Leave Today](6)" classname="runner.DashboardTest" time="8.212"/>
-  <testcase name="testDashboardSheetsNames[Employee Distribution by Location](7)" classname="runner.DashboardTest" time="7.806"/>
-  <testcase name="testOrangeLinkInFooter" classname="runner.DashboardTest" time="43.062"/>
-  <testcase name="testQuestionIcon" classname="runner.DashboardTest" time="12.12"/>
-  <testcase name="testSearchInSidebarMenu[a](1)" classname="runner.DashboardTest" time="10.3"/>
-  <testcase name="testSearchInSidebarMenu[m](2)" classname="runner.DashboardTest" time="7.357"/>
-  <testcase name="testSearchInSidebarMenu[o](3)" classname="runner.DashboardTest" time="6.138"/>
-  <testcase name="testTransitionToAdminPage" classname="runner.DashboardTest" time="11.057"/>
-  <testcase name="testTransitionToPIMpage" classname="runner.DashboardTest" time="2.663"/>
-  <testcase name="testTransitionToLeavePage" classname="runner.DashboardTest" time="3.626"/>
-  <testcase name="testTransitionToTimePage" classname="runner.DashboardTest" time="4.254"/>
-  <testcase name="testTransitionToRecruitmentPage" classname="runner.DashboardTest" time="2.035"/>
-  <testcase name="testTransitionToMyInfoPage" classname="runner.DashboardTest" time="4.19"/>
-  <testcase name="testTransitionToPerformancePage" classname="runner.DashboardTest" time="2.404"/>
-  <testcase name="testTransitionToDashboardPage" classname="runner.DashboardTest" time="2.032"/>
-  <testcase name="testTransitionToDirectoryPage" classname="runner.DashboardTest" time="2.441"/>
-  <testcase name="testTransitionToMaintenancePage" classname="runner.DashboardTest" time="5.499"/>
-  <testcase name="testTransitionToClaimPage" classname="runner.DashboardTest" time="1.815"/>
-  <testcase name="testTransitionToBuzzPage" classname="runner.DashboardTest" time="2.466"/>
-  <testcase name="testAddEmployee" classname="runner.PimTest" time="10.557">
+  <testcase name="testDashboardSheetsNames[My Actions](2)" classname="runner.DashboardTest" time="8.459"/>
+  <testcase name="testDashboardSheetsNames[Quick Launch](3)" classname="runner.DashboardTest" time="5.223"/>
+  <testcase name="testDashboardSheetsNames[Employee Distribution by Sub Unit](4)" classname="runner.DashboardTest" time="4.89"/>
+  <testcase name="testDashboardSheetsNames[Buzz Latest Posts](5)" classname="runner.DashboardTest" time="4.501"/>
+  <testcase name="testDashboardSheetsNames[Employees on Leave Today](6)" classname="runner.DashboardTest" time="6.472"/>
+  <testcase name="testDashboardSheetsNames[Employee Distribution by Location](7)" classname="runner.DashboardTest" time="6.267"/>
+  <testcase name="testOrangeLinkInFooter" classname="runner.DashboardTest" time="39.847"/>
+  <testcase name="testQuestionIcon" classname="runner.DashboardTest" time="14.312"/>
+  <testcase name="testSearchInSidebarMenu[a](1)" classname="runner.DashboardTest" time="7.296"/>
+  <testcase name="testSearchInSidebarMenu[m](2)" classname="runner.DashboardTest" time="10.237"/>
+  <testcase name="testSearchInSidebarMenu[o](3)" classname="runner.DashboardTest" time="4.922"/>
+  <testcase name="testTransitionToAdminPage" classname="runner.DashboardTest" time="13.388"/>
+  <testcase name="testTransitionToPIMpage" classname="runner.DashboardTest" time="2.7"/>
+  <testcase name="testTransitionToLeavePage" classname="runner.DashboardTest" time="3.265"/>
+  <testcase name="testTransitionToTimePage" classname="runner.DashboardTest" time="3.395"/>
+  <testcase name="testTransitionToRecruitmentPage" classname="runner.DashboardTest" time="2.305"/>
+  <testcase name="testTransitionToMyInfoPage" classname="runner.DashboardTest" time="2.992"/>
+  <testcase name="testTransitionToPerformancePage" classname="runner.DashboardTest" time="2.231"/>
+  <testcase name="testTransitionToDashboardPage" classname="runner.DashboardTest" time="1.352"/>
+  <testcase name="testTransitionToDirectoryPage" classname="runner.DashboardTest" time="1.982"/>
+  <testcase name="testTransitionToMaintenancePage" classname="runner.DashboardTest" time="3.955"/>
+  <testcase name="testTransitionToClaimPage" classname="runner.DashboardTest" time="1.821"/>
+  <testcase name="testTransitionToBuzzPage" classname="runner.DashboardTest" time="8.199"/>
+  <testcase name="testAddEmployee" classname="runner.PimTest" time="10.409">
     <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@name = &apos;username&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
@@ -140,9 +140,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1d307515f87724b4f158afbd18db02e4, findElement {using=xpath, value=//input[@name = 'username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55390}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55390/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d307515f87724b4f158afbd18db02e4
+Command: [bcd98037c44344bac7a263a1f7fd8be7, findElement {using=xpath, value=//input[@name = 'username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52087}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52087/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bcd98037c44344bac7a263a1f7fd8be7
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -168,7 +168,7 @@ Session ID: 1d307515f87724b4f158afbd18db02e4
 	... 34 more
 ]]></failure>
   </testcase>
-  <testcase name="testForgotYourPassword" classname="runner.LoginTest" time="5.478">
+  <testcase name="testForgotYourPassword" classname="runner.LoginTest" time="5.058">
     <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class = &apos;orangehrm-login-forgot&apos;]&apos; (tried for 5 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[@class = 'orangehrm-login-forgot']' (tried for 5 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
@@ -211,9 +211,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//div[@class = 'orangehrm-login-forgot']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//div[@class = 'orangehrm-login-forgot']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -241,7 +241,7 @@ Session ID: 33cc533993b4a6e8ae2fdc580895f82e
 	... 33 more
 ]]></failure>
   </testcase>
-  <testcase name="testLoginWithInvalidPassword" classname="runner.LoginTest" time="10.493">
+  <testcase name="testLoginWithInvalidPassword" classname="runner.LoginTest" time="10.542">
     <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@name = &apos;username&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
@@ -284,9 +284,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//input[@name = 'username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//input[@name = 'username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -312,7 +312,7 @@ Session ID: 33cc533993b4a6e8ae2fdc580895f82e
 	... 33 more
 ]]></failure>
   </testcase>
-  <testcase name="testLoginWithInvalidUsername" classname="runner.LoginTest" time="10.467">
+  <testcase name="testLoginWithInvalidUsername" classname="runner.LoginTest" time="10.468">
     <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@name = &apos;username&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
@@ -355,9 +355,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//input[@name = 'username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//input[@name = 'username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -383,7 +383,7 @@ Session ID: 33cc533993b4a6e8ae2fdc580895f82e
 	... 33 more
 ]]></failure>
   </testcase>
-  <testcase name="testLoginWithValidCredentials" classname="runner.LoginTest" time="10.405">
+  <testcase name="testLoginWithValidCredentials" classname="runner.LoginTest" time="10.549">
     <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@name = &apos;username&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
@@ -426,9 +426,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//input[@name = 'username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//input[@name = 'username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -454,7 +454,7 @@ Session ID: 33cc533993b4a6e8ae2fdc580895f82e
 	... 33 more
 ]]></failure>
   </testcase>
-  <testcase name="testLoginWithoutFillingInUserNameAndPasswordFields" classname="runner.LoginTest" time="2.15">
+  <testcase name="testLoginWithoutFillingInUserNameAndPasswordFields" classname="runner.LoginTest" time="2.171">
     <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //button[@type = &apos;submit&apos;]&apos; (tried for 2 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[@type = 'submit']' (tried for 2 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
@@ -497,9 +497,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//button[@type = 'submit']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//button[@type = 'submit']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -527,7 +527,7 @@ Session ID: 33cc533993b4a6e8ae2fdc580895f82e
 	... 33 more
 ]]></failure>
   </testcase>
-  <testcase name="testTransitionToFacebookPage" classname="runner.LoginTest" time="10.431">
+  <testcase name="testTransitionToFacebookPage" classname="runner.LoginTest" time="10.453">
     <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[contains(@href,&apos;facebook&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[contains(@href,'facebook')]' (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
@@ -570,9 +570,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//a[contains(@href,'facebook')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//a[contains(@href,'facebook')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -600,7 +600,7 @@ Session ID: 33cc533993b4a6e8ae2fdc580895f82e
 	... 33 more
 ]]></failure>
   </testcase>
-  <testcase name="testTransitionToLinkedinPage" classname="runner.LoginTest" time="10.405">
+  <testcase name="testTransitionToLinkedinPage" classname="runner.LoginTest" time="10.528">
     <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[contains(@href,&apos;linkedin&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[contains(@href,'linkedin')]' (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
@@ -643,9 +643,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//a[contains(@href,'linkedin')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//a[contains(@href,'linkedin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -673,7 +673,7 @@ Session ID: 33cc533993b4a6e8ae2fdc580895f82e
 	... 33 more
 ]]></failure>
   </testcase>
-  <testcase name="testTransitionToTwitterPage" classname="runner.LoginTest" time="10.465">
+  <testcase name="testTransitionToTwitterPage" classname="runner.LoginTest" time="10.46">
     <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[contains(@href,&apos;twitter&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[contains(@href,'twitter')]' (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
@@ -716,9 +716,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//a[contains(@href,'twitter')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//a[contains(@href,'twitter')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -746,7 +746,7 @@ Session ID: 33cc533993b4a6e8ae2fdc580895f82e
 	... 33 more
 ]]></failure>
   </testcase>
-  <testcase name="testTransitionToYoutubePage" classname="runner.LoginTest" time="10.451">
+  <testcase name="testTransitionToYoutubePage" classname="runner.LoginTest" time="10.526">
     <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[contains(@href,&apos;youtube&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //a[contains(@href,'youtube')]' (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
@@ -789,9 +789,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [33cc533993b4a6e8ae2fdc580895f82e, findElement {using=xpath, value=//a[contains(@href,'youtube')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55414/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 33cc533993b4a6e8ae2fdc580895f82e
+Command: [0104255d388c98b594b59b2eb1b4f8a9, findElement {using=xpath, value=//a[contains(@href,'youtube')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52095/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0104255d388c98b594b59b2eb1b4f8a9
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
