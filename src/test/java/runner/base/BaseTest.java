@@ -11,7 +11,8 @@ import org.testng.annotations.BeforeSuite;
 import java.time.Duration;
 
 public class BaseTest {
-    private WebDriver driver = new ChromeDriver(new ChromeOptions().addArguments("--window-size=1920,1080"));
+//   private WebDriver driver = new ChromeDriver(new ChromeOptions().addArguments("--window-size=1920,1080"));
+   private WebDriver driver = new ChromeDriver(new ChromeOptions().addArguments("--headless"));
     private WebDriverWait wait2;
     private WebDriverWait wait10;
 
