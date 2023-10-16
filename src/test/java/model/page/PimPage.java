@@ -17,14 +17,11 @@ public class PimPage extends BasePage {
     private WebElement addBtn;
     @FindBy(xpath = "//input[@placeholder = 'First Name']")
     private WebElement firstNameField;
-    @FindBy(xpath = "//input[@placeholder = 'Middle Name']")
-    private WebElement middleNameField;
     @FindBy(xpath = "//input[@placeholder = 'Last Name']")
     private WebElement lastNameField;
     @FindBy(xpath = "//button[@type = 'submit']")
     private WebElement saveBtn;
     private final String firstName = new Faker().name().firstName();
-    private final String middleName = new Faker().name().nameWithMiddle();
     private final String lastName = new Faker().name().lastName();
 
     public PimPage(WebDriver driver) {
@@ -46,11 +43,6 @@ public class PimPage extends BasePage {
         return this;
     }
 
-    public PimPage fillInMiddleName() {
-        getWait5().until(ExpectedConditions.visibilityOf(middleNameField)).sendKeys(middleName);
-        return this;
-    }
-
     public PimPage fillInLastName() {
         getWait5().until(ExpectedConditions.visibilityOf(lastNameField)).sendKeys(lastName);
         return this;
@@ -67,9 +59,6 @@ public class PimPage extends BasePage {
     }
 
     public boolean isUserCreated() {
-        System.out.println(getNameFromUserCard());
-        System.out.println(firstName + " " + lastName + "ER");
         return (firstName + " " + lastName).equals(getNameFromUserCard());
-
     }
 }

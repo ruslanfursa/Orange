@@ -16,7 +16,6 @@ public class PimTest extends BaseTest {
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.PIM, new PimPage(getDriver()))
                 .clickAddBtn()
                 .fillInFirstName()
-                .fillInMiddleName()
                 .fillInLastName()
                 .clickSaveBtn()
                 .isUserCreated();
