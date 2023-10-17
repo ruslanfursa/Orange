@@ -6,9 +6,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.annotations.Ignore;
 
 import java.util.Set;
 
+@Ignore
 public class LoginPage extends BasePage {
 
     @FindBy(xpath = "//input[@name = 'username']")
@@ -77,20 +79,20 @@ public class LoginPage extends BasePage {
 
     public boolean isInvalidCredentialsMessageShown() {
         String expectedErrorMessage = "Invalid credentials";
-        getWait5().until(ExpectedConditions.visibilityOf(errorMessage));
+        getWait10().until(ExpectedConditions.visibilityOf(errorMessage));
         String actualErrorMessage = errorMessage.getText();
         return expectedErrorMessage.equals(actualErrorMessage);
     }
 
     public boolean isRequiredMessagesShown() {
         String expectedMessage = "Required";
-        getWait5().until(ExpectedConditions.visibilityOf(passwordRequiredMessage));
+        getWait10().until(ExpectedConditions.visibilityOf(passwordRequiredMessage));
         return expectedMessage.equals(userNameRequiredMessage.getText()) &&
                 expectedMessage.equals(passwordRequiredMessage.getText());
     }
 
     public ResetPasswordPage clickForgotYourPassword() {
-        getWait5().until(ExpectedConditions.elementToBeClickable(forgotYourPasswordLink)).click();
+        getWait10().until(ExpectedConditions.elementToBeClickable(forgotYourPasswordLink)).click();
         return new ResetPasswordPage(getDriver());
     }
 

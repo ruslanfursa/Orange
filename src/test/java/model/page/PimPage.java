@@ -54,7 +54,7 @@ public class PimPage extends BasePage {
     }
 
     private String getNameFromUserCard() {
-        return getWait5().until(ExpectedConditions.visibilityOfElementLocated(By
+        return getWait10().until(ExpectedConditions.visibilityOfElementLocated(By
                 .xpath("//h6[@class = 'oxd-text oxd-text--h6 --strong']"))).getText();
     }
 

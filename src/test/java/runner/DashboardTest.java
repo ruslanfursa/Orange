@@ -71,113 +71,132 @@ public class DashboardTest extends BaseTest {
                 .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.ADMIN, new AdminPage(getDriver()))
                 .isTitleCorrect("Admin");
+        new AdminPage(getDriver())
+                .clickLogout();
         Assert.assertTrue(isCorrectTitle);
     }
 
-    @Test(dependsOnMethods = "testTransitionToAdminPage")
+    @Test
     public void testTransitionToPIMpage() {
-        boolean isCorrectTitle = new AdminPage(getDriver())
+        boolean isCorrectTitle = new LoginPage(getDriver())
+                .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.PIM, new PimPage(getDriver()))
                 .isTitleCorrect("PIM");
+        new PimPage(getDriver())
+                .clickLogout();
         Assert.assertTrue(isCorrectTitle);
     }
 
-    @Test(dependsOnMethods = {"testTransitionToAdminPage", "testTransitionToPIMpage"})
+    @Test
     public void testTransitionToLeavePage() {
-        boolean isCorrectTitle = new PimPage(getDriver())
+        boolean isCorrectTitle = new LoginPage(getDriver())
+                .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.LEAVE, new LeavePage(getDriver()))
                 .isTitleCorrect("Leave");
+        new LeavePage(getDriver())
+                .clickLogout();
         Assert.assertTrue(isCorrectTitle);
     }
 
-    @Test(dependsOnMethods = {"testTransitionToAdminPage", "testTransitionToPIMpage", "testTransitionToLeavePage"})
+    @Test
     public void testTransitionToTimePage() {
-        boolean isCorrectTitle = new LeavePage(getDriver())
+        boolean isCorrectTitle = new LoginPage(getDriver())
+                .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.TIME, new TimePage(getDriver()))
                 .isTitleCorrect("Time");
+        new TimePage(getDriver())
+                .clickLogout();
         Assert.assertTrue(isCorrectTitle);
     }
 
-    @Test(dependsOnMethods = {"testTransitionToAdminPage", "testTransitionToPIMpage", "testTransitionToLeavePage",
-            "testTransitionToTimePage"})
+    @Test
     public void testTransitionToRecruitmentPage() {
-        boolean isCorrectTitle = new TimePage(getDriver())
+        boolean isCorrectTitle = new LoginPage(getDriver())
+                .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.RECRUITMENT, new RecruitmentPage(getDriver()))
                 .isTitleCorrect("Recruitment");
+        new RecruitmentPage(getDriver())
+                .clickLogout();
         Assert.assertTrue(isCorrectTitle);
     }
 
-    @Test(dependsOnMethods = {"testTransitionToAdminPage", "testTransitionToPIMpage", "testTransitionToLeavePage",
-            "testTransitionToTimePage", "testTransitionToRecruitmentPage"})
+    @Test
     public void testTransitionToMyInfoPage() {
-        boolean isCorrectTitle = new RecruitmentPage(getDriver())
+        boolean isCorrectTitle = new LoginPage(getDriver())
+                .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.MY_INFO, new MyInfoPage(getDriver()))
                 .isTitleCorrect("PIM");
+        new MyInfoPage(getDriver())
+                .clickLogout();
         Assert.assertTrue(isCorrectTitle);
     }
 
-    @Test(dependsOnMethods = {"testTransitionToAdminPage", "testTransitionToPIMpage", "testTransitionToLeavePage",
-            "testTransitionToTimePage", "testTransitionToRecruitmentPage", "testTransitionToMyInfoPage"})
+    @Test
     public void testTransitionToPerformancePage() {
-        boolean isCorrectTitle = new MyInfoPage(getDriver())
+        boolean isCorrectTitle = new LoginPage(getDriver())
+                .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.PERFORMANCE, new PerformancePage(getDriver()))
                 .isTitleCorrect("Performance");
+        new PerformancePage(getDriver())
+                .clickLogout();
         Assert.assertTrue(isCorrectTitle);
     }
 
-    @Test(dependsOnMethods = {"testTransitionToAdminPage", "testTransitionToPIMpage", "testTransitionToLeavePage",
-            "testTransitionToTimePage", "testTransitionToRecruitmentPage", "testTransitionToMyInfoPage",
-            "testTransitionToPerformancePage"})
+    @Test
     public void testTransitionToDashboardPage() {
-        boolean isCorrectTitle = new PerformancePage(getDriver())
+        boolean isCorrectTitle = new LoginPage(getDriver())
+                .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.DASHBOARD, new DashboardPage(getDriver()))
                 .isTitleCorrect("Dashboard");
+        new DashboardPage(getDriver())
+                .clickLogout();
         Assert.assertTrue(isCorrectTitle);
     }
 
-    @Test(dependsOnMethods = {"testTransitionToAdminPage", "testTransitionToPIMpage", "testTransitionToLeavePage",
-            "testTransitionToTimePage", "testTransitionToRecruitmentPage", "testTransitionToMyInfoPage",
-            "testTransitionToPerformancePage", "testTransitionToDashboardPage"})
+    @Test
     public void testTransitionToDirectoryPage() {
-        boolean isCorrectTitle = new DashboardPage(getDriver())
+        boolean isCorrectTitle = new LoginPage(getDriver())
+                .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.DIRECTORY, new DirectoryPage(getDriver()))
                 .isTitleCorrect("Directory");
+        new DashboardPage(getDriver())
+                .clickLogout();
         Assert.assertTrue(isCorrectTitle);
     }
 
-    @Test(dependsOnMethods = {"testTransitionToAdminPage", "testTransitionToPIMpage", "testTransitionToLeavePage",
-            "testTransitionToTimePage", "testTransitionToRecruitmentPage", "testTransitionToMyInfoPage",
-            "testTransitionToPerformancePage", "testTransitionToDashboardPage", "testTransitionToDirectoryPage"})
+    @Test
     public void testTransitionToMaintenancePage() {
-        new DirectoryPage(getDriver())
+        new LoginPage(getDriver())
+                .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.MAINTENANCE, new LoginPage(getDriver()))
                 .fillInValidPassword()
                 .clickLoginBtn();
         boolean isCorrectTitle = new MaintenancePage(getDriver())
                 .isTitleCorrect("Maintenance");
+        new MaintenancePage(getDriver())
+                .clickLogout();
         Assert.assertTrue(isCorrectTitle);
     }
 
-    @Test(dependsOnMethods = {"testTransitionToAdminPage", "testTransitionToPIMpage", "testTransitionToLeavePage",
-            "testTransitionToTimePage", "testTransitionToRecruitmentPage", "testTransitionToMyInfoPage",
-            "testTransitionToPerformancePage", "testTransitionToDashboardPage", "testTransitionToDirectoryPage",
-            "testTransitionToMaintenancePage"})
+    @Test
     public void testTransitionToClaimPage() {
-        boolean isCorrectTitle = new MaintenancePage(getDriver())
+        boolean isCorrectTitle = new LoginPage(getDriver())
+                .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.CLAIM, new ClaimPage(getDriver()))
                 .isTitleCorrect("Claim");
+        new ClaimPage(getDriver())
+                .clickLogout();
         Assert.assertTrue(isCorrectTitle);
     }
 
-    @Test(dependsOnMethods = {"testTransitionToAdminPage", "testTransitionToPIMpage", "testTransitionToLeavePage",
-            "testTransitionToTimePage", "testTransitionToRecruitmentPage", "testTransitionToMyInfoPage",
-            "testTransitionToPerformancePage", "testTransitionToDashboardPage", "testTransitionToDirectoryPage",
-            "testTransitionToMaintenancePage", "testTransitionToClaimPage"})
+    @Test
     public void testTransitionToBuzzPage() {
-        boolean isCorrectTitle = new ClaimPage(getDriver())
+        boolean isCorrectTitle = new LoginPage(getDriver())
+                .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.BUZZ, new BuzzPage(getDriver()))
                 .isTitleCorrect("Buzz");
+        new BuzzPage(getDriver())
+                .clickLogout();
         Assert.assertTrue(isCorrectTitle);
     }
-
 }
