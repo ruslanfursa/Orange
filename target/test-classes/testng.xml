@@ -41,6 +41,11 @@
                     <include name="testAddEmployee"/>
                 </methods>
             </class>
+            <class name="runner.LeaveTest">
+                <methods>
+                    <include name="testRenameHoliday"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

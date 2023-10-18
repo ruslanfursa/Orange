@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">All Test Suite</span>
+              <span class="suite-name border-failed">All Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">34 methods,   34 passed</span>
+                    <span class="method-stats">35 methods, 3 failed,   32 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.PimTest" class="method navigator-link" hash-for-method="testAddEmployee">testAddEmployee</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.LoginTest" class="method navigator-link" hash-for-method="testLoginWithValidCredentials">testLoginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.LeaveTest" class="method navigator-link" hash-for-method="testRenameHoliday">testRenameHoliday</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +127,7 @@
                     <div class="method-list-content passed suite-All_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.PimTest" class="method navigator-link" hash-for-method="testAddEmployee">testAddEmployee</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testDashboardSheetsNames(Employee Distribution by Location)">testDashboardSheetsNames(Employee Distribution by Location)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -113,12 +137,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testDashboardSheetsNames(Employees on Leave Today)">testDashboardSheetsNames(Employees on Leave Today)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testDashboardSheetsNames(Quick Launch)">testDashboardSheetsNames(Quick Launch)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testDashboardSheetsNames(Quick Launch)">testDashboardSheetsNames(Quick Launch)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testDashboardSheetsNames(Employee Distribution by Sub Unit)">testDashboardSheetsNames(Employee Distribution by Sub Unit)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testDashboardSheetsNames(Employees on Leave Today)">testDashboardSheetsNames(Employees on Leave Today)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -129,16 +158,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testDashboardSheetsNames(My Actions)">testDashboardSheetsNames(My Actions)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testDashboardSheetsNames(Employee Distribution by Sub Unit)">testDashboardSheetsNames(Employee Distribution by Sub Unit)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testDashboardSheetsNames(Employee Distribution by Location)">testDashboardSheetsNames(Employee Distribution by Location)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -154,11 +173,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-All_Test_Suite" title="runner.LoginTest" class="method navigator-link" hash-for-method="testLoginWithInvalidUsername">testLoginWithInvalidUsername</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.LoginTest" class="method navigator-link" hash-for-method="testLoginWithValidCredentials">testLoginWithValidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -183,12 +197,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testSearchInSidebarMenu(o)">testSearchInSidebarMenu(o)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testSearchInSidebarMenu(a)">testSearchInSidebarMenu(a)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testSearchInSidebarMenu(a)">testSearchInSidebarMenu(a)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testSearchInSidebarMenu(o)">testSearchInSidebarMenu(o)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -283,9 +297,75 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
-          <div class="suite-All_Test_Suite-class-passed">
+          <div class="suite-All_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">runner.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithValidCredentials">
+                  </a> <!-- testLoginWithValidCredentials -->
+                  <span class="method-name">testLoginWithValidCredentials</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@name = &apos;username&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at model.page.LoginPage.fillInValidUserName(LoginPage.java:53)
+	at runner.LoginTest.testLoginWithValidCredentials(LoginTest.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name = &apos;username&apos;]&quot;}
+  (Session info: headless chrome=118.0.5993.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6a65bde2f06fca7720ded56392b705c0, findElement {using=xpath, value=//input[@name = &apos;username&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50700}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50700/devtoo..., se:cdpVersion: 118.0.5993.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a65bde2f06fca7720ded56392b705c0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 15 more
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">runner.PimTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -294,87 +374,142 @@
                   <a name="testAddEmployee">
                   </a> <!-- testAddEmployee -->
                   <span class="method-name">testAddEmployee</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@name = &apos;username&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at model.page.LoginPage.fillInValidUserName(LoginPage.java:53)
+	at model.page.LoginPage.login(LoginPage.java:131)
+	at runner.PimTest.testAddEmployee(PimTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name = &apos;username&apos;]&quot;}
+  (Session info: headless chrome=118.0.5993.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c554ad71dfb5cc2525d162dd9ea0e23, findElement {using=xpath, value=//input[@name = &apos;username&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50703/devtoo..., se:cdpVersion: 118.0.5993.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c554ad71dfb5cc2525d162dd9ea0e23
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 16 more
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">runner.LoginTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">runner.LeaveTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testForgotYourPassword">
-                  </a> <!-- testForgotYourPassword -->
-                  <span class="method-name">testForgotYourPassword</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginWithInvalidPassword">
-                  </a> <!-- testLoginWithInvalidPassword -->
-                  <span class="method-name">testLoginWithInvalidPassword</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginWithInvalidUsername">
-                  </a> <!-- testLoginWithInvalidUsername -->
-                  <span class="method-name">testLoginWithInvalidUsername</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginWithValidCredentials">
-                  </a> <!-- testLoginWithValidCredentials -->
-                  <span class="method-name">testLoginWithValidCredentials</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginWithoutFillingInUserNameAndPasswordFields">
-                  </a> <!-- testLoginWithoutFillingInUserNameAndPasswordFields -->
-                  <span class="method-name">testLoginWithoutFillingInUserNameAndPasswordFields</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testTransitionToFacebookPage">
-                  </a> <!-- testTransitionToFacebookPage -->
-                  <span class="method-name">testTransitionToFacebookPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testTransitionToLinkedinPage">
-                  </a> <!-- testTransitionToLinkedinPage -->
-                  <span class="method-name">testTransitionToLinkedinPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testTransitionToTwitterPage">
-                  </a> <!-- testTransitionToTwitterPage -->
-                  <span class="method-name">testTransitionToTwitterPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testTransitionToYoutubePage">
-                  </a> <!-- testTransitionToYoutubePage -->
-                  <span class="method-name">testTransitionToYoutubePage</span>
+                  <a name="testRenameHoliday">
+                  </a> <!-- testRenameHoliday -->
+                  <span class="method-name">testRenameHoliday</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[text() = &apos;Configure &apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at model.page.LeavePage.clickConfigureTab(LeavePage.java:51)
+	at runner.LeaveTest.testRenameHoliday(LeaveTest.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text() = &apos;Configure &apos;]&quot;}
+  (Session info: headless chrome=118.0.5993.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;19.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [25fbf34e25bbda95dde032cff5d74273, findElement {using=xpath, value=//span[text() = &apos;Configure &apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50701/devtoo..., se:cdpVersion: 118.0.5993.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25fbf34e25bbda95dde032cff5d74273
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 15 more
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">runner.DashboardTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDashboardSheetsNames(Employee Distribution by Location)">
+                  </a> <!-- testDashboardSheetsNames(Employee Distribution by Location) -->
+                  <span class="method-name">testDashboardSheetsNames</span>
+                  <span class="parameters">(Employee Distribution by Location)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="testDashboardSheetsNames(Time at Work)">
@@ -385,18 +520,26 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testDashboardSheetsNames(Employees on Leave Today)">
-                  </a> <!-- testDashboardSheetsNames(Employees on Leave Today) -->
-                  <span class="method-name">testDashboardSheetsNames</span>
-                  <span class="parameters">(Employees on Leave Today)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="testDashboardSheetsNames(Quick Launch)">
                   </a> <!-- testDashboardSheetsNames(Quick Launch) -->
                   <span class="method-name">testDashboardSheetsNames</span>
                   <span class="parameters">(Quick Launch)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDashboardSheetsNames(Employee Distribution by Sub Unit)">
+                  </a> <!-- testDashboardSheetsNames(Employee Distribution by Sub Unit) -->
+                  <span class="method-name">testDashboardSheetsNames</span>
+                  <span class="parameters">(Employee Distribution by Sub Unit)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDashboardSheetsNames(Employees on Leave Today)">
+                  </a> <!-- testDashboardSheetsNames(Employees on Leave Today) -->
+                  <span class="method-name">testDashboardSheetsNames</span>
+                  <span class="parameters">(Employees on Leave Today)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -413,22 +556,6 @@
                   </a> <!-- testDashboardSheetsNames(My Actions) -->
                   <span class="method-name">testDashboardSheetsNames</span>
                   <span class="parameters">(My Actions)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDashboardSheetsNames(Employee Distribution by Sub Unit)">
-                  </a> <!-- testDashboardSheetsNames(Employee Distribution by Sub Unit) -->
-                  <span class="method-name">testDashboardSheetsNames</span>
-                  <span class="parameters">(Employee Distribution by Sub Unit)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDashboardSheetsNames(Employee Distribution by Location)">
-                  </a> <!-- testDashboardSheetsNames(Employee Distribution by Location) -->
-                  <span class="method-name">testDashboardSheetsNames</span>
-                  <span class="parameters">(Employee Distribution by Location)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -455,18 +582,18 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testSearchInSidebarMenu(o)">
-                  </a> <!-- testSearchInSidebarMenu(o) -->
-                  <span class="method-name">testSearchInSidebarMenu</span>
-                  <span class="parameters">(o)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="testSearchInSidebarMenu(a)">
                   </a> <!-- testSearchInSidebarMenu(a) -->
                   <span class="method-name">testSearchInSidebarMenu</span>
                   <span class="parameters">(a)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchInSidebarMenu(o)">
+                  </a> <!-- testSearchInSidebarMenu(o) -->
+                  <span class="method-name">testSearchInSidebarMenu</span>
+                  <span class="parameters">(o)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -555,6 +682,70 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runner.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForgotYourPassword">
+                  </a> <!-- testForgotYourPassword -->
+                  <span class="method-name">testForgotYourPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithInvalidPassword">
+                  </a> <!-- testLoginWithInvalidPassword -->
+                  <span class="method-name">testLoginWithInvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithInvalidUsername">
+                  </a> <!-- testLoginWithInvalidUsername -->
+                  <span class="method-name">testLoginWithInvalidUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithoutFillingInUserNameAndPasswordFields">
+                  </a> <!-- testLoginWithoutFillingInUserNameAndPasswordFields -->
+                  <span class="method-name">testLoginWithoutFillingInUserNameAndPasswordFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTransitionToFacebookPage">
+                  </a> <!-- testTransitionToFacebookPage -->
+                  <span class="method-name">testTransitionToFacebookPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTransitionToLinkedinPage">
+                  </a> <!-- testTransitionToLinkedinPage -->
+                  <span class="method-name">testTransitionToLinkedinPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTransitionToTwitterPage">
+                  </a> <!-- testTransitionToTwitterPage -->
+                  <span class="method-name">testTransitionToTwitterPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testTransitionToYoutubePage">
+                  </a> <!-- testTransitionToYoutubePage -->
+                  <span class="method-name">testTransitionToYoutubePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
         </div> <!-- panel All_Test_Suite -->
         <div panel-name="test-xml-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -605,6 +796,11 @@
           &lt;include name=&quot;testAddEmployee&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- runner.PimTest --&gt;
+      &lt;class name=&quot;runner.LeaveTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testRenameHoliday&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- runner.LeaveTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- /Users/ruslanfursa/IdeaProjects/Orange --&gt;
 &lt;/suite&gt; &lt;!-- All Test Suite --&gt;
@@ -618,7 +814,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">/Users/ruslanfursa/IdeaProjects/Orange (3 classes)</span>
+                <span class="test-name">/Users/ruslanfursa/IdeaProjects/Orange (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -644,143 +840,147 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(34);
+data.addRows(35);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testAddEmployee')
-data.setCell(0, 2, 'runner.PimTest')
-data.setCell(0, 3, 82328);
+data.setCell(0, 1, 'testRenameHoliday')
+data.setCell(0, 2, 'runner.LeaveTest')
+data.setCell(0, 3, 67048);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testLoginWithValidCredentials')
-data.setCell(1, 2, 'runner.LoginTest')
-data.setCell(1, 3, 55555);
+data.setCell(1, 1, 'testDashboardSheetsNames')
+data.setCell(1, 2, 'runner.DashboardTest')
+data.setCell(1, 3, 57315);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testDashboardSheetsNames')
+data.setCell(2, 1, 'testOrangeLinkInFooter')
 data.setCell(2, 2, 'runner.DashboardTest')
-data.setCell(2, 3, 55023);
+data.setCell(2, 3, 35471);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testOrangeLinkInFooter')
-data.setCell(3, 2, 'runner.DashboardTest')
-data.setCell(3, 3, 36010);
+data.setCell(3, 1, 'testTransitionToYoutubePage')
+data.setCell(3, 2, 'runner.LoginTest')
+data.setCell(3, 3, 30200);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testTransitionToYoutubePage')
+data.setCell(4, 1, 'testLoginWithInvalidUsername')
 data.setCell(4, 2, 'runner.LoginTest')
-data.setCell(4, 3, 25862);
+data.setCell(4, 3, 29911);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testTransitionToFacebookPage')
+data.setCell(5, 1, 'testTransitionToLinkedinPage')
 data.setCell(5, 2, 'runner.LoginTest')
-data.setCell(5, 3, 19356);
+data.setCell(5, 3, 20209);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testTransitionToMaintenancePage')
+data.setCell(6, 1, 'testDashboardSheetsNames')
 data.setCell(6, 2, 'runner.DashboardTest')
-data.setCell(6, 3, 15906);
+data.setCell(6, 3, 16084);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testDashboardSheetsNames')
+data.setCell(7, 1, 'testTransitionToAdminPage')
 data.setCell(7, 2, 'runner.DashboardTest')
-data.setCell(7, 3, 15117);
+data.setCell(7, 3, 13810);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testTransitionToClaimPage')
-data.setCell(8, 2, 'runner.DashboardTest')
-data.setCell(8, 3, 14873);
+data.setCell(8, 1, 'testTransitionToFacebookPage')
+data.setCell(8, 2, 'runner.LoginTest')
+data.setCell(8, 3, 12959);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'testTransitionToBuzzPage')
 data.setCell(9, 2, 'runner.DashboardTest')
-data.setCell(9, 3, 13767);
+data.setCell(9, 3, 12857);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testDashboardSheetsNames')
+data.setCell(10, 1, 'testTransitionToLeavePage')
 data.setCell(10, 2, 'runner.DashboardTest')
-data.setCell(10, 3, 13473);
+data.setCell(10, 3, 12748);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testTransitionToLinkedinPage')
-data.setCell(11, 2, 'runner.LoginTest')
-data.setCell(11, 3, 13304);
+data.setCell(11, 1, 'testQuestionIcon')
+data.setCell(11, 2, 'runner.DashboardTest')
+data.setCell(11, 3, 12398);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testTransitionToPIMpage')
+data.setCell(12, 1, 'testTransitionToMyInfoPage')
 data.setCell(12, 2, 'runner.DashboardTest')
-data.setCell(12, 3, 12443);
+data.setCell(12, 3, 12202);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testTransitionToLeavePage')
+data.setCell(13, 1, 'testDashboardSheetsNames')
 data.setCell(13, 2, 'runner.DashboardTest')
-data.setCell(13, 3, 12432);
+data.setCell(13, 3, 11149);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'testTransitionToTimePage')
-data.setCell(14, 2, 'runner.DashboardTest')
-data.setCell(14, 3, 11870);
+data.setCell(14, 1, 'testAddEmployee')
+data.setCell(14, 2, 'runner.PimTest')
+data.setCell(14, 3, 11029);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'testTransitionToDirectoryPage')
-data.setCell(15, 2, 'runner.DashboardTest')
-data.setCell(15, 3, 11196);
+data.setCell(15, 1, 'testLoginWithValidCredentials')
+data.setCell(15, 2, 'runner.LoginTest')
+data.setCell(15, 3, 10668);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'testQuestionIcon')
+data.setCell(16, 1, 'testTransitionToClaimPage')
 data.setCell(16, 2, 'runner.DashboardTest')
-data.setCell(16, 3, 10507);
+data.setCell(16, 3, 10595);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'testTransitionToAdminPage')
+data.setCell(17, 1, 'testDashboardSheetsNames')
 data.setCell(17, 2, 'runner.DashboardTest')
-data.setCell(17, 3, 10073);
+data.setCell(17, 3, 10208);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'testDashboardSheetsNames')
+data.setCell(18, 1, 'testSearchInSidebarMenu')
 data.setCell(18, 2, 'runner.DashboardTest')
-data.setCell(18, 3, 9911);
+data.setCell(18, 3, 8918);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'testDashboardSheetsNames')
+data.setCell(19, 1, 'testTransitionToPerformancePage')
 data.setCell(19, 2, 'runner.DashboardTest')
-data.setCell(19, 3, 9528);
+data.setCell(19, 3, 8828);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'testSearchInSidebarMenu')
 data.setCell(20, 2, 'runner.DashboardTest')
-data.setCell(20, 3, 8283);
+data.setCell(20, 3, 8589);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'testSearchInSidebarMenu')
+data.setCell(21, 1, 'testDashboardSheetsNames')
 data.setCell(21, 2, 'runner.DashboardTest')
-data.setCell(21, 3, 8125);
+data.setCell(21, 3, 8586);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'testTransitionToRecruitmentPage')
+data.setCell(22, 1, 'testTransitionToPIMpage')
 data.setCell(22, 2, 'runner.DashboardTest')
-data.setCell(22, 3, 7758);
+data.setCell(22, 3, 8561);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'testTransitionToMyInfoPage')
+data.setCell(23, 1, 'testDashboardSheetsNames')
 data.setCell(23, 2, 'runner.DashboardTest')
-data.setCell(23, 3, 7280);
+data.setCell(23, 3, 8429);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'testSearchInSidebarMenu')
+data.setCell(24, 1, 'testTransitionToMaintenancePage')
 data.setCell(24, 2, 'runner.DashboardTest')
-data.setCell(24, 3, 7198);
+data.setCell(24, 3, 7914);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'testTransitionToPerformancePage')
+data.setCell(25, 1, 'testTransitionToRecruitmentPage')
 data.setCell(25, 2, 'runner.DashboardTest')
-data.setCell(25, 3, 6282);
+data.setCell(25, 3, 7691);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'testDashboardSheetsNames')
+data.setCell(26, 1, 'testSearchInSidebarMenu')
 data.setCell(26, 2, 'runner.DashboardTest')
-data.setCell(26, 3, 6263);
+data.setCell(26, 3, 7109);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'testTransitionToDashboardPage')
+data.setCell(27, 1, 'testTransitionToDirectoryPage')
 data.setCell(27, 2, 'runner.DashboardTest')
-data.setCell(27, 3, 5599);
+data.setCell(27, 3, 6763);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'testDashboardSheetsNames')
+data.setCell(28, 1, 'testTransitionToTimePage')
 data.setCell(28, 2, 'runner.DashboardTest')
-data.setCell(28, 3, 4939);
+data.setCell(28, 3, 6637);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'testLoginWithInvalidUsername')
-data.setCell(29, 2, 'runner.LoginTest')
-data.setCell(29, 3, 4581);
+data.setCell(29, 1, 'testTransitionToDashboardPage')
+data.setCell(29, 2, 'runner.DashboardTest')
+data.setCell(29, 3, 6035);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'testLoginWithInvalidPassword')
-data.setCell(30, 2, 'runner.LoginTest')
-data.setCell(30, 3, 3204);
+data.setCell(30, 1, 'testDashboardSheetsNames')
+data.setCell(30, 2, 'runner.DashboardTest')
+data.setCell(30, 3, 5138);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'testForgotYourPassword')
+data.setCell(31, 1, 'testLoginWithInvalidPassword')
 data.setCell(31, 2, 'runner.LoginTest')
-data.setCell(31, 3, 2975);
+data.setCell(31, 3, 4467);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'testTransitionToTwitterPage')
+data.setCell(32, 1, 'testForgotYourPassword')
 data.setCell(32, 2, 'runner.LoginTest')
-data.setCell(32, 3, 2529);
+data.setCell(32, 3, 3578);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'testLoginWithoutFillingInUserNameAndPasswordFields')
+data.setCell(33, 1, 'testTransitionToTwitterPage')
 data.setCell(33, 2, 'runner.LoginTest')
-data.setCell(33, 3, 1361);
+data.setCell(33, 3, 3004);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testLoginWithoutFillingInUserNameAndPasswordFields')
+data.setCell(34, 2, 'runner.LoginTest')
+data.setCell(34, 3, 1968);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
@@ -811,7 +1011,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">runner.DashboardTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">runner.LeaveTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
                 <span class="method-start">0 ms</span>
@@ -819,6 +1019,13 @@ return data;
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.PimTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runner.DashboardTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
                 <span class="method-start">0 ms</span>
@@ -828,348 +1035,366 @@ return data;
               <div class="chronological-class-name">runner.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">4552 ms</span>
+                <span class="method-start">5103 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runner.LeaveTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openSite</span>
+                <span class="method-start">5103 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.PimTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">4552 ms</span>
+                <span class="method-start">5103 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.DashboardTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">4568 ms</span>
+                <span class="method-start">5117 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runner.PimTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAddEmployee</span>
+                <span class="method-start">7479 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testLoginWithValidCredentials</span>
-                <span class="method-start">11402 ms</span>
+                <span class="method-start">9609 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runner.LeaveTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRenameHoliday</span>
+                <span class="method-start">11966 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.DashboardTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testDashboardSheetsNames(Time at Work)</span>
-                <span class="method-start">11402 ms</span>
+                <span class="method-start">12031 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.PimTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testAddEmployee</span>
-                <span class="method-start">11402 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">runner.DashboardTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openSite</span>
-                <span class="method-start">66494 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="configuration-class after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">18634 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">66964 ms</span>
+                <span class="method-start">20284 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithInvalidUsername</span>
-                <span class="method-start">69564 ms</span>
+                <span class="method-start">25021 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">runner.DashboardTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testDashboardSheetsNames(My Actions)</span>
-                <span class="method-start">69943 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">runner.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">74149 ms</span>
+                <span class="method-start">54939 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithInvalidPassword</span>
-                <span class="method-start">74577 ms</span>
+                <span class="method-start">55528 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">77785 ms</span>
+                <span class="method-start">60000 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithoutFillingInUserNameAndPasswordFields</span>
-                <span class="method-start">78154 ms</span>
+                <span class="method-start">60584 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">79521 ms</span>
+                <span class="method-start">62558 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testForgotYourPassword</span>
-                <span class="method-start">79911 ms</span>
+                <span class="method-start">63019 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">82896 ms</span>
+                <span class="method-start">66612 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testTransitionToLinkedinPage</span>
+                <span class="method-start">67391 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runner.DashboardTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openSite</span>
+                <span class="method-start">69387 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDashboardSheetsNames(My Actions)</span>
+                <span class="method-start">72119 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runner.LeaveTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">79024 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runner.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openSite</span>
+                <span class="method-start">87608 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.DashboardTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">83419 ms</span>
+                <span class="method-start">88211 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testTransitionToLinkedinPage</span>
-                <span class="method-start">83614 ms</span>
+                <span class="method-name">testTransitionToFacebookPage</span>
+                <span class="method-start">88305 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.DashboardTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testDashboardSheetsNames(Quick Launch)</span>
-                <span class="method-start">84180 ms</span>
+                <span class="method-start">89027 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">90450 ms</span>
+                <span class="method-start">97619 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDashboardSheetsNames(Employee Distribution by Sub Unit)</span>
-                <span class="method-start">91624 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">runner.PimTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">closeDriver</span>
-                <span class="method-start">93739 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">runner.LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openSite</span>
-                <span class="method-start">96923 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testTransitionToFacebookPage</span>
-                <span class="method-start">97544 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">runner.DashboardTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openSite</span>
-                <span class="method-start">101162 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testDashboardSheetsNames(Buzz Latest Posts)</span>
-                <span class="method-start">106301 ms</span>
+                <span class="method-start">98400 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">116911 ms</span>
+                <span class="method-start">101271 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToTwitterPage</span>
-                <span class="method-start">117424 ms</span>
+                <span class="method-start">101729 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">119965 ms</span>
+                <span class="method-start">104739 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToYoutubePage</span>
-                <span class="method-start">120323 ms</span>
+                <span class="method-start">105218 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.DashboardTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">121421 ms</span>
+                <span class="method-start">106836 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDashboardSheetsNames(Buzz Latest Posts)</span>
+                <span class="method-start">108477 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">openSite</span>
+                <span class="method-start">119632 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDashboardSheetsNames(Employees on Leave Today)</span>
-                <span class="method-start">123073 ms</span>
+                <span class="method-start">121898 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">132995 ms</span>
+                <span class="method-start">132109 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDashboardSheetsNames(Employee Distribution by Location)</span>
-                <span class="method-start">133787 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">openSite</span>
-                <span class="method-start">138732 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testQuestionIcon</span>
-                <span class="method-start">139456 ms</span>
+                <span class="method-start">133091 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class after">
-                <span class="method-name">closeDriver</span>
-                <span class="method-start">146191 ms</span>
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">135421 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.DashboardTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">149965 ms</span>
+                <span class="method-start">138234 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testQuestionIcon</span>
+                <span class="method-start">138928 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">openSite</span>
+                <span class="method-start">151329 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testOrangeLinkInFooter</span>
-                <span class="method-start">150505 ms</span>
+                <span class="method-start">153040 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">186525 ms</span>
+                <span class="method-start">188518 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchInSidebarMenu(a)</span>
-                <span class="method-start">188396 ms</span>
+                <span class="method-start">189247 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">196524 ms</span>
+                <span class="method-start">197839 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchInSidebarMenu(m)</span>
-                <span class="method-start">197209 ms</span>
+                <span class="method-start">199548 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">205495 ms</span>
+                <span class="method-start">208469 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchInSidebarMenu(o)</span>
-                <span class="method-start">206966 ms</span>
+                <span class="method-start">209096 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">214168 ms</span>
+                <span class="method-start">216207 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToAdminPage</span>
-                <span class="method-start">214715 ms</span>
+                <span class="method-start">217967 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">224792 ms</span>
+                <span class="method-start">231781 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToPIMpage</span>
-                <span class="method-start">225434 ms</span>
+                <span class="method-start">232466 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">237883 ms</span>
+                <span class="method-start">241031 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToLeavePage</span>
-                <span class="method-start">238651 ms</span>
+                <span class="method-start">242979 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">251088 ms</span>
+                <span class="method-start">255731 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToTimePage</span>
-                <span class="method-start">253500 ms</span>
+                <span class="method-start">256523 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">265374 ms</span>
+                <span class="method-start">263164 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToRecruitmentPage</span>
-                <span class="method-start">266020 ms</span>
+                <span class="method-start">263858 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">273786 ms</span>
+                <span class="method-start">271551 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToMyInfoPage</span>
-                <span class="method-start">274830 ms</span>
+                <span class="method-start">272330 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">282115 ms</span>
+                <span class="method-start">284536 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToPerformancePage</span>
-                <span class="method-start">282950 ms</span>
+                <span class="method-start">285303 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">289234 ms</span>
+                <span class="method-start">294134 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToDashboardPage</span>
-                <span class="method-start">289849 ms</span>
+                <span class="method-start">294725 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">295452 ms</span>
+                <span class="method-start">300763 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToDirectoryPage</span>
-                <span class="method-start">296170 ms</span>
+                <span class="method-start">301477 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">307368 ms</span>
+                <span class="method-start">308244 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToMaintenancePage</span>
-                <span class="method-start">308040 ms</span>
+                <span class="method-start">308902 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">323949 ms</span>
+                <span class="method-start">316819 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToClaimPage</span>
-                <span class="method-start">324585 ms</span>
+                <span class="method-start">317498 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">339462 ms</span>
+                <span class="method-start">328094 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToBuzzPage</span>
-                <span class="method-start">340242 ms</span>
+                <span class="method-start">329529 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">closeDriver</span>
-                <span class="method-start">354026 ms</span>
+                <span class="method-name">quitDriver</span>
+                <span class="method-start">342388 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
