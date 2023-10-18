@@ -19,4 +19,5 @@ model/page/ResetPasswordPage.class
 model/page/AdminPage.class
 model/base/SideBarMenu.class
 model/page/LoginPage.class
+runner/LeaveTest.class
 model/base/SideBarMenu$LinkFromSidebarMenu.class
