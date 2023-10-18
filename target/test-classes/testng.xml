@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="4">
+    <test verbose="2" name="/Users/ruslanfursa/IdeaProjects/Orange">
+        <classes>
+            <class name="runner.DashboardTest">
+                <methods>
+                    <include name="testDashboardSheetsNames"/>
+                    <include name="testQuestionIcon"/>
+                    <include name="testOrangeLinkInFooter"/>
+                    <include name="testSearchInSidebarMenu"/>
+                    <include name="testTransitionToAdminPage"/>
+                    <include name="testTransitionToPIMpage"/>
+                    <include name="testTransitionToLeavePage"/>
+                    <include name="testTransitionToTimePage"/>
+                    <include name="testTransitionToRecruitmentPage"/>
+                    <include name="testTransitionToMyInfoPage"/>
+                    <include name="testTransitionToPerformancePage"/>
+                    <include name="testTransitionToDashboardPage"/>
+                    <include name="testTransitionToDirectoryPage"/>
+                    <include name="testTransitionToMaintenancePage"/>
+                    <include name="testTransitionToClaimPage"/>
+                    <include name="testTransitionToBuzzPage"/>
+                </methods>
+            </class>
+            <class name="runner.LoginTest">
+                <methods>
+                    <include name="testLoginWithValidCredentials"/>
+                    <include name="testLoginWithInvalidUsername"/>
+                    <include name="testLoginWithInvalidPassword"/>
+                    <include name="testLoginWithoutFillingInUserNameAndPasswordFields"/>
+                    <include name="testForgotYourPassword"/>
+                    <include name="testTransitionToLinkedinPage"/>
+                    <include name="testTransitionToFacebookPage"/>
+                    <include name="testTransitionToTwitterPage"/>
+                    <include name="testTransitionToYoutubePage"/>
+                </methods>
+            </class>
+            <class name="runner.PimTest">
+                <methods>
+                    <include name="testAddEmployee"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
