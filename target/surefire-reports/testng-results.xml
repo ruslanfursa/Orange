@@ -2,120 +2,30 @@
 <testng-results ignored="0" total="35" passed="32" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-18T15:22:05 MSK" name="All Test Suite" finished-at="2023-10-18T15:27:48 MSK" duration-ms="342321">
+  <suite started-at="2023-10-18T16:13:56 MSK" name="All Test Suite" finished-at="2023-10-18T16:19:38 MSK" duration-ms="342600">
     <groups>
     </groups>
-    <test started-at="2023-10-18T15:22:05 MSK" name="/Users/ruslanfursa/IdeaProjects/Orange" finished-at="2023-10-18T15:27:48 MSK" duration-ms="342321">
+    <test started-at="2023-10-18T16:13:56 MSK" name="/Users/ruslanfursa/IdeaProjects/Orange" finished-at="2023-10-18T16:19:38 MSK" duration-ms="342600">
       <class name="runner.LoginTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:22:05 MSK" name="init" finished-at="2023-10-18T15:22:11 MSK" duration-ms="5495" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:13:56 MSK" name="init" finished-at="2023-10-18T16:14:01 MSK" duration-ms="5059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:22:11 MSK" name="openSite" finished-at="2023-10-18T15:22:19 MSK" duration-ms="7868" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:14:01 MSK" name="openSite" finished-at="2023-10-18T16:14:05 MSK" duration-ms="4502" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testLoginWithValidCredentials()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:22:19 MSK" name="testLoginWithValidCredentials" finished-at="2023-10-18T15:23:17 MSK" duration-ms="58173" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginWithValidCredentials -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:23:17 MSK" name="openSite" finished-at="2023-10-18T15:23:19 MSK" duration-ms="1477" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method signature="testLoginWithInvalidUsername()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:23:19 MSK" name="testLoginWithInvalidUsername" finished-at="2023-10-18T15:23:24 MSK" duration-ms="5237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginWithInvalidUsername -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:23:24 MSK" name="openSite" finished-at="2023-10-18T15:23:24 MSK" duration-ms="457" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method signature="testLoginWithInvalidPassword()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:23:24 MSK" name="testLoginWithInvalidPassword" finished-at="2023-10-18T15:23:27 MSK" duration-ms="3260" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginWithInvalidPassword -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:23:27 MSK" name="openSite" finished-at="2023-10-18T15:23:28 MSK" duration-ms="393" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method signature="testLoginWithoutFillingInUserNameAndPasswordFields()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:23:28 MSK" name="testLoginWithoutFillingInUserNameAndPasswordFields" finished-at="2023-10-18T15:23:29 MSK" duration-ms="1378" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginWithoutFillingInUserNameAndPasswordFields -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:23:29 MSK" name="openSite" finished-at="2023-10-18T15:23:30 MSK" duration-ms="411" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method signature="testForgotYourPassword()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:23:30 MSK" name="testForgotYourPassword" finished-at="2023-10-18T15:23:32 MSK" duration-ms="2735" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testForgotYourPassword -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:23:32 MSK" name="openSite" finished-at="2023-10-18T15:23:33 MSK" duration-ms="685" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToLinkedinPage()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:23:33 MSK" name="testTransitionToLinkedinPage" finished-at="2023-10-18T15:23:52 MSK" duration-ms="18553" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTransitionToLinkedinPage -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:23:52 MSK" name="openSite" finished-at="2023-10-18T15:23:52 MSK" duration-ms="432" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToFacebookPage()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:23:52 MSK" name="testTransitionToFacebookPage" finished-at="2023-10-18T15:24:04 MSK" duration-ms="11635" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTransitionToFacebookPage -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:24:04 MSK" name="openSite" finished-at="2023-10-18T15:24:05 MSK" duration-ms="1609" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToTwitterPage()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:24:05 MSK" name="testTransitionToTwitterPage" finished-at="2023-10-18T15:24:08 MSK" duration-ms="2919" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTransitionToTwitterPage -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:24:08 MSK" name="openSite" finished-at="2023-10-18T15:24:09 MSK" duration-ms="491" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToYoutubePage()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:24:09 MSK" name="testTransitionToYoutubePage" finished-at="2023-10-18T15:24:34 MSK" duration-ms="25282" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTransitionToYoutubePage -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:runner.LoginTest@544d57e]" started-at="2023-10-18T15:24:34 MSK" name="quitDriver" finished-at="2023-10-18T15:24:34 MSK" duration-ms="110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- runner.LoginTest -->
-      <class name="runner.DashboardTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:22:05 MSK" name="init" finished-at="2023-10-18T15:22:11 MSK" duration-ms="5495" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:22:11 MSK" name="openSite" finished-at="2023-10-18T15:22:15 MSK" duration-ms="4339" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openSite -->
-        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:22:15 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-18T15:22:37 MSK" duration-ms="21067" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Time at Work]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testLoginWithValidCredentials()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:14:05 MSK" name="testLoginWithValidCredentials" finished-at="2023-10-18T16:14:16 MSK" duration-ms="10668" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 20 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 10 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 20 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 10 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
 at model.page.LoginPage.fillInValidUserName(LoginPage.java:53)
-at model.page.LoginPage.login(LoginPage.java:131)
-at runner.DashboardTest.testDashboardSheetsNames(DashboardTest.java:26)
+at runner.LoginTest.testLoginWithValidCredentials(LoginTest.java:14)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -135,9 +45,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [04db576889998547341476774802a44e, findElement {using=xpath, value=//input[@name = 'username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49530}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49530/devtoo..., se:cdpVersion: 118.0.5993.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 04db576889998547341476774802a44e
+Command: [6a65bde2f06fca7720ded56392b705c0, findElement {using=xpath, value=//input[@name = 'username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50700}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50700/devtoo..., se:cdpVersion: 118.0.5993.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a65bde2f06fca7720ded56392b705c0
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -154,23 +64,112 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
 at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-... 16 more
+... 15 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDashboardSheetsNames -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:22:37 MSK" name="openSite" finished-at="2023-10-18T15:22:42 MSK" duration-ms="5750" status="PASS">
+        </test-method> <!-- testLoginWithValidCredentials -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:14:16 MSK" name="openSite" finished-at="2023-10-18T16:14:21 MSK" duration-ms="4736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:22:42 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-18T15:23:44 MSK" duration-ms="62062" status="PASS">
+        <test-method signature="testLoginWithInvalidUsername()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:14:21 MSK" name="testLoginWithInvalidUsername" finished-at="2023-10-18T16:14:51 MSK" duration-ms="29911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidUsername -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:14:51 MSK" name="openSite" finished-at="2023-10-18T16:14:51 MSK" duration-ms="587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="testLoginWithInvalidPassword()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:14:51 MSK" name="testLoginWithInvalidPassword" finished-at="2023-10-18T16:14:56 MSK" duration-ms="4467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidPassword -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:14:56 MSK" name="openSite" finished-at="2023-10-18T16:14:56 MSK" duration-ms="575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="testLoginWithoutFillingInUserNameAndPasswordFields()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:14:56 MSK" name="testLoginWithoutFillingInUserNameAndPasswordFields" finished-at="2023-10-18T16:14:58 MSK" duration-ms="1968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithoutFillingInUserNameAndPasswordFields -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:14:58 MSK" name="openSite" finished-at="2023-10-18T16:14:59 MSK" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="testForgotYourPassword()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:14:59 MSK" name="testForgotYourPassword" finished-at="2023-10-18T16:15:02 MSK" duration-ms="3578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForgotYourPassword -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:15:02 MSK" name="openSite" finished-at="2023-10-18T16:15:03 MSK" duration-ms="777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="testTransitionToLinkedinPage()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:15:03 MSK" name="testTransitionToLinkedinPage" finished-at="2023-10-18T16:15:23 MSK" duration-ms="20209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTransitionToLinkedinPage -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:15:23 MSK" name="openSite" finished-at="2023-10-18T16:15:24 MSK" duration-ms="695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="testTransitionToFacebookPage()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:15:24 MSK" name="testTransitionToFacebookPage" finished-at="2023-10-18T16:15:37 MSK" duration-ms="12959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTransitionToFacebookPage -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:15:37 MSK" name="openSite" finished-at="2023-10-18T16:15:37 MSK" duration-ms="457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="testTransitionToTwitterPage()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:15:37 MSK" name="testTransitionToTwitterPage" finished-at="2023-10-18T16:15:40 MSK" duration-ms="3004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTransitionToTwitterPage -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:15:40 MSK" name="openSite" finished-at="2023-10-18T16:15:41 MSK" duration-ms="476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="testTransitionToYoutubePage()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:15:41 MSK" name="testTransitionToYoutubePage" finished-at="2023-10-18T16:16:11 MSK" duration-ms="30200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTransitionToYoutubePage -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:runner.LoginTest@1787bc24]" started-at="2023-10-18T16:16:11 MSK" name="quitDriver" finished-at="2023-10-18T16:16:11 MSK" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- runner.LoginTest -->
+      <class name="runner.DashboardTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:13:56 MSK" name="init" finished-at="2023-10-18T16:14:01 MSK" duration-ms="5059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:14:01 MSK" name="openSite" finished-at="2023-10-18T16:14:08 MSK" duration-ms="6912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:14:08 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-18T16:15:05 MSK" duration-ms="57315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Time at Work]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDashboardSheetsNames -->
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:15:05 MSK" name="openSite" finished-at="2023-10-18T16:15:08 MSK" duration-ms="2725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSite -->
+        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:15:08 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-18T16:15:24 MSK" duration-ms="16084" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -181,11 +180,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDashboardSheetsNames -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:23:44 MSK" name="openSite" finished-at="2023-10-18T15:23:47 MSK" duration-ms="2570" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:15:24 MSK" name="openSite" finished-at="2023-10-18T16:15:25 MSK" duration-ms="813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:23:47 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-18T15:23:58 MSK" duration-ms="11066" status="PASS">
+        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:15:25 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-18T16:15:33 MSK" duration-ms="8586" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -196,11 +195,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDashboardSheetsNames -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:23:58 MSK" name="openSite" finished-at="2023-10-18T15:23:59 MSK" duration-ms="708" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:15:33 MSK" name="openSite" finished-at="2023-10-18T16:15:34 MSK" duration-ms="779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:23:59 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-18T15:24:05 MSK" duration-ms="6067" status="PASS">
+        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:15:34 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-18T16:15:43 MSK" duration-ms="8429" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -211,11 +210,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDashboardSheetsNames -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:24:05 MSK" name="openSite" finished-at="2023-10-18T15:24:06 MSK" duration-ms="704" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:15:43 MSK" name="openSite" finished-at="2023-10-18T16:15:44 MSK" duration-ms="1640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:24:06 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-18T15:24:10 MSK" duration-ms="4493" status="PASS">
+        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:15:44 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-18T16:15:55 MSK" duration-ms="11149" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -226,11 +225,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDashboardSheetsNames -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:24:10 MSK" name="openSite" finished-at="2023-10-18T15:24:11 MSK" duration-ms="592" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:15:55 MSK" name="openSite" finished-at="2023-10-18T16:15:58 MSK" duration-ms="2265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:24:11 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-18T15:24:17 MSK" duration-ms="6375" status="PASS">
+        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:15:58 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-18T16:16:08 MSK" duration-ms="10208" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -241,11 +240,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDashboardSheetsNames -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:24:17 MSK" name="openSite" finished-at="2023-10-18T15:24:18 MSK" duration-ms="1366" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:16:08 MSK" name="openSite" finished-at="2023-10-18T16:16:09 MSK" duration-ms="981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:24:18 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-18T15:24:27 MSK" duration-ms="8991" status="PASS">
+        <test-method signature="testDashboardSheetsNames(java.lang.String)[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:16:09 MSK" name="testDashboardSheetsNames" data-provider="expectedNames" finished-at="2023-10-18T16:16:14 MSK" duration-ms="5138" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -256,27 +255,27 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDashboardSheetsNames -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:24:27 MSK" name="openSite" finished-at="2023-10-18T15:24:30 MSK" duration-ms="2363" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:16:14 MSK" name="openSite" finished-at="2023-10-18T16:16:15 MSK" duration-ms="692" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testQuestionIcon()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:24:30 MSK" name="testQuestionIcon" finished-at="2023-10-18T15:24:47 MSK" duration-ms="16743" status="PASS">
+        <test-method signature="testQuestionIcon()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:16:15 MSK" name="testQuestionIcon" finished-at="2023-10-18T16:16:27 MSK" duration-ms="12398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuestionIcon -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:24:47 MSK" name="openSite" finished-at="2023-10-18T15:24:47 MSK" duration-ms="546" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:16:27 MSK" name="openSite" finished-at="2023-10-18T16:16:29 MSK" duration-ms="1709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testOrangeLinkInFooter()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:24:47 MSK" name="testOrangeLinkInFooter" finished-at="2023-10-18T15:25:19 MSK" duration-ms="32095" status="PASS">
+        <test-method signature="testOrangeLinkInFooter()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:16:29 MSK" name="testOrangeLinkInFooter" finished-at="2023-10-18T16:17:04 MSK" duration-ms="35471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOrangeLinkInFooter -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:25:19 MSK" name="openSite" finished-at="2023-10-18T15:25:20 MSK" duration-ms="644" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:17:04 MSK" name="openSite" finished-at="2023-10-18T16:17:05 MSK" duration-ms="728" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testSearchInSidebarMenu(java.lang.String)[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:25:20 MSK" name="testSearchInSidebarMenu" data-provider="searchSymbols" finished-at="2023-10-18T15:25:29 MSK" duration-ms="9660" status="PASS">
+        <test-method signature="testSearchInSidebarMenu(java.lang.String)[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:17:05 MSK" name="testSearchInSidebarMenu" data-provider="searchSymbols" finished-at="2023-10-18T16:17:14 MSK" duration-ms="8589" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -287,11 +286,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchInSidebarMenu -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:25:29 MSK" name="openSite" finished-at="2023-10-18T15:25:31 MSK" duration-ms="1415" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:17:14 MSK" name="openSite" finished-at="2023-10-18T16:17:15 MSK" duration-ms="1708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testSearchInSidebarMenu(java.lang.String)[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:25:31 MSK" name="testSearchInSidebarMenu" data-provider="searchSymbols" finished-at="2023-10-18T15:25:36 MSK" duration-ms="5492" status="PASS">
+        <test-method signature="testSearchInSidebarMenu(java.lang.String)[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:17:15 MSK" name="testSearchInSidebarMenu" data-provider="searchSymbols" finished-at="2023-10-18T16:17:24 MSK" duration-ms="8918" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -302,11 +301,11 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchInSidebarMenu -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:25:36 MSK" name="openSite" finished-at="2023-10-18T15:25:37 MSK" duration-ms="592" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:17:24 MSK" name="openSite" finished-at="2023-10-18T16:17:25 MSK" duration-ms="626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testSearchInSidebarMenu(java.lang.String)[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:25:37 MSK" name="testSearchInSidebarMenu" data-provider="searchSymbols" finished-at="2023-10-18T15:25:42 MSK" duration-ms="5383" status="PASS">
+        <test-method signature="testSearchInSidebarMenu(java.lang.String)[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:17:25 MSK" name="testSearchInSidebarMenu" data-provider="searchSymbols" finished-at="2023-10-18T16:17:32 MSK" duration-ms="7109" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -317,123 +316,123 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchInSidebarMenu -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:25:42 MSK" name="openSite" finished-at="2023-10-18T15:25:43 MSK" duration-ms="615" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:17:32 MSK" name="openSite" finished-at="2023-10-18T16:17:34 MSK" duration-ms="1760" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToAdminPage()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:25:43 MSK" name="testTransitionToAdminPage" finished-at="2023-10-18T15:25:55 MSK" duration-ms="12339" status="PASS">
+        <test-method signature="testTransitionToAdminPage()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:17:34 MSK" name="testTransitionToAdminPage" finished-at="2023-10-18T16:17:48 MSK" duration-ms="13810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToAdminPage -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:25:55 MSK" name="openSite" finished-at="2023-10-18T15:25:56 MSK" duration-ms="705" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:17:48 MSK" name="openSite" finished-at="2023-10-18T16:17:48 MSK" duration-ms="684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToPIMpage()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:25:56 MSK" name="testTransitionToPIMpage" finished-at="2023-10-18T15:26:09 MSK" duration-ms="12842" status="PASS">
+        <test-method signature="testTransitionToPIMpage()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:17:48 MSK" name="testTransitionToPIMpage" finished-at="2023-10-18T16:17:57 MSK" duration-ms="8561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToPIMpage -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:26:09 MSK" name="openSite" finished-at="2023-10-18T15:26:10 MSK" duration-ms="890" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:17:57 MSK" name="openSite" finished-at="2023-10-18T16:17:59 MSK" duration-ms="1947" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToLeavePage()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:26:10 MSK" name="testTransitionToLeavePage" finished-at="2023-10-18T15:26:20 MSK" duration-ms="9914" status="PASS">
+        <test-method signature="testTransitionToLeavePage()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:17:59 MSK" name="testTransitionToLeavePage" finished-at="2023-10-18T16:18:11 MSK" duration-ms="12748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToLeavePage -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:26:20 MSK" name="openSite" finished-at="2023-10-18T15:26:20 MSK" duration-ms="728" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:18:11 MSK" name="openSite" finished-at="2023-10-18T16:18:12 MSK" duration-ms="790" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToTimePage()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:26:20 MSK" name="testTransitionToTimePage" finished-at="2023-10-18T15:26:29 MSK" duration-ms="8641" status="PASS">
+        <test-method signature="testTransitionToTimePage()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:18:12 MSK" name="testTransitionToTimePage" finished-at="2023-10-18T16:18:19 MSK" duration-ms="6637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToTimePage -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:26:29 MSK" name="openSite" finished-at="2023-10-18T15:26:31 MSK" duration-ms="1820" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:18:19 MSK" name="openSite" finished-at="2023-10-18T16:18:20 MSK" duration-ms="692" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToRecruitmentPage()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:26:31 MSK" name="testTransitionToRecruitmentPage" finished-at="2023-10-18T15:26:42 MSK" duration-ms="10654" status="PASS">
+        <test-method signature="testTransitionToRecruitmentPage()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:18:20 MSK" name="testTransitionToRecruitmentPage" finished-at="2023-10-18T16:18:27 MSK" duration-ms="7691" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToRecruitmentPage -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:26:42 MSK" name="openSite" finished-at="2023-10-18T15:26:42 MSK" duration-ms="800" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:18:27 MSK" name="openSite" finished-at="2023-10-18T16:18:28 MSK" duration-ms="778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToMyInfoPage()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:26:42 MSK" name="testTransitionToMyInfoPage" finished-at="2023-10-18T15:26:49 MSK" duration-ms="6967" status="PASS">
+        <test-method signature="testTransitionToMyInfoPage()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:18:28 MSK" name="testTransitionToMyInfoPage" finished-at="2023-10-18T16:18:40 MSK" duration-ms="12202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToMyInfoPage -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:26:49 MSK" name="openSite" finished-at="2023-10-18T15:26:50 MSK" duration-ms="619" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:18:40 MSK" name="openSite" finished-at="2023-10-18T16:18:41 MSK" duration-ms="766" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToPerformancePage()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:26:50 MSK" name="testTransitionToPerformancePage" finished-at="2023-10-18T15:26:56 MSK" duration-ms="6245" status="PASS">
+        <test-method signature="testTransitionToPerformancePage()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:18:41 MSK" name="testTransitionToPerformancePage" finished-at="2023-10-18T16:18:50 MSK" duration-ms="8828" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToPerformancePage -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:26:56 MSK" name="openSite" finished-at="2023-10-18T15:26:57 MSK" duration-ms="651" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:18:50 MSK" name="openSite" finished-at="2023-10-18T16:18:50 MSK" duration-ms="591" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToDashboardPage()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:26:57 MSK" name="testTransitionToDashboardPage" finished-at="2023-10-18T15:27:05 MSK" duration-ms="8519" status="PASS">
+        <test-method signature="testTransitionToDashboardPage()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:18:50 MSK" name="testTransitionToDashboardPage" finished-at="2023-10-18T16:18:57 MSK" duration-ms="6035" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToDashboardPage -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:27:05 MSK" name="openSite" finished-at="2023-10-18T15:27:07 MSK" duration-ms="2076" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:18:57 MSK" name="openSite" finished-at="2023-10-18T16:18:57 MSK" duration-ms="712" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToDirectoryPage()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:27:07 MSK" name="testTransitionToDirectoryPage" finished-at="2023-10-18T15:27:19 MSK" duration-ms="11088" status="PASS">
+        <test-method signature="testTransitionToDirectoryPage()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:18:57 MSK" name="testTransitionToDirectoryPage" finished-at="2023-10-18T16:19:04 MSK" duration-ms="6763" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToDirectoryPage -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:27:19 MSK" name="openSite" finished-at="2023-10-18T15:27:19 MSK" duration-ms="702" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:19:04 MSK" name="openSite" finished-at="2023-10-18T16:19:05 MSK" duration-ms="656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToMaintenancePage()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:27:19 MSK" name="testTransitionToMaintenancePage" finished-at="2023-10-18T15:27:27 MSK" duration-ms="7790" status="PASS">
+        <test-method signature="testTransitionToMaintenancePage()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:19:05 MSK" name="testTransitionToMaintenancePage" finished-at="2023-10-18T16:19:13 MSK" duration-ms="7914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToMaintenancePage -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:27:27 MSK" name="openSite" finished-at="2023-10-18T15:27:28 MSK" duration-ms="753" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:19:13 MSK" name="openSite" finished-at="2023-10-18T16:19:13 MSK" duration-ms="677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToClaimPage()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:27:28 MSK" name="testTransitionToClaimPage" finished-at="2023-10-18T15:27:35 MSK" duration-ms="7002" status="PASS">
+        <test-method signature="testTransitionToClaimPage()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:19:13 MSK" name="testTransitionToClaimPage" finished-at="2023-10-18T16:19:24 MSK" duration-ms="10595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToClaimPage -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:27:35 MSK" name="openSite" finished-at="2023-10-18T15:27:35 MSK" duration-ms="716" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:19:24 MSK" name="openSite" finished-at="2023-10-18T16:19:25 MSK" duration-ms="1433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testTransitionToBuzzPage()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:27:35 MSK" name="testTransitionToBuzzPage" finished-at="2023-10-18T15:27:48 MSK" duration-ms="12069" status="PASS">
+        <test-method signature="testTransitionToBuzzPage()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:19:25 MSK" name="testTransitionToBuzzPage" finished-at="2023-10-18T16:19:38 MSK" duration-ms="12857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTransitionToBuzzPage -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:runner.DashboardTest@28b46423]" started-at="2023-10-18T15:27:48 MSK" name="quitDriver" finished-at="2023-10-18T15:27:48 MSK" duration-ms="137" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:runner.DashboardTest@4e07b95f]" started-at="2023-10-18T16:19:38 MSK" name="quitDriver" finished-at="2023-10-18T16:19:38 MSK" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- runner.DashboardTest -->
       <class name="runner.LeaveTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:runner.LeaveTest@53b7f657]" started-at="2023-10-18T15:22:05 MSK" name="init" finished-at="2023-10-18T15:22:11 MSK" duration-ms="5495" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:runner.LeaveTest@55c53a33]" started-at="2023-10-18T16:13:56 MSK" name="init" finished-at="2023-10-18T16:14:01 MSK" duration-ms="5058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LeaveTest@53b7f657]" started-at="2023-10-18T15:22:11 MSK" name="openSite" finished-at="2023-10-18T15:22:19 MSK" duration-ms="7762" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.LeaveTest@55c53a33]" started-at="2023-10-18T16:14:01 MSK" name="openSite" finished-at="2023-10-18T16:14:08 MSK" duration-ms="6862" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testRenameHoliday()[pri:0, instance:runner.LeaveTest@53b7f657]" started-at="2023-10-18T15:22:19 MSK" name="testRenameHoliday" finished-at="2023-10-18T15:23:35 MSK" duration-ms="75822" status="FAIL">
+        <test-method signature="testRenameHoliday()[pri:0, instance:runner.LeaveTest@55c53a33]" started-at="2023-10-18T16:14:08 MSK" name="testRenameHoliday" finished-at="2023-10-18T16:15:15 MSK" duration-ms="67048" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text() = 'Configure ']' (tried for 20 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text() = 'Configure ']' (tried for 10 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text() = 'Configure ']' (tried for 20 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text() = 'Configure ']' (tried for 10 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
 at model.page.LeavePage.clickConfigureTab(LeavePage.java:51)
@@ -457,9 +456,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6b174d27059460ea6dbe244de02f1ecc, findElement {using=xpath, value=//span[text() = 'Configure ']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49527}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49527/devtoo..., se:cdpVersion: 118.0.5993.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6b174d27059460ea6dbe244de02f1ecc
+Command: [25fbf34e25bbda95dde032cff5d74273, findElement {using=xpath, value=//span[text() = 'Configure ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50701/devtoo..., se:cdpVersion: 118.0.5993.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25fbf34e25bbda95dde032cff5d74273
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -476,7 +475,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
 at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
@@ -488,32 +487,32 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRenameHoliday -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:runner.LeaveTest@53b7f657]" started-at="2023-10-18T15:23:35 MSK" name="quitDriver" finished-at="2023-10-18T15:23:35 MSK" duration-ms="178" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:runner.LeaveTest@55c53a33]" started-at="2023-10-18T16:15:15 MSK" name="quitDriver" finished-at="2023-10-18T16:15:15 MSK" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- runner.LeaveTest -->
       <class name="runner.PimTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:runner.PimTest@55c53a33]" started-at="2023-10-18T15:22:05 MSK" name="init" finished-at="2023-10-18T15:22:11 MSK" duration-ms="5495" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:runner.PimTest@544d57e]" started-at="2023-10-18T16:13:56 MSK" name="init" finished-at="2023-10-18T16:14:01 MSK" duration-ms="5059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.PimTest@55c53a33]" started-at="2023-10-18T15:22:11 MSK" name="openSite" finished-at="2023-10-18T15:22:19 MSK" duration-ms="7652" status="PASS">
+        <test-method is-config="true" signature="openSite()[pri:0, instance:runner.PimTest@544d57e]" started-at="2023-10-18T16:14:01 MSK" name="openSite" finished-at="2023-10-18T16:14:03 MSK" duration-ms="2285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openSite -->
-        <test-method signature="testAddEmployee()[pri:0, instance:runner.PimTest@55c53a33]" started-at="2023-10-18T15:22:19 MSK" name="testAddEmployee" finished-at="2023-10-18T15:23:47 MSK" duration-ms="88522" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="testAddEmployee()[pri:0, instance:runner.PimTest@544d57e]" started-at="2023-10-18T16:14:03 MSK" name="testAddEmployee" finished-at="2023-10-18T16:14:14 MSK" duration-ms="11029" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 10 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at runner.PimTest.testAddEmployee(PimTest.java:24)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at model.page.LoginPage.fillInValidUserName(LoginPage.java:53)
+at model.page.LoginPage.login(LoginPage.java:131)
+at runner.PimTest.testAddEmployee(PimTest.java:15)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -527,13 +526,44 @@ at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name = 'username']"}
+  (Session info: headless chrome=118.0.5993.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5c554ad71dfb5cc2525d162dd9ea0e23, findElement {using=xpath, value=//input[@name = 'username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50703/devtoo..., se:cdpVersion: 118.0.5993.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c554ad71dfb5cc2525d162dd9ea0e23
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+... 16 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddEmployee -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:runner.PimTest@55c53a33]" started-at="2023-10-18T15:23:47 MSK" name="quitDriver" finished-at="2023-10-18T15:23:47 MSK" duration-ms="91" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:runner.PimTest@544d57e]" started-at="2023-10-18T16:14:14 MSK" name="quitDriver" finished-at="2023-10-18T16:14:15 MSK" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

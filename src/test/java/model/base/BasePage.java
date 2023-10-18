@@ -47,7 +47,7 @@ public abstract class BasePage implements SideBarMenu {
 
     protected WebDriverWait getWait10() {
         if (wait10 == null) {
-            wait10 = new WebDriverWait(getDriver(), Duration.ofSeconds(20));
+            wait10 = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
         }
         return wait10;
     }

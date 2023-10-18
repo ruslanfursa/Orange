@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="345.926" tests="35" errors="0" skipped="0" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="344.733" tests="35" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BY"/>
     <property name="sun.boot.library.path" value="/Users/ruslanfursa/Library/Java/JavaVirtualMachines/corretto-19.0.2/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/ruslanfursa/IdeaProjects/Orange/target/surefire/surefirebooter-20231018152203782_3.jar /Users/ruslanfursa/IdeaProjects/Orange/target/surefire 2023-10-18T15-22-03_442-jvmRun1 surefire-20231018152203782_1tmp surefire_0-20231018152203782_2tmp"/>
+    <property name="sun.java.command" value="/Users/ruslanfursa/IdeaProjects/Orange/target/surefire/surefirebooter-20231018161354125_3.jar /Users/ruslanfursa/IdeaProjects/Orange/target/surefire 2023-10-18T16-13-53_967-jvmRun1 surefire-20231018161354125_1tmp surefire_0-20231018161354125_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/ruslanfursa/IdeaProjects/Orange/target/test-classes:/Users/ruslanfursa/IdeaProjects/Orange/target/classes:/Users/ruslanfursa/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/ruslanfursa/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/ruslanfursa/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/ruslanfursa/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:/Users/ruslanfursa/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/ruslanfursa/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/ruslanfursa/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-java/4.14.1/selenium-java-4.14.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-api/4.14.1/selenium-api-4.14.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.14.1/selenium-chrome-driver-4.14.1.jar:/Users/ruslanfursa/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/ruslanfursa/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/ruslanfursa/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/ruslanfursa/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/ruslanfursa/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/ruslanfursa/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/ruslanfursa/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/ruslanfursa/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.14.1/selenium-chromium-driver-4.14.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-json/4.14.1/selenium-json-4.14.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.14.1/selenium-manager-4.14.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v116/4.14.1/selenium-devtools-v116-4.14.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v117/4.14.1/selenium-devtools-v117-4.14.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.14.1/selenium-devtools-v118-4.14.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.14.1/selenium-devtools-v85-4.14.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.14.1/selenium-edge-driver-4.14.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.14.1/selenium-firefox-driver-4.14.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-http/4.14.1/selenium-http-4.14.1.jar:/Users/ruslanfursa/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.14.1/selenium-ie-driver-4.14.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.14.1/selenium-remote-driver-4.14.1.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/ruslanfursa/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/ruslanfursa/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-os/4.14.1/selenium-os-4.14.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.14.1/selenium-safari-driver-4.14.1.jar:/Users/ruslanfursa/.m2/repository/org/seleniumhq/selenium/selenium-support/4.14.1/selenium-support-4.14.1.jar:/Users/ruslanfursa/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar:/Users/ruslanfursa/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/ruslanfursa/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/Users/ruslanfursa/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/Users/ruslanfursa/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/Users/ruslanfursa/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/ruslanfursa/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/ruslanfursa/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/ruslanfursa/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/ruslanfursa/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/ruslanfursa/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/Users/ruslanfursa/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/Users/ruslanfursa/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/Users/ruslanfursa/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/ruslanfursa/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/Users/ruslanfursa/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/Users/ruslanfursa/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/ruslanfursa/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/ruslanfursa/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/ruslanfursa/.m2/repository/io/qameta/allure/allure-testng/2.23.0/allure-testng-2.23.0.jar:/Users/ruslanfursa/.m2/repository/io/qameta/allure/allure-java-commons/2.23.0/allure-java-commons-2.23.0.jar:/Users/ruslanfursa/.m2/repository/io/qameta/allure/allure-model/2.23.0/allure-model-2.23.0.jar:/Users/ruslanfursa/.m2/repository/io/qameta/allure/allure-test-filter/2.23.0/allure-test-filter-2.23.0.jar:/Users/ruslanfursa/.m2/repository/io/qameta/allure/allure-maven/2.8/allure-maven-2.8.jar:/Users/ruslanfursa/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/ruslanfursa/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/ruslanfursa/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/ruslanfursa/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar:/Users/ruslanfursa/.m2/repository/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar:/Users/ruslanfursa/.m2/repository/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar:/Users/ruslanfursa/.m2/repository/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar:/Users/ruslanfursa/.m2/repository/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar:/Users/ruslanfursa/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar:/Users/ruslanfursa/.m2/repository/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar:/Users/ruslanfursa/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/Users/ruslanfursa/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar:/Users/ruslanfursa/.m2/repository/com/google/inject/guice/4.0/guice-4.0-no_aop.jar:/Users/ruslanfursa/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/ruslanfursa/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/ruslanfursa/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar:/Users/ruslanfursa/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar:/Users/ruslanfursa/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.jar:/Users/ruslanfursa/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar:/Users/ruslanfursa/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar:/Users/ruslanfursa/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/reporting/maven-reporting-impl/2.4/maven-reporting-impl-2.4.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar:/Users/ruslanfursa/.m2/repository/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar:/Users/ruslanfursa/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar:/Users/ruslanfursa/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/ruslanfursa/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.6/doxia-sink-api-1.6.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.6/doxia-logging-api-1.6.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/doxia/doxia-core/1.6/doxia-core-1.6.jar:/Users/ruslanfursa/.m2/repository/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar:/Users/ruslanfursa/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar:/Users/ruslanfursa/.m2/repository/xmlunit/xmlunit/1.5/xmlunit-1.5.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.6/doxia-site-renderer-1.6.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.6/doxia-decoration-model-1.6.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.6/doxia-module-xhtml-1.6.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/doxia/doxia-module-fml/1.6/doxia-module-fml-1.6.jar:/Users/ruslanfursa/.m2/repository/org/codehaus/plexus/plexus-i18n/1.0-beta-7/plexus-i18n-1.0-beta-7.jar:/Users/ruslanfursa/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.jar:/Users/ruslanfursa/.m2/repository/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar:/Users/ruslanfursa/.m2/repository/commons-chain/commons-chain/1.1/commons-chain-1.1.jar:/Users/ruslanfursa/.m2/repository/dom4j/dom4j/1.1/dom4j-1.1.jar:/Users/ruslanfursa/.m2/repository/sslext/sslext/1.2-0/sslext-1.2-0.jar:/Users/ruslanfursa/.m2/repository/org/apache/struts/struts-core/1.3.8/struts-core-1.3.8.jar:/Users/ruslanfursa/.m2/repository/antlr/antlr/2.7.2/antlr-2.7.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/struts/struts-taglib/1.3.8/struts-taglib-1.3.8.jar:/Users/ruslanfursa/.m2/repository/org/apache/struts/struts-tiles/1.3.8/struts-tiles-1.3.8.jar:/Users/ruslanfursa/.m2/repository/commons-validator/commons-validator/1.4.1/commons-validator-1.4.1.jar:/Users/ruslanfursa/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/ruslanfursa/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar:/Users/ruslanfursa/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/ruslanfursa/.m2/repository/net/lingala/zip4j/zip4j/1.3.2/zip4j-1.3.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/plugins/maven-jxr-plugin/2.5/maven-jxr-plugin-2.5.jar:/Users/ruslanfursa/.m2/repository/org/apache/velocity/velocity/1.5/velocity-1.5.jar:/Users/ruslanfursa/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/maven-jxr/2.5/maven-jxr-2.5.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0/wagon-provider-api-1.0.jar:/Users/ruslanfursa/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/Users/ruslanfursa/.m2/repository/xalan/xalan/2.7.0/xalan-2.7.0.jar:/Users/ruslanfursa/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/ruslanfursa/.m2/repository/org/slf4j/slf4j-reload4j/2.0.9/slf4j-reload4j-2.0.9.jar:/Users/ruslanfursa/.m2/repository/ch/qos/reload4j/reload4j/1.2.22/reload4j-1.2.22.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/3.1.2/maven-surefire-plugin-3.1.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.1.2/maven-surefire-common-3.1.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/surefire/surefire-api/3.1.2/surefire-api-3.1.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.1.2/surefire-logger-api-3.1.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/surefire/surefire-extensions-api/3.1.2/surefire-extensions-api-3.1.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/surefire/surefire-booter/3.1.2/surefire-booter-3.1.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.1.2/surefire-extensions-spi-3.1.2.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.1.1/maven-common-artifact-filters-3.1.1.jar:/Users/ruslanfursa/.m2/repository/org/codehaus/plexus/plexus-java/1.1.2/plexus-java-1.1.2.jar:/Users/ruslanfursa/.m2/repository/org/ow2/asm/asm/9.4/asm-9.4.jar:/Users/ruslanfursa/.m2/repository/com/thoughtworks/qdox/qdox/2.0.3/qdox-2.0.3.jar:/Users/ruslanfursa/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.1.2/surefire-shared-utils-3.1.2.jar:"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/ruslanfursa/IdeaProjects/Orange/target/surefire/surefirebooter-20231018152203782_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/ruslanfursa/IdeaProjects/Orange/target/surefire/surefirebooter-20231018161354125_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="19.0.2+7-FR"/>
@@ -59,13 +59,13 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="testDashboardSheetsNames[Time at Work](1)" classname="runner.DashboardTest" time="17.763">
-    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@name = &apos;username&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 20 second(s) with 500 milliseconds interval)
+  <testcase name="testAddEmployee" classname="runner.PimTest" time="6.603">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@name = &apos;username&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
 	at model.page.LoginPage.fillInValidUserName(LoginPage.java:53)
 	at model.page.LoginPage.login(LoginPage.java:131)
-	at runner.DashboardTest.testDashboardSheetsNames(DashboardTest.java:26)
+	at runner.PimTest.testAddEmployee(PimTest.java:15)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -85,9 +85,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [04db576889998547341476774802a44e, findElement {using=xpath, value=//input[@name = 'username']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49530}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49530/devtoo..., se:cdpVersion: 118.0.5993.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 04db576889998547341476774802a44e
+Command: [5c554ad71dfb5cc2525d162dd9ea0e23, findElement {using=xpath, value=//input[@name = 'username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50703/devtoo..., se:cdpVersion: 118.0.5993.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c554ad71dfb5cc2525d162dd9ea0e23
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -104,7 +104,7 @@ Session ID: 04db576889998547341476774802a44e
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
@@ -112,236 +112,290 @@ Session ID: 04db576889998547341476774802a44e
 	... 16 more
 ]]></failure>
     <system-out><![CDATA[0    [main] DEBUG org.testng.TestNG  - suiteXmlPath: "/Users/ruslanfursa/IdeaProjects/Orange/src/test/resources/testng.xml"
-961  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-966  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-974  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-975  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-977  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-977  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-977  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-978  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-983  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
-1004 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 19 ms.
-1007 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1010 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
-1011 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1011 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1012 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1015 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1027 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+938  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+943  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+945  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+946  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+946  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+947  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+948  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+948  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+959  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+980  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 20 ms.
+982  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+983  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+984  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+985  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+986  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+986  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+993  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+999  [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 5 ms.
+1003 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1004 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1021 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1022 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1022 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1022 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1023 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1023 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1025 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1025 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1026 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1027 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1028 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
 1028 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1032 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1032 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1029 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1029 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1030 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1030 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1030 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1031 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1031 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1031 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1042 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1042 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1043 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1043 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1043 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1045 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
 1046 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1046 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1047 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1048 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1049 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1052 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1053 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+1054 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1054 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1055 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1055 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1057 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1057 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
 1058 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
 1058 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1060 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1060 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1061 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1061 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
 1062 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1062 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1063 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1063 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1063 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
 1064 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
 1064 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
 1065 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
 1065 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
 1065 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1065 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1067 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1067 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1066 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
 1068 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1068 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1069 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1070 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1071 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1071 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1071 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1071 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1072 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
 1072 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
 1072 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1073 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1073 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1076 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1078 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1077 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1079 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
 1079 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
 1080 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1080 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1082 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1083 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1084 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1084 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1085 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1085 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1085 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1086 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1087 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1087 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1087 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1097 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1098 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1100 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1100 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1100 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1100 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1101 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1101 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1102 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1103 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-1105 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1106 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1106 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1106 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1107 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1107 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1109 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1110 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1112 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1112 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1116 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1116 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1116 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1116 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1122 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
-1129 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 7 ms.
-1134 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1135 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1135 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-1135 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-1216 [main] INFO  org.testng.internal.Utils  - [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
-1229 [main] INFO  org.testng.internal.Utils  - [TestRunner] Starting executor for test /Users/ruslanfursa/IdeaProjects/Orange with time out:2147483647 milliseconds.
-6725 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-2] DEBUG runner.LoginTest  - init
-6725 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-3] DEBUG runner.PimTest  - init
-6725 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-4] DEBUG runner.LeaveTest  - init
-6725 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - init
-11114 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
-14414 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-3] DEBUG runner.PimTest  - openSite
-14525 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-4] DEBUG runner.LeaveTest  - openSite
-14630 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-2] DEBUG runner.LoginTest  - openSite
+1084 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+1092 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 8 ms.
+1095 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1095 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1095 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+1095 [main] INFO  org.testng.internal.Utils  - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+1177 [main] INFO  org.testng.internal.Utils  - [Utils] DynamicGraphHelper.createDynamicGraph() took 3 ms.
+1192 [main] INFO  org.testng.internal.Utils  - [TestRunner] Starting executor for test /Users/ruslanfursa/IdeaProjects/Orange with time out:2147483647 milliseconds.
+runner.LeaveTest@55c53a33init
+runner.PimTest@544d57einit
+runner.LoginTest@1787bc24init
+runner.DashboardTest@4e07b95finit
+runner.PimTest@544d57eopenSite
+runner.LoginTest@1787bc24openSite
+runner.LeaveTest@55c53a33openSite
+runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testDashboardSheetsNames[My Actions](2)" classname="runner.DashboardTest" time="11.323">
-    <system-out><![CDATA[90544 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-4] DEBUG runner.LeaveTest  - closeDriver
+  <testcase name="testLoginWithValidCredentials" classname="runner.LoginTest" time="8.248">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //input[@name = &apos;username&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@name = 'username']' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at model.page.LoginPage.fillInValidUserName(LoginPage.java:53)
+	at runner.LoginTest.testLoginWithValidCredentials(LoginTest.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name = 'username']"}
+  (Session info: headless chrome=118.0.5993.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6a65bde2f06fca7720ded56392b705c0, findElement {using=xpath, value=//input[@name = 'username']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50700}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50700/devtoo..., se:cdpVersion: 118.0.5993.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a65bde2f06fca7720ded56392b705c0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 15 more
+]]></failure>
+    <system-out><![CDATA[runner.PimTest@544d57ecloseDriver
 ]]></system-out>
   </testcase>
-  <testcase name="testDashboardSheetsNames[Quick Launch](3)" classname="runner.DashboardTest" time="5.975">
-    <system-out><![CDATA[107879 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-2] DEBUG runner.LoginTest  - openSite
+  <testcase name="testLoginWithInvalidUsername" classname="runner.LoginTest" time="29.916">
+    <system-out><![CDATA[runner.LoginTest@1787bc24openSite
 ]]></system-out>
   </testcase>
-  <testcase name="testDashboardSheetsNames[Employee Distribution by Sub Unit](4)" classname="runner.DashboardTest" time="6.07"/>
-  <testcase name="testDashboardSheetsNames[Buzz Latest Posts](5)" classname="runner.DashboardTest" time="1.293">
-    <system-out><![CDATA[124538 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-2] DEBUG runner.LoginTest  - openSite
+  <testcase name="testLoginWithInvalidPassword" classname="runner.LoginTest" time="4.479">
+    <system-out><![CDATA[runner.LoginTest@1787bc24openSite
 ]]></system-out>
   </testcase>
-  <testcase name="testDashboardSheetsNames[Employees on Leave Today](6)" classname="runner.DashboardTest" time="6.376">
-    <system-out><![CDATA[126429 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testLoginWithoutFillingInUserNameAndPasswordFields" classname="runner.LoginTest" time="1.967">
+    <system-out><![CDATA[runner.LoginTest@1787bc24openSite
 ]]></system-out>
   </testcase>
-  <testcase name="testDashboardSheetsNames[Employee Distribution by Location](7)" classname="runner.DashboardTest" time="8.992">
-    <system-out><![CDATA[134174 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testForgotYourPassword" classname="runner.LoginTest" time="3.58">
+    <system-out><![CDATA[runner.LoginTest@1787bc24openSite
 ]]></system-out>
   </testcase>
-  <testcase name="testQuestionIcon" classname="runner.DashboardTest" time="16.742">
-    <system-out><![CDATA[149936 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-2] DEBUG runner.LoginTest  - closeDriver
+  <testcase name="testTransitionToLinkedinPage" classname="runner.LoginTest" time="15.471">
+    <system-out><![CDATA[runner.LeaveTest@55c53a33closeDriver
 ]]></system-out>
   </testcase>
-  <testcase name="testOrangeLinkInFooter" classname="runner.DashboardTest" time="32.097">
-    <system-out><![CDATA[162827 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testTransitionToFacebookPage" classname="runner.LoginTest" time="2.867">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testSearchInSidebarMenu[a](1)" classname="runner.DashboardTest" time="9.66">
-    <system-out><![CDATA[195577 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testTransitionToTwitterPage" classname="runner.LoginTest" time="3.008">
+    <system-out><![CDATA[runner.LoginTest@1787bc24openSite
 ]]></system-out>
   </testcase>
-  <testcase name="testSearchInSidebarMenu[m](2)" classname="runner.DashboardTest" time="5.493">
-    <system-out><![CDATA[206657 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testTransitionToYoutubePage" classname="runner.LoginTest" time="2.328">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testSearchInSidebarMenu[o](3)" classname="runner.DashboardTest" time="5.385">
-    <system-out><![CDATA[212744 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testDashboardSheetsNames[Time at Work](1)" classname="runner.DashboardTest" time="1.991">
+    <system-out><![CDATA[runner.LoginTest@1787bc24openSite
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToAdminPage" classname="runner.DashboardTest" time="12.34">
-    <system-out><![CDATA[218747 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testDashboardSheetsNames[My Actions](2)" classname="runner.DashboardTest" time="16.07"/>
+  <testcase name="testDashboardSheetsNames[Quick Launch](3)" classname="runner.DashboardTest" time="8.589">
+    <system-out><![CDATA[runner.LoginTest@1787bc24openSite
+runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToPIMpage" classname="runner.DashboardTest" time="12.842">
-    <system-out><![CDATA[231794 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testDashboardSheetsNames[Employee Distribution by Sub Unit](4)" classname="runner.DashboardTest" time="1.617">
+    <system-out><![CDATA[runner.LoginTest@1787bc24openSite
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToLeavePage" classname="runner.DashboardTest" time="9.914">
-    <system-out><![CDATA[245530 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testDashboardSheetsNames[Buzz Latest Posts](5)" classname="runner.DashboardTest" time="11.149">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToTimePage" classname="runner.DashboardTest" time="8.641">
-    <system-out><![CDATA[256177 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testDashboardSheetsNames[Employees on Leave Today](6)" classname="runner.DashboardTest" time="10.207">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToRecruitmentPage" classname="runner.DashboardTest" time="10.657">
-    <system-out><![CDATA[266642 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testDashboardSheetsNames[Employee Distribution by Location](7)" classname="runner.DashboardTest" time="5.138">
+    <system-out><![CDATA[runner.LoginTest@1787bc24closeDriver
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToMyInfoPage" classname="runner.DashboardTest" time="6.971">
-    <system-out><![CDATA[278101 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testQuestionIcon" classname="runner.DashboardTest" time="12.399">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToPerformancePage" classname="runner.DashboardTest" time="6.245">
-    <system-out><![CDATA[285691 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testOrangeLinkInFooter" classname="runner.DashboardTest" time="35.471">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToDashboardPage" classname="runner.DashboardTest" time="8.521">
-    <system-out><![CDATA[292592 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testSearchInSidebarMenu[a](1)" classname="runner.DashboardTest" time="8.591">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToDirectoryPage" classname="runner.DashboardTest" time="11.089">
-    <system-out><![CDATA[303192 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testSearchInSidebarMenu[m](2)" classname="runner.DashboardTest" time="8.919">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToMaintenancePage" classname="runner.DashboardTest" time="7.793">
-    <system-out><![CDATA[314985 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testSearchInSidebarMenu[o](3)" classname="runner.DashboardTest" time="7.11">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToClaimPage" classname="runner.DashboardTest" time="7.005">
-    <system-out><![CDATA[323534 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testTransitionToAdminPage" classname="runner.DashboardTest" time="13.812">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToBuzzPage" classname="runner.DashboardTest" time="12.077">
-    <system-out><![CDATA[331258 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testTransitionToPIMpage" classname="runner.DashboardTest" time="8.562">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testLoginWithValidCredentials" classname="runner.LoginTest" time="34.669">
-    <system-out><![CDATA[38144 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testTransitionToLeavePage" classname="runner.DashboardTest" time="12.748">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testLoginWithInvalidUsername" classname="runner.LoginTest" time="5.238">
-    <system-out><![CDATA[74298 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-2] DEBUG runner.LoginTest  - openSite
+  <testcase name="testTransitionToTimePage" classname="runner.DashboardTest" time="6.639">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testLoginWithInvalidPassword" classname="runner.LoginTest" time="3.261">
-    <system-out><![CDATA[80000 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-2] DEBUG runner.LoginTest  - openSite
+  <testcase name="testTransitionToRecruitmentPage" classname="runner.DashboardTest" time="7.692">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testLoginWithoutFillingInUserNameAndPasswordFields" classname="runner.LoginTest" time="1.381">
-    <system-out><![CDATA[83664 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-2] DEBUG runner.LoginTest  - openSite
+  <testcase name="testTransitionToMyInfoPage" classname="runner.DashboardTest" time="12.206">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testForgotYourPassword" classname="runner.LoginTest" time="2.737">
-    <system-out><![CDATA[85459 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-2] DEBUG runner.LoginTest  - openSite
+  <testcase name="testTransitionToPerformancePage" classname="runner.DashboardTest" time="8.829">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToLinkedinPage" classname="runner.LoginTest" time="4.657">
-    <system-out><![CDATA[103037 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-3] DEBUG runner.PimTest  - closeDriver
+  <testcase name="testTransitionToDashboardPage" classname="runner.DashboardTest" time="6.036">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToFacebookPage" classname="runner.LoginTest" time="4.95">
-    <system-out><![CDATA[114564 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testTransitionToDirectoryPage" classname="runner.DashboardTest" time="6.765">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToTwitterPage" classname="runner.LoginTest" time="2.706">
-    <system-out><![CDATA[121126 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-2] DEBUG runner.LoginTest  - openSite
-121340 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testTransitionToMaintenancePage" classname="runner.DashboardTest" time="7.914">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testTransitionToYoutubePage" classname="runner.LoginTest" time="4.287">
-    <system-out><![CDATA[145533 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+  <testcase name="testTransitionToClaimPage" classname="runner.DashboardTest" time="10.595">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
-  <testcase name="testRenameHoliday" classname="runner.LeaveTest" time="1.475">
-    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[text() = &apos;Configure &apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text() = 'Configure ']' (tried for 20 second(s) with 500 milliseconds interval)
+  <testcase name="testTransitionToBuzzPage" classname="runner.DashboardTest" time="12.86">
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
+]]></system-out>
+  </testcase>
+  <testcase name="testRenameHoliday" classname="runner.LeaveTest" time="6.884">
+    <failure message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //span[text() = &apos;Configure &apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text() = 'Configure ']' (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
 	at model.page.LeavePage.clickConfigureTab(LeavePage.java:51)
@@ -365,9 +419,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6b174d27059460ea6dbe244de02f1ecc, findElement {using=xpath, value=//span[text() = 'Configure ']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49527}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49527/devtoo..., se:cdpVersion: 118.0.5993.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6b174d27059460ea6dbe244de02f1ecc
+Command: [25fbf34e25bbda95dde032cff5d74273, findElement {using=xpath, value=//span[text() = 'Configure ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.70, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50701/devtoo..., se:cdpVersion: 118.0.5993.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25fbf34e25bbda95dde032cff5d74273
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -384,38 +438,14 @@ Session ID: 6b174d27059460ea6dbe244de02f1ecc
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
 	... 15 more
 ]]></failure>
-    <system-out><![CDATA[88889 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-2] DEBUG runner.LoginTest  - openSite
-]]></system-out>
-  </testcase>
-  <testcase name="testAddEmployee" classname="runner.PimTest" time="0.159">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at runner.PimTest.testAddEmployee(PimTest.java:24)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-]]></failure>
-    <system-out><![CDATA[102785 [TestNG-test=/Users/ruslanfursa/IdeaProjects/Orange-1] DEBUG runner.DashboardTest  - openSite
+    <system-out><![CDATA[runner.DashboardTest@4e07b95fopenSite
 ]]></system-out>
   </testcase>
 </testsuite>

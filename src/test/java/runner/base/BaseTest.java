@@ -14,10 +14,8 @@ import org.testng.annotations.*;
 import java.time.Duration;
 
 public class BaseTest {
-    protected Logger log = Logger.getLogger(this.getClass());
+//    protected Logger log = Logger.getLogger(this.getClass());
     private WebDriver driver;
-    private WebDriverWait wait2;
-    private WebDriverWait wait10;
 
     protected WebDriver getDriver() {
         return driver;
@@ -32,7 +30,8 @@ public class BaseTest {
     @BeforeMethod
     protected void openSite() {
         getDriver().get("https://opensource-demo.orangehrmlive.com/");
-        log.log(Level.DEBUG, "openSite");
+//        log.log(Level.DEBUG, "openSite");
+        System.out.println("openSite " + this);
     }
 
     @AfterClass
@@ -40,19 +39,19 @@ public class BaseTest {
         if (driver != null) {
             driver.quit();
             driver = null;
-            wait2 = null;
-            wait10 = null;
-            log.log(Level.DEBUG, "closeDriver");
+//            log.log(Level.DEBUG, "closeDriver");
+            System.out.println("closeDriver " + this);
         }
     }
-    @BeforeSuite
-    void initLogger() {
-        BasicConfigurator.configure();
-    }
+//    @BeforeSuite
+//    void initLogger() {
+//        BasicConfigurator.configure();
+//    }
 
     @BeforeClass
     protected void init() {
         createDriver();
-        log.log(Level.DEBUG, "init");
+//        log.log(Level.DEBUG, "init");
+        System.out.println("init " + this);
     }
 }
