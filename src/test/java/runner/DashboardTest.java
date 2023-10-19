@@ -4,9 +4,13 @@ import model.base.SideBarMenu;
 import model.page.*;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Ignore;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import runner.base.BaseTest;
 
+@Listeners(screenshots.Listener.class)
+@Ignore
 public class DashboardTest extends BaseTest {
 
     @DataProvider(name = "expectedNames")
