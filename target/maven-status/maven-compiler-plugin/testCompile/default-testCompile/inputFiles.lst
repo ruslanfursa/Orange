@@ -1,6 +1,8 @@
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/page/DashboardPage.java
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/page/MaintenancePage.java
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/base/BasePage.java
+/Users/ruslanfursa/IdeaProjects/Orange/src/test/java/runner/TimeTest.java
+/Users/ruslanfursa/IdeaProjects/Orange/src/test/java/screenshots/Listener.java
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/page/PerformancePage.java
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/base/SideBarMenu.java
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/page/AdminPage.java

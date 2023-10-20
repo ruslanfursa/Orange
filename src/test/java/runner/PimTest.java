@@ -19,8 +19,9 @@ public class PimTest extends BaseTest {
                 .fillInLastName()
                 .clickSaveBtn()
                 .isUserCreated();
+        Assert.assertTrue(isEmployeeCreated);
         new PimPage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isEmployeeCreated);
+
     }
 }

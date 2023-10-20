@@ -60,8 +60,8 @@ public abstract class BasePage implements SideBarMenu {
     }
 
     public LoginPage clickLogout() {
-        getWait5().until(ExpectedConditions.elementToBeClickable(userProfileTab)).click();
-        getWait5().until(ExpectedConditions.elementToBeClickable(logoutInDropdownMenu)).click();
+        getWait10().until(ExpectedConditions.elementToBeClickable(userProfileTab)).click();
+        getWait10().until(ExpectedConditions.elementToBeClickable(logoutInDropdownMenu)).click();
         return new LoginPage(getDriver());
     }
 

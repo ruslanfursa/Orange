@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel="classes" thread-count="4">
+<suite name="All Test Suite" parallel="classes" thread-count="5">
+<!--    <listeners>-->
+<!--        <listener class-name="screenshots.Listener"/>-->
+<!--    </listeners>-->
     <test verbose="2" name="/Users/ruslanfursa/IdeaProjects/Orange">
         <classes>
             <class name="runner.DashboardTest">
@@ -44,6 +47,11 @@
             <class name="runner.LeaveTest">
                 <methods>
                     <include name="testRenameHoliday"/>
+                </methods>
+            </class>
+            <class name="runner.TimeTest">
+                <methods>
+                    <include name="testToggles"/>
                 </methods>
             </class>
         </classes>
