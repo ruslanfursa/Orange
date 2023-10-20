@@ -1,21 +1,21 @@
 package screenshots;
 
+import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 
 import java.io.File;
+import java.util.Date;
 
 public class Listener implements ITestListener {
     @AfterMethod
     public void onTestFailure (ITestResult result) {
-        System.out.println("Test is failed");
         try {
             WebDriver driver = (WebDriver)result.getTestClass().getRealClass().getSuperclass()
                     .getDeclaredField("driver").get(result.getInstance());
@@ -24,22 +24,24 @@ public class Listener implements ITestListener {
             captureScreenShot(result.getName(), driver);
         }
         catch(Exception e) {
-            System.out.println("catc: " + e.getMessage());
+            System.out.println("Catch = " + e.getMessage());
         }
     }
-
+@Attachment
     private void captureScreenShot(String methodName, WebDriver driver) {
         try {
-            System.out.println("Start capturescreen");
+            String timeStamp = new Date().toString().replace(":", "_").replace(" ", "_");
             File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(file, new File("target/allure-results/" + methodName + ".jpg"));
-            System.out.println("Screenshot is saved");
+            FileUtils.copyFile(file, new File("target/allure-results/" + methodName + timeStamp + ".png"));
         }
         catch (Exception e) {
             System.out.println(e.getMessage());
         }
-//        finally {
-//            screenDriver.quit();
-//        }
     }
+
+//    @Attachment(value = "screenshot", type = "image/png", fileExtension = ".png")
+//    private byte[] saveScreenshotOnFailure(WebDriver driver) {
+//        System.out.println("screenForAllure");
+//        return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+//    }
 }

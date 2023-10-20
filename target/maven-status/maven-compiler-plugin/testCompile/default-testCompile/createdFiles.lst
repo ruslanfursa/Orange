@@ -22,5 +22,4 @@ model/base/SideBarMenu.class
 model/page/LoginPage.class
 runner/LeaveTest.class
 runner/TimeTest.class
-runner/base/AllureScreenShooter.class
 model/base/SideBarMenu$LinkFromSidebarMenu.class

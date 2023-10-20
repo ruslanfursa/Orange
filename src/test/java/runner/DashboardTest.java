@@ -4,13 +4,10 @@ import model.base.SideBarMenu;
 import model.page.*;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Ignore;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import runner.base.BaseTest;
 
-@Listeners(screenshots.Listener.class)
-@Ignore
+
 public class DashboardTest extends BaseTest {
 
     @DataProvider(name = "expectedNames")
@@ -41,9 +38,10 @@ public class DashboardTest extends BaseTest {
                 .clickQuestionIcon()
                 .goToNewTab()
                 .isPageOpened("starterhelp");
+        Assert.assertTrue(isHelpPageOpened);
         new DashboardPage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isHelpPageOpened);
+
     }
 
     @Test
@@ -53,9 +51,10 @@ public class DashboardTest extends BaseTest {
                 .clickOrangeLinkInFooter()
                 .goToNewTab()
                 .isPageOpened("https://www.orangehrm.com/");
+        Assert.assertTrue(isOrangeProductSiteOpened);
         new DashboardPage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isOrangeProductSiteOpened);
+
     }
 
     @Test(dataProvider = "searchSymbols")
@@ -64,9 +63,10 @@ public class DashboardTest extends BaseTest {
                 .login()
                 .typeSymbolInSearchField(symbol)
                 .isSymbolPresentInSearchResult(symbol);
+        Assert.assertTrue(isSymbolPresent);
         new DashboardPage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isSymbolPresent);
+
     }
 
     @Test
@@ -75,9 +75,10 @@ public class DashboardTest extends BaseTest {
                 .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.ADMIN, new AdminPage(getDriver()))
                 .isTitleCorrect("Admin");
+        Assert.assertTrue(isCorrectTitle);
         new AdminPage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isCorrectTitle);
+
     }
 
     @Test
@@ -86,9 +87,10 @@ public class DashboardTest extends BaseTest {
                 .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.PIM, new PimPage(getDriver()))
                 .isTitleCorrect("PIM");
+        Assert.assertTrue(isCorrectTitle);
         new PimPage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isCorrectTitle);
+
     }
 
     @Test
@@ -97,9 +99,10 @@ public class DashboardTest extends BaseTest {
                 .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.LEAVE, new LeavePage(getDriver()))
                 .isTitleCorrect("Leave");
+        Assert.assertTrue(isCorrectTitle);
         new LeavePage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isCorrectTitle);
+
     }
 
     @Test
@@ -108,9 +111,10 @@ public class DashboardTest extends BaseTest {
                 .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.TIME, new TimePage(getDriver()))
                 .isTitleCorrect("Time");
+        Assert.assertTrue(isCorrectTitle);
         new TimePage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isCorrectTitle);
+
     }
 
     @Test
@@ -119,9 +123,10 @@ public class DashboardTest extends BaseTest {
                 .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.RECRUITMENT, new RecruitmentPage(getDriver()))
                 .isTitleCorrect("Recruitment");
+        Assert.assertTrue(isCorrectTitle);
         new RecruitmentPage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isCorrectTitle);
+
     }
 
     @Test
@@ -130,9 +135,10 @@ public class DashboardTest extends BaseTest {
                 .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.MY_INFO, new MyInfoPage(getDriver()))
                 .isTitleCorrect("PIM");
+        Assert.assertTrue(isCorrectTitle);
         new MyInfoPage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isCorrectTitle);
+
     }
 
     @Test
@@ -141,9 +147,10 @@ public class DashboardTest extends BaseTest {
                 .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.PERFORMANCE, new PerformancePage(getDriver()))
                 .isTitleCorrect("Performance");
+        Assert.assertTrue(isCorrectTitle);
         new PerformancePage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isCorrectTitle);
+
     }
 
     @Test
@@ -152,9 +159,10 @@ public class DashboardTest extends BaseTest {
                 .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.DASHBOARD, new DashboardPage(getDriver()))
                 .isTitleCorrect("Dashboard");
+        Assert.assertTrue(isCorrectTitle);
         new DashboardPage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isCorrectTitle);
+
     }
 
     @Test
@@ -163,9 +171,10 @@ public class DashboardTest extends BaseTest {
                 .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.DIRECTORY, new DirectoryPage(getDriver()))
                 .isTitleCorrect("Directory");
+        Assert.assertTrue(isCorrectTitle);
         new DashboardPage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isCorrectTitle);
+
     }
 
     @Test
@@ -177,9 +186,10 @@ public class DashboardTest extends BaseTest {
                 .clickLoginBtn();
         boolean isCorrectTitle = new MaintenancePage(getDriver())
                 .isTitleCorrect("Maintenance");
+        Assert.assertTrue(isCorrectTitle);
         new MaintenancePage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isCorrectTitle);
+
     }
 
     @Test
@@ -188,9 +198,10 @@ public class DashboardTest extends BaseTest {
                 .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.CLAIM, new ClaimPage(getDriver()))
                 .isTitleCorrect("Claim");
+        Assert.assertTrue(isCorrectTitle);
         new ClaimPage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isCorrectTitle);
+
     }
 
     @Test
@@ -199,8 +210,9 @@ public class DashboardTest extends BaseTest {
                 .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.BUZZ, new BuzzPage(getDriver()))
                 .isTitleCorrect("Buzz");
+        Assert.assertTrue(isCorrectTitle);
         new BuzzPage(getDriver())
                 .clickLogout();
-        Assert.assertTrue(isCorrectTitle);
+
     }
 }

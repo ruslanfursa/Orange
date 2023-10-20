@@ -6,8 +6,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import org.testng.annotations.*;
 
+@Listeners(screenshots.Listener.class)
 public class BaseTest {
-//    protected Logger log = Logger.getLogger(this.getClass());
+    //    protected Logger log = Logger.getLogger(this.getClass());
     public WebDriver driver;
 
     protected WebDriver getDriver() {
@@ -15,8 +16,8 @@ public class BaseTest {
     }
 
     protected void createDriver() {
-     //driver = new ChromeDriver(new ChromeOptions().addArguments("--headless"));
-       driver = new ChromeDriver(new ChromeOptions().addArguments("--window-size=1920,1080"));
+        driver = new ChromeDriver(new ChromeOptions().addArguments("--headless"));
+        //  driver = new ChromeDriver(new ChromeOptions().addArguments("--window-size=1920,1080"));
 
     }
 
@@ -47,9 +48,4 @@ public class BaseTest {
 //        log.log(Level.DEBUG, "init");
         System.out.println("init " + this);
     }
-//    @AfterMethod
-//    protected void takeScreenshot() {
-//        Listener lis = new Listener();
-//        lis.captureScreenShot(new ITestResult().getName());
-//    }
 }
