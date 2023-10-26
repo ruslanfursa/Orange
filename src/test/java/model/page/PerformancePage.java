@@ -2,7 +2,6 @@ package model.page;
 
 import com.github.javafaker.Faker;
 import model.base.BasePage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,12 +27,11 @@ public class PerformancePage extends BasePage {
     private WebElement saveBtn;
     @FindBy(xpath = "//div[@class = 'orangehrm-employee-tracker-log-title']//child::h6[1]")
     private WebElement newLogTitle;
-    @FindBy(xpath = "//div[@class = 'orangehrm-employee-tracker-log-title']//child::h6[1]")
+    @FindBy(xpath = "//div[@class = 'orangehrm-employee-tracker-log-body']//child::p[1]")
     private WebElement newCommentTitle;
 
     private final String newLogName = "Good log";
     private final String comment = new Faker().chuckNorris().fact();
-
 
 
     public PerformancePage(WebDriver driver) {
@@ -51,12 +49,12 @@ public class PerformancePage extends BasePage {
     }
 
     public PerformancePage clickViewBtn() {
-        viewBtn.click();
+        getWait10().until(ExpectedConditions.visibilityOf(viewBtn)).click();
         return this;
     }
 
     public PerformancePage clickAddLogBtn() {
-        addLogBtn.click();
+        getWait10().until(ExpectedConditions.visibilityOf(addLogBtn)).click();
         return this;
     }
 
@@ -89,6 +87,6 @@ public class PerformancePage extends BasePage {
     }
 
     private boolean isCommentDisplayed() {
-        return getWait10().until(ExpectedConditions.visibilityOf(newLogTitle)).getText().equals(newLogName);
+        return getWait10().until(ExpectedConditions.visibilityOf(newCommentTitle)).getText().equals(comment);
     }
 }

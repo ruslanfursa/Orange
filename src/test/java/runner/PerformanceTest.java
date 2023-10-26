@@ -3,6 +3,7 @@ package runner;
 import model.base.SideBarMenu;
 import model.page.LoginPage;
 import model.page.PerformancePage;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import runner.base.BaseTest;
 
@@ -10,7 +11,7 @@ public class PerformanceTest extends BaseTest {
 
     @Test
     public void testAddLog() {
-        new LoginPage(getDriver())
+        boolean isNewLogDisplayed = new LoginPage(getDriver())
                 .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.PERFORMANCE, new PerformancePage(getDriver()))
                 .clickMyTrackersTab()
@@ -19,7 +20,10 @@ public class PerformanceTest extends BaseTest {
                 .fillInLogName()
                 .fillInCommentField()
                 .clickDislikeIcon()
-                .clickSaveBtn();
-
+                .clickSaveBtn()
+                .isNewLogAndCommentSaved();
+        Assert.assertTrue(isNewLogDisplayed);
+        new PerformancePage(getDriver())
+                .clickLogout();
     }
 }
