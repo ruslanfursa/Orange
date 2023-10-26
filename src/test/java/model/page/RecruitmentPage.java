@@ -34,9 +34,15 @@ public class RecruitmentPage extends BasePage {
     private WebElement numberOfPositionsField;
     @FindBy(xpath = "//button[text() = ' Save ']")
     private WebElement saveBtn;
+    @FindBy(xpath = "//div[@class = 'oxd-table-cell oxd-padding-cell'][2]")
+    private WebElement vacanciesTable;
+    @FindBy(xpath = "//button[text() = ' Yes, Delete ']")
+    private WebElement yesDeleteBtn;
 
-    private String newVacancyName = new Faker().name().username();
+
+    private final String newVacancyName = new Faker().name().username();
     private String managerName;
+
 
     public RecruitmentPage(WebDriver driver) {
         super(driver);
@@ -47,7 +53,7 @@ public class RecruitmentPage extends BasePage {
         return pageTitle;
     }
 
-    public RecruitmentPage clickVacanciesTab(boolean isNeedSaveManagerName) {
+    private void clickVacanciesTab(boolean isNeedSaveManagerName) {
         Actions actions = new Actions(getDriver());
         actions
                 .pause(2000)
@@ -57,21 +63,18 @@ public class RecruitmentPage extends BasePage {
             managerName = getWait10().until(ExpectedConditions.visibilityOfElementLocated(By
                     .xpath("//div[@class = 'oxd-table-cell oxd-padding-cell'][4]"))).getText();
         }
-        return this;
     }
 
-    public RecruitmentPage clickAddBtn() {
+    private void clickAddBtn() {
         getWait10().until(ExpectedConditions.elementToBeClickable(addBtn)).click();
-        return this;
     }
 
-    public RecruitmentPage fillInNewVacancyBlank() {
+    private void fillInNewVacancyBlank() {
         fillInVacancyName();
         fillInJobTitle();
         fillInVacancyDescriptionField();
         fillInHiringManagerField();
         fillInNumberOfPositionsField();
-        return this;
     }
 
     private void fillInVacancyName() {
@@ -102,9 +105,8 @@ public class RecruitmentPage extends BasePage {
         numberOfPositionsField.sendKeys("1");
     }
 
-    public RecruitmentPage clickSaveBtn() {
+    private void clickSaveBtn() {
         saveBtn.click();
-        return this;
     }
 
     public boolean isVacancyCrated() {
@@ -113,10 +115,31 @@ public class RecruitmentPage extends BasePage {
 
     private Set<String> getVacancyNames() {
         Set<String> names = new HashSet<>();
-        List<WebElement> elements = getWait10().until(ExpectedConditions.visibilityOfElementLocated(By
-                .xpath("//div[@class = 'oxd-table-cell oxd-padding-cell'][2]"))).findElements(By
+        List<WebElement> elements = getWait10().until(ExpectedConditions.visibilityOf(vacanciesTable)).findElements(By
                 .xpath("//div[@class = 'oxd-table-cell oxd-padding-cell'][2]"));
         elements.forEach(element -> names.add(element.getText()));
         return names;
+    }
+
+    public RecruitmentPage createNewVacancy() {
+        clickVacanciesTab(true);
+        clickAddBtn();
+        fillInNewVacancyBlank();
+        clickSaveBtn();
+        clickVacanciesTab(false);
+        return this;
+    }
+
+    public RecruitmentPage deleteVacancy() {
+        getWait10().until(ExpectedConditions.visibilityOf(vacanciesTable));
+        getDriver().findElement(By
+                .xpath("//div[contains(text(), '" + newVacancyName + "')]//following::div[8]//button[1]")).click();
+        clickYesDeleteBtn();
+        System.out.println("knknkn");
+        return this;
+    }
+
+    private void clickYesDeleteBtn() {
+        getWait5().until(ExpectedConditions.elementToBeClickable(yesDeleteBtn)).click();
     }
 }

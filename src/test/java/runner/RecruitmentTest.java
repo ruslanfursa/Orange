@@ -14,13 +14,22 @@ public class RecruitmentTest extends BaseTest {
         boolean isVacancyCreated = new LoginPage(getDriver())
                 .login()
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.RECRUITMENT, new RecruitmentPage(getDriver()))
-                .clickVacanciesTab(true)
-                .clickAddBtn()
-                .fillInNewVacancyBlank()
-                .clickSaveBtn()
-                .clickVacanciesTab(false)
+                .createNewVacancy()
                 .isVacancyCrated();
         Assert.assertTrue(isVacancyCreated);
+        new RecruitmentPage(getDriver())
+                .clickLogout();
+    }
+
+    @Test
+    public void testDeleteVacancy() {
+        boolean isVacancyPresent = new LoginPage(getDriver())
+                .login()
+                .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.RECRUITMENT, new RecruitmentPage(getDriver()))
+                .createNewVacancy()
+                .deleteVacancy()
+                .isVacancyCrated();
+        Assert.assertFalse(isVacancyPresent);
         new RecruitmentPage(getDriver())
                 .clickLogout();
     }
