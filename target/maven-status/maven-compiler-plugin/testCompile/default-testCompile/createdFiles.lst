@@ -1,9 +1,11 @@
 model/page/BuzzPage.class
+runner/PerformanceTest.class
 screenshots/Listener.class
 model/page/PimPage.class
 model/base/BasePage.class
 model/page/MaintenancePage.class
 model/page/RecruitmentPage.class
+runner/DirectoryTest.class
 model/page/PerformancePage.class
 model/page/DirectoryPage.class
 runner/LoginTest.class
@@ -15,10 +17,12 @@ runner/base/BaseTest.class
 model/page/MyInfoPage.class
 model/page/DashboardPage.class
 model/page/NewTabPage.class
+runner/RecruitmentTest.class
 model/page/TimePage.class
 model/page/ResetPasswordPage.class
 model/page/AdminPage.class
 model/base/SideBarMenu.class
+runner/MyInfoTest.class
 model/page/LoginPage.class
 runner/LeaveTest.class
 runner/TimeTest.class
