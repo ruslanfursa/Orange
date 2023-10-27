@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel="classes" thread-count="8">
+<suite name="All Test Suite" parallel="classes" thread-count="1">
 <!--    <listeners>-->
 <!--        <listener class-name="screenshots.Listener"/>-->
 <!--    </listeners>-->
@@ -52,6 +52,27 @@
             <class name="runner.TimeTest">
                 <methods>
                     <include name="testToggles"/>
+                </methods>
+            </class>
+            <class name="runner.MyInfoTest">
+                <methods>
+                    <include name="testUsernameChange"/>
+                </methods>
+            </class>
+            <class name="runner.PerformanceTest">
+                <methods>
+                    <include name="testAddLog"/>
+                </methods>
+            </class>
+            <class name="runner.RecruitmentTest">
+                <methods>
+                    <include name="testAddNewVacancy"/>
+                    <include name="testDeleteVacancy"/>
+                </methods>
+            </class>
+            <class name="runner.DirectoryTest">
+                <methods>
+                    <include name="testSearchJobTitleFilter"/>
                 </methods>
             </class>
         </classes>

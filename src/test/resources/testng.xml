@@ -54,6 +54,27 @@
                     <include name="testToggles"/>
                 </methods>
             </class>
+            <class name="runner.MyInfoTest">
+                <methods>
+                    <include name="testUsernameChange"/>
+                </methods>
+            </class>
+            <class name="runner.PerformanceTest">
+                <methods>
+                    <include name="testAddLog"/>
+                </methods>
+            </class>
+            <class name="runner.RecruitmentTest">
+                <methods>
+                    <include name="testAddNewVacancy"/>
+                    <include name="testDeleteVacancy"/>
+                </methods>
+            </class>
+            <class name="runner.DirectoryTest">
+                <methods>
+                    <include name="testSearchJobTitleFilter"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
