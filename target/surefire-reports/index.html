@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">36 methods, 2 failed,   34 passed</span>
+                    <span class="method-stats">36 methods, 3 failed,   33 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -109,6 +109,11 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-All_Test_Suite" title="runner.LeaveTest" class="method navigator-link" hash-for-method="testRenameHoliday">testRenameHoliday</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.TimeTest" class="method navigator-link" hash-for-method="testToggles">testToggles</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-All_Test_Suite -->
@@ -197,17 +202,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testSearchInSidebarMenu(m)">testSearchInSidebarMenu(m)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testSearchInSidebarMenu(o)">testSearchInSidebarMenu(o)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.TimeTest" class="method navigator-link" hash-for-method="testToggles">testToggles</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="runner.DashboardTest" class="method navigator-link" hash-for-method="testSearchInSidebarMenu(m)">testSearchInSidebarMenu(m)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -337,9 +337,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;19.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5c8705be3a9fa933093b458229820c4d, findElement {using=xpath, value=//span[text() = &apos;Configure &apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.117, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64608}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64608/devtoo..., se:cdpVersion: 118.0.5993.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5c8705be3a9fa933093b458229820c4d
+Command: [b87b99ccef4c4ec0897f309a10c32c90, findElement {using=xpath, value=//span[text() = &apos;Configure &apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.117, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/_p/m636hhn95hb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52783}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52783/devtoo..., se:cdpVersion: 118.0.5993.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b87b99ccef4c4ec0897f309a10c32c90
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -385,6 +385,42 @@ Session ID: 5c8705be3a9fa933093b458229820c4d
 	at org.testng.Assert.assertTrue(Assert.java:56)
 	at org.testng.Assert.assertTrue(Assert.java:66)
 	at runner.PimTest.testAddEmployee(PimTest.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runner.TimeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testToggles">
+                  </a> <!-- testToggles -->
+                  <span class="method-name">testToggles</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at runner.TimeTest.testToggles(TimeTest.java:22)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -561,18 +597,18 @@ Session ID: 5c8705be3a9fa933093b458229820c4d
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testSearchInSidebarMenu(m)">
-                  </a> <!-- testSearchInSidebarMenu(m) -->
-                  <span class="method-name">testSearchInSidebarMenu</span>
-                  <span class="parameters">(m)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="testSearchInSidebarMenu(o)">
                   </a> <!-- testSearchInSidebarMenu(o) -->
                   <span class="method-name">testSearchInSidebarMenu</span>
                   <span class="parameters">(o)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchInSidebarMenu(m)">
+                  </a> <!-- testSearchInSidebarMenu(m) -->
+                  <span class="method-name">testSearchInSidebarMenu</span>
+                  <span class="parameters">(m)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -657,21 +693,6 @@ Session ID: 5c8705be3a9fa933093b458229820c4d
                   <a name="testTransitionToTimePage">
                   </a> <!-- testTransitionToTimePage -->
                   <span class="method-name">testTransitionToTimePage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">runner.TimeTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testToggles">
-                  </a> <!-- testToggles -->
-                  <span class="method-name">testToggles</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -777,154 +798,154 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(36);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testOrangeLinkInFooter')
-data.setCell(0, 2, 'runner.DashboardTest')
-data.setCell(0, 3, 43929);
+data.setCell(0, 1, 'testToggles')
+data.setCell(0, 2, 'runner.TimeTest')
+data.setCell(0, 3, 36963);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testAddEmployee')
 data.setCell(1, 2, 'runner.PimTest')
-data.setCell(1, 3, 41350);
+data.setCell(1, 3, 36527);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testToggles')
-data.setCell(2, 2, 'runner.TimeTest')
-data.setCell(2, 3, 37814);
+data.setCell(2, 1, 'testRenameHoliday')
+data.setCell(2, 2, 'runner.LeaveTest')
+data.setCell(2, 3, 36161);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testRenameHoliday')
-data.setCell(3, 2, 'runner.LeaveTest')
-data.setCell(3, 3, 35378);
+data.setCell(3, 1, 'testOrangeLinkInFooter')
+data.setCell(3, 2, 'runner.DashboardTest')
+data.setCell(3, 3, 32347);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testDashboardSheetsNames')
 data.setCell(4, 2, 'runner.DashboardTest')
-data.setCell(4, 3, 32405);
+data.setCell(4, 3, 30596);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testLoginWithValidCredentials')
 data.setCell(5, 2, 'runner.LoginTest')
-data.setCell(5, 3, 30661);
+data.setCell(5, 3, 26554);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testTransitionToYoutubePage')
 data.setCell(6, 2, 'runner.LoginTest')
-data.setCell(6, 3, 20031);
+data.setCell(6, 3, 20479);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testTransitionToAdminPage')
+data.setCell(7, 1, 'testTransitionToBuzzPage')
 data.setCell(7, 2, 'runner.DashboardTest')
-data.setCell(7, 3, 13810);
+data.setCell(7, 3, 13314);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testTransitionToPIMpage')
+data.setCell(8, 1, 'testTransitionToDashboardPage')
 data.setCell(8, 2, 'runner.DashboardTest')
-data.setCell(8, 3, 12055);
+data.setCell(8, 3, 12838);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testTransitionToDirectoryPage')
+data.setCell(9, 1, 'testTransitionToPIMpage')
 data.setCell(9, 2, 'runner.DashboardTest')
-data.setCell(9, 3, 11811);
+data.setCell(9, 3, 11559);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testTransitionToMyInfoPage')
+data.setCell(10, 1, 'testTransitionToClaimPage')
 data.setCell(10, 2, 'runner.DashboardTest')
-data.setCell(10, 3, 11537);
+data.setCell(10, 3, 10362);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testTransitionToDashboardPage')
+data.setCell(11, 1, 'testTransitionToLeavePage')
 data.setCell(11, 2, 'runner.DashboardTest')
-data.setCell(11, 3, 10074);
+data.setCell(11, 3, 10317);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testQuestionIcon')
+data.setCell(12, 1, 'testTransitionToAdminPage')
 data.setCell(12, 2, 'runner.DashboardTest')
-data.setCell(12, 3, 9870);
+data.setCell(12, 3, 10269);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testTransitionToPerformancePage')
+data.setCell(13, 1, 'testSearchInSidebarMenu')
 data.setCell(13, 2, 'runner.DashboardTest')
-data.setCell(13, 3, 9573);
+data.setCell(13, 3, 9604);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'testSearchInSidebarMenu')
+data.setCell(14, 1, 'testDashboardSheetsNames')
 data.setCell(14, 2, 'runner.DashboardTest')
-data.setCell(14, 3, 9047);
+data.setCell(14, 3, 9295);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'testTransitionToBuzzPage')
+data.setCell(15, 1, 'testTransitionToMyInfoPage')
 data.setCell(15, 2, 'runner.DashboardTest')
-data.setCell(15, 3, 8913);
+data.setCell(15, 3, 8169);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'testSearchInSidebarMenu')
+data.setCell(16, 1, 'testTransitionToMaintenancePage')
 data.setCell(16, 2, 'runner.DashboardTest')
-data.setCell(16, 3, 8688);
+data.setCell(16, 3, 7995);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'testTransitionToLeavePage')
+data.setCell(17, 1, 'testSearchInSidebarMenu')
 data.setCell(17, 2, 'runner.DashboardTest')
-data.setCell(17, 3, 8525);
+data.setCell(17, 3, 7554);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'testDashboardSheetsNames')
+data.setCell(18, 1, 'testTransitionToDirectoryPage')
 data.setCell(18, 2, 'runner.DashboardTest')
-data.setCell(18, 3, 8150);
+data.setCell(18, 3, 7472);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'testTransitionToMaintenancePage')
+data.setCell(19, 1, 'testDashboardSheetsNames')
 data.setCell(19, 2, 'runner.DashboardTest')
-data.setCell(19, 3, 8009);
+data.setCell(19, 3, 7384);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'testTransitionToRecruitmentPage')
+data.setCell(20, 1, 'testTransitionToPerformancePage')
 data.setCell(20, 2, 'runner.DashboardTest')
-data.setCell(20, 3, 7925);
+data.setCell(20, 3, 7209);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'testDashboardSheetsNames')
+data.setCell(21, 1, 'testTransitionToRecruitmentPage')
 data.setCell(21, 2, 'runner.DashboardTest')
-data.setCell(21, 3, 7843);
+data.setCell(21, 3, 7099);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'testDashboardSheetsNames')
+data.setCell(22, 1, 'testQuestionIcon')
 data.setCell(22, 2, 'runner.DashboardTest')
-data.setCell(22, 3, 7800);
+data.setCell(22, 3, 6630);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'testTransitionToClaimPage')
+data.setCell(23, 1, 'testDashboardSheetsNames')
 data.setCell(23, 2, 'runner.DashboardTest')
-data.setCell(23, 3, 7502);
+data.setCell(23, 3, 6552);
 data.setCell(24, 0, 24)
 data.setCell(24, 1, 'testTransitionToTimePage')
 data.setCell(24, 2, 'runner.DashboardTest')
-data.setCell(24, 3, 6473);
+data.setCell(24, 3, 6292);
 data.setCell(25, 0, 25)
 data.setCell(25, 1, 'testDashboardSheetsNames')
 data.setCell(25, 2, 'runner.DashboardTest')
-data.setCell(25, 3, 6262);
+data.setCell(25, 3, 5769);
 data.setCell(26, 0, 26)
 data.setCell(26, 1, 'testDashboardSheetsNames')
 data.setCell(26, 2, 'runner.DashboardTest')
-data.setCell(26, 3, 5630);
+data.setCell(26, 3, 4760);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'testDashboardSheetsNames')
+data.setCell(27, 1, 'testSearchInSidebarMenu')
 data.setCell(27, 2, 'runner.DashboardTest')
-data.setCell(27, 3, 5016);
+data.setCell(27, 3, 4444);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'testSearchInSidebarMenu')
+data.setCell(28, 1, 'testDashboardSheetsNames')
 data.setCell(28, 2, 'runner.DashboardTest')
-data.setCell(28, 3, 4920);
+data.setCell(28, 3, 4238);
 data.setCell(29, 0, 29)
 data.setCell(29, 1, 'testLoginWithInvalidUsername')
 data.setCell(29, 2, 'runner.LoginTest')
-data.setCell(29, 3, 3657);
+data.setCell(29, 3, 2572);
 data.setCell(30, 0, 30)
 data.setCell(30, 1, 'testLoginWithInvalidPassword')
 data.setCell(30, 2, 'runner.LoginTest')
-data.setCell(30, 3, 3225);
+data.setCell(30, 3, 2527);
 data.setCell(31, 0, 31)
 data.setCell(31, 1, 'testForgotYourPassword')
 data.setCell(31, 2, 'runner.LoginTest')
-data.setCell(31, 3, 2792);
+data.setCell(31, 3, 2199);
 data.setCell(32, 0, 32)
 data.setCell(32, 1, 'testTransitionToLinkedinPage')
 data.setCell(32, 2, 'runner.LoginTest')
-data.setCell(32, 3, 2689);
+data.setCell(32, 3, 1763);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'testTransitionToTwitterPage')
+data.setCell(33, 1, 'testTransitionToFacebookPage')
 data.setCell(33, 2, 'runner.LoginTest')
-data.setCell(33, 3, 1627);
+data.setCell(33, 3, 1330);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'testTransitionToFacebookPage')
+data.setCell(34, 1, 'testTransitionToTwitterPage')
 data.setCell(34, 2, 'runner.LoginTest')
-data.setCell(34, 3, 1447);
+data.setCell(34, 3, 1224);
 data.setCell(35, 0, 35)
 data.setCell(35, 1, 'testLoginWithoutFillingInUserNameAndPasswordFields')
 data.setCell(35, 2, 'runner.LoginTest')
-data.setCell(35, 3, 1116);
+data.setCell(35, 3, 942);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -957,343 +978,345 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">5374 ms</span>
+                <span class="method-start">4501 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDashboardSheetsNames(Time at Work)</span>
-                <span class="method-start">11043 ms</span>
+                <span class="method-start">9419 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">43505 ms</span>
+                <span class="method-start">40068 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDashboardSheetsNames(My Actions)</span>
-                <span class="method-start">44229 ms</span>
+                <span class="method-start">41797 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">52382 ms</span>
+                <span class="method-start">51096 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDashboardSheetsNames(Quick Launch)</span>
-                <span class="method-start">52970 ms</span>
+                <span class="method-start">51692 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">57989 ms</span>
+                <span class="method-start">57465 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDashboardSheetsNames(Employee Distribution by Sub Unit)</span>
-                <span class="method-start">58498 ms</span>
+                <span class="method-start">58035 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">66304 ms</span>
+                <span class="method-start">64596 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDashboardSheetsNames(Buzz Latest Posts)</span>
-                <span class="method-start">67398 ms</span>
+                <span class="method-start">66014 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">75246 ms</span>
+                <span class="method-start">73400 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDashboardSheetsNames(Employees on Leave Today)</span>
-                <span class="method-start">76229 ms</span>
+                <span class="method-start">73999 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">81869 ms</span>
+                <span class="method-start">78239 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDashboardSheetsNames(Employee Distribution by Location)</span>
-                <span class="method-start">82430 ms</span>
+                <span class="method-start">78855 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">88697 ms</span>
+                <span class="method-start">83619 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testQuestionIcon</span>
-                <span class="method-start">89554 ms</span>
+                <span class="method-start">84166 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">99432 ms</span>
+                <span class="method-start">90800 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testOrangeLinkInFooter</span>
-                <span class="method-start">99920 ms</span>
+                <span class="method-start">91365 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">143863 ms</span>
+                <span class="method-start">123725 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchInSidebarMenu(a)</span>
-                <span class="method-start">144733 ms</span>
+                <span class="method-start">125292 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">153424 ms</span>
+                <span class="method-start">134900 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchInSidebarMenu(m)</span>
-                <span class="method-start">155065 ms</span>
+                <span class="method-start">136535 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">164114 ms</span>
+                <span class="method-start">144092 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSearchInSidebarMenu(o)</span>
-                <span class="method-start">164749 ms</span>
+                <span class="method-start">144652 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">169671 ms</span>
+                <span class="method-start">149100 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToAdminPage</span>
-                <span class="method-start">170295 ms</span>
+                <span class="method-start">149694 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">184121 ms</span>
+                <span class="method-start">159974 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToPIMpage</span>
-                <span class="method-start">185803 ms</span>
+                <span class="method-start">160617 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">197860 ms</span>
+                <span class="method-start">172179 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToLeavePage</span>
-                <span class="method-start">198551 ms</span>
+                <span class="method-start">173559 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">207078 ms</span>
+                <span class="method-start">183878 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToTimePage</span>
-                <span class="method-start">207864 ms</span>
+                <span class="method-start">184788 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">214340 ms</span>
+                <span class="method-start">191082 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToRecruitmentPage</span>
-                <span class="method-start">215073 ms</span>
+                <span class="method-start">191812 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">223003 ms</span>
+                <span class="method-start">198919 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToMyInfoPage</span>
-                <span class="method-start">223754 ms</span>
+                <span class="method-start">199839 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">235295 ms</span>
+                <span class="method-start">208013 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToPerformancePage</span>
-                <span class="method-start">236342 ms</span>
+                <span class="method-start">208744 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">245929 ms</span>
+                <span class="method-start">215971 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToDashboardPage</span>
-                <span class="method-start">246530 ms</span>
+                <span class="method-start">216499 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">256610 ms</span>
+                <span class="method-start">229340 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToDirectoryPage</span>
-                <span class="method-start">258891 ms</span>
+                <span class="method-start">230204 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">270706 ms</span>
+                <span class="method-start">237679 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToMaintenancePage</span>
-                <span class="method-start">271400 ms</span>
+                <span class="method-start">238303 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">279411 ms</span>
+                <span class="method-start">246300 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToClaimPage</span>
-                <span class="method-start">280159 ms</span>
+                <span class="method-start">247027 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">287666 ms</span>
+                <span class="method-start">257394 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToBuzzPage</span>
-                <span class="method-start">288415 ms</span>
+                <span class="method-start">259139 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">297341 ms</span>
+                <span class="method-start">272469 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
-                <span class="method-start">297532 ms</span>
+                <span class="method-start">272682 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">299983 ms</span>
+                <span class="method-start">275389 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithValidCredentials</span>
-                <span class="method-start">304017 ms</span>
+                <span class="method-start">280322 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">334689 ms</span>
+                <span class="method-start">306878 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithInvalidUsername</span>
-                <span class="method-start">336493 ms</span>
+                <span class="method-start">307863 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">340153 ms</span>
+                <span class="method-start">310438 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithInvalidPassword</span>
-                <span class="method-start">340679 ms</span>
+                <span class="method-start">310848 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">343906 ms</span>
+                <span class="method-start">313377 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLoginWithoutFillingInUserNameAndPasswordFields</span>
-                <span class="method-start">344310 ms</span>
+                <span class="method-start">313801 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">345430 ms</span>
+                <span class="method-start">314747 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testForgotYourPassword</span>
-                <span class="method-start">345867 ms</span>
+                <span class="method-start">315141 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">348664 ms</span>
+                <span class="method-start">317343 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToLinkedinPage</span>
-                <span class="method-start">349322 ms</span>
+                <span class="method-start">317944 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">352014 ms</span>
+                <span class="method-start">319712 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToFacebookPage</span>
-                <span class="method-start">352391 ms</span>
+                <span class="method-start">320114 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">353843 ms</span>
+                <span class="method-start">321449 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToTwitterPage</span>
-                <span class="method-start">354298 ms</span>
+                <span class="method-start">321802 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">355928 ms</span>
+                <span class="method-start">323028 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTransitionToYoutubePage</span>
-                <span class="method-start">356426 ms</span>
+                <span class="method-start">323409 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">376463 ms</span>
+                <span class="method-start">343893 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.PimTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
-                <span class="method-start">376588 ms</span>
+                <span class="method-start">344001 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">378525 ms</span>
+                <span class="method-start">345594 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testAddEmployee</span>
-                <span class="method-start">382214 ms</span>
+                <span class="method-start">349199 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">429161 ms</span>
+                <span class="method-start">391246 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.LeaveTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
-                <span class="method-start">429259 ms</span>
+                <span class="method-start">391370 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">430889 ms</span>
+                <span class="method-start">393152 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testRenameHoliday</span>
-                <span class="method-start">434214 ms</span>
+                <span class="method-start">397611 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">474951 ms</span>
+                <span class="method-start">439132 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">runner.TimeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
-                <span class="method-start">475038 ms</span>
+                <span class="method-start">439230 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">openSite</span>
-                <span class="method-start">476616 ms</span>
+                <span class="method-start">440797 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testToggles</span>
-                <span class="method-start">479793 ms</span>
+                <span class="method-start">443947 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">517611 ms</span>
+                <span class="method-start">486274 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
