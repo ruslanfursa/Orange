@@ -1,7 +1,7 @@
 package runner;
 
 import model.base.SideBarMenu;
-import model.page.LoginPage;
+import model.page.DashboardPage;
 import model.page.PimPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,8 +11,7 @@ public class PimTest extends BaseTest {
 
     @Test
     public void testAddEmployee() {
-        boolean isEmployeeCreated = new LoginPage(getDriver())
-                .login()
+        boolean isEmployeeCreated = new DashboardPage(getDriver())
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.PIM, new PimPage(getDriver()))
                 .clickAddBtn()
                 .fillInFirstName()
@@ -20,8 +19,5 @@ public class PimTest extends BaseTest {
                 .clickSaveBtn()
                 .isUserCreated();
         Assert.assertTrue(isEmployeeCreated);
-        new PimPage(getDriver())
-                .clickLogout();
-
     }
 }

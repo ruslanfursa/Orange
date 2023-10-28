@@ -1,8 +1,8 @@
 package runner;
 
 import model.base.SideBarMenu;
+import model.page.DashboardPage;
 import model.page.DirectoryPage;
-import model.page.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -23,14 +23,11 @@ public class DirectoryTest extends BaseTest {
 
     @Test(dataProvider = "jobNames")
     public void testSearchJobTitleFilter(String jobNme) {
-        boolean isResultCorrect = new LoginPage(getDriver())
-                .login()
+        boolean isResultCorrect = new DashboardPage(getDriver())
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.DIRECTORY, new DirectoryPage(getDriver()))
                 .fillInJobTitle(jobNme)
                 .clickSearchBtn()
                 .isJobPresentInSearchResult(jobNme);
         Assert.assertTrue(isResultCorrect);
-        new DirectoryPage(getDriver())
-                .clickLogout();
     }
 }

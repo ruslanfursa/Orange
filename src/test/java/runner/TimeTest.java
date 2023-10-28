@@ -1,7 +1,7 @@
 package runner;
 
 import model.base.SideBarMenu;
-import model.page.LoginPage;
+import model.page.DashboardPage;
 import model.page.TimePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,8 +11,7 @@ public class TimeTest extends BaseTest {
 
     @Test
     public void testToggles() {
-        boolean isTogglesDisabled = new LoginPage(getDriver())
-                .login()
+        boolean isTogglesDisabled = new DashboardPage(getDriver())
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.TIME, new TimePage(getDriver()))
                 .clickAttendanceTab()
                 .clickConfigurationInDropdownList()
@@ -20,7 +19,5 @@ public class TimeTest extends BaseTest {
                 .clickSaveBtn()
                 .isTogglesDisabled();
         Assert.assertTrue(isTogglesDisabled);
-        new TimePage(getDriver())
-                .clickLogout();
     }
 }
