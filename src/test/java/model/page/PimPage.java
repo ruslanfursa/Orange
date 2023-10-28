@@ -5,6 +5,7 @@ import model.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -54,11 +55,17 @@ public class PimPage extends BasePage {
     }
 
     private String getNameFromUserCard() {
+
         return getWait10().until(ExpectedConditions.visibilityOfElementLocated(By
-                .xpath("//h6[@class = 'oxd-text oxd-text--h6 --strong']"))).getText();
+                .xpath("//div[@class = 'orangehrm-edit-employee-name']//h6"))).getText();
     }
 
+
     public boolean isUserCreated() {
-        return (firstName + " " + lastName).equals(getNameFromUserCard());
+        new Actions(getDriver()).pause(2000).perform();
+        System.out.println((firstName + " " + lastName + "---expected name"));
+        String s = getNameFromUserCard();
+        System.out.println(s + "---actual name");
+        return (firstName + " " + lastName).equals(s);
     }
 }

@@ -18,6 +18,7 @@ model/page/MyInfoPage.class
 model/page/DashboardPage.class
 model/page/NewTabPage.class
 runner/RecruitmentTest.class
+runner/base/OrangeUtils.class
 model/page/TimePage.class
 model/page/ResetPasswordPage.class
 model/page/AdminPage.class

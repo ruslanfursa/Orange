@@ -1,7 +1,7 @@
 package runner;
 
 import model.base.SideBarMenu;
-import model.page.LoginPage;
+import model.page.DashboardPage;
 import model.page.RecruitmentPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,26 +11,20 @@ public class RecruitmentTest extends BaseTest {
 
     @Test
     public void testAddNewVacancy() {
-        boolean isVacancyCreated = new LoginPage(getDriver())
-                .login()
+        boolean isVacancyCreated = new DashboardPage(getDriver())
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.RECRUITMENT, new RecruitmentPage(getDriver()))
                 .createNewVacancy()
                 .isVacancyCrated();
         Assert.assertTrue(isVacancyCreated);
-        new RecruitmentPage(getDriver())
-                .clickLogout();
     }
 
     @Test
     public void testDeleteVacancy() {
-        boolean isVacancyPresent = new LoginPage(getDriver())
-                .login()
+        boolean isVacancyPresent = new DashboardPage(getDriver())
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.RECRUITMENT, new RecruitmentPage(getDriver()))
                 .createNewVacancy()
                 .deleteVacancy()
                 .isVacancyCrated();
         Assert.assertFalse(isVacancyPresent);
-        new RecruitmentPage(getDriver())
-                .clickLogout();
     }
 }

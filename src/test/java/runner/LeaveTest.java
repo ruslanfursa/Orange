@@ -1,8 +1,8 @@
 package runner;
 
 import model.base.SideBarMenu;
+import model.page.DashboardPage;
 import model.page.LeavePage;
-import model.page.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import runner.base.BaseTest;
@@ -11,8 +11,7 @@ public class LeaveTest extends BaseTest {
 
     @Test
     public void testRenameHoliday() {
-        boolean isHolidayEdited = new LoginPage(getDriver())
-                .login()
+        boolean isHolidayEdited = new DashboardPage(getDriver())
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.LEAVE, new LeavePage(getDriver()))
                 .clickConfigureTab()
                 .clickHolidaysInDropDownList()
@@ -22,8 +21,5 @@ public class LeaveTest extends BaseTest {
                 .clickSaveBtn()
                 .isHolidayEdited();
         Assert.assertTrue(isHolidayEdited);
-        new LeavePage(getDriver())
-                .clickLogout();
-
     }
 }
