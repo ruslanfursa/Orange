@@ -61,6 +61,7 @@ public class ClaimPage extends BasePage {
     }
 
     public ClaimPage chooseEventType() {
+        getWait10().until(ExpectedConditions.elementToBeClickable(eventType));
         eventType.click();
         return this;
     }

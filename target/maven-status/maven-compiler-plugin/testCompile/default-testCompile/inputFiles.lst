@@ -10,6 +10,7 @@
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/runner/base/BaseTest.java
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/page/ResetPasswordPage.java
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/page/LoginPage.java
+/Users/ruslanfursa/IdeaProjects/Orange/src/test/java/runner/BuzzTest.java
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/page/LeavePage.java
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/page/DirectoryPage.java
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/runner/PerformanceTest.java
@@ -22,6 +23,7 @@
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/base/BasePage.java
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/page/AdminPage.java
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/page/TimePage.java
+/Users/ruslanfursa/IdeaProjects/Orange/src/test/java/runner/ClaimTest.java
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/page/BuzzPage.java
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/page/RecruitmentPage.java
 /Users/ruslanfursa/IdeaProjects/Orange/src/test/java/model/page/ClaimPage.java

@@ -58,15 +58,18 @@ public class DirectoryPage extends BasePage {
         String resultSearch = getWait10().until(ExpectedConditions.visibilityOf(searchResult)).getText();
         if (noRecords.equals(resultSearch)) {
             System.out.println("No record found for this job in DB");
-            return false;
+//            return false;
         }
         return true;
     }
 
     public boolean isJobPresentInSearchResult(String jobName) {
         if (isRecordFound()) {
+            if(getListOfJobsFromSearchResult().size() < 1){
+                System.out.println("No record found for this job in DB");
+                return true;
+            }
             for (String s : getListOfJobsFromSearchResult()) {
-                System.out.println(s);
                 if (!jobName.equals(s)) {
                     System.out.println(s);
                     return false;

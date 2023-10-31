@@ -1,5 +1,6 @@
 model/page/BuzzPage.class
 runner/PerformanceTest.class
+runner/BuzzTest.class
 screenshots/Listener.class
 model/page/PimPage.class
 model/base/BasePage.class
@@ -18,6 +19,7 @@ model/page/MyInfoPage.class
 model/page/DashboardPage.class
 model/page/NewTabPage.class
 runner/RecruitmentTest.class
+runner/ClaimTest.class
 runner/base/OrangeUtils.class
 model/page/TimePage.class
 model/page/ResetPasswordPage.class

@@ -84,6 +84,7 @@
                 <methods>
                     <include name="testCreateBuzz"/>
                     <include name="testEditBuzz"/>
+                    <include name="testDeleteBuzz"/>
                 </methods>
             </class>
             <class name="runner.DirectoryTest">
