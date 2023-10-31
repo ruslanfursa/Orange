@@ -30,4 +30,16 @@ public class BuzzTest extends BaseTest {
                 .isNewBuzzEdited();
         Assert.assertTrue(isBuzzEdited);
     }
+
+    @Test
+    public void testDeleteBuzz() {
+        boolean isBuzzExist = new DashboardPage(getDriver())
+                .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.BUZZ, new BuzzPage(getDriver()))
+                .createBuzz()
+                .clickKebabMenu()
+                .clickDeletePostInKebabMenu()
+                .clickYesDeleteBtn()
+                .isNewBuzzCreated();
+        Assert.assertFalse(isBuzzExist);
+    }
 }
