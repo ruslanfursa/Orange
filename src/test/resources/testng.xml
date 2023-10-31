@@ -86,6 +86,16 @@
                     <include name="testEditBuzz"/>
                 </methods>
             </class>
+            <class name="runner.DirectoryTest">
+                <methods>
+                    <include name="testSearchJobTitleFilter"/>
+                </methods>
+            </class>
+            <class name="runner.ClaimTest">
+                <methods>
+                    <include name="testCreateClaim"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

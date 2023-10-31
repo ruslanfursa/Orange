@@ -25,10 +25,14 @@ public class BuzzPage extends BasePage {
     private WebElement kebabMenu;
     @FindBy(xpath = "//div[@class = 'orangehrm-buzz-post-header-config'][1]//*[text() = 'Edit Post']")
     private WebElement editPostInKebabMenu;
+    @FindBy(xpath = "//div[@class = 'orangehrm-buzz-post-header-config'][1]//*[text() = 'Delete Post']")
+    private WebElement deletePostInKebabMenu;
     @FindBy(xpath = "//div[@class = 'oxd-buzz-post oxd-buzz-post--active oxd-buzz-post--composing']")
     private WebElement editedBuzzField;
     @FindBy(xpath = "//div[@role = 'document']//child::button[text() = ' Post ']")
     private WebElement postBtnInModalWindow;
+    @FindBy(xpath = "//button[text() = ' Yes, Delete ']")
+    private WebElement yesDeleteBtn;
 
 
     private final String newBuzzText = new Faker().chuckNorris().fact();
@@ -103,6 +107,16 @@ public class BuzzPage extends BasePage {
                 .moveToElement(postBtnInModalWindow)
                 .click()
                 .perform();
+        return this;
+    }
+
+    public BuzzPage clickDeletePostInKebabMenu() {
+        getWait10().until(ExpectedConditions.elementToBeClickable(deletePostInKebabMenu)).click();
+        return this;
+    }
+
+    public BuzzPage clickYesDeleteBtn() {
+        getWait10().until(ExpectedConditions.elementToBeClickable(yesDeleteBtn)).click();
         return this;
     }
 }
