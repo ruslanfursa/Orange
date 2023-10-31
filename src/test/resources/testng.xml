@@ -83,6 +83,7 @@
             <class name="runner.BuzzTest">
                 <methods>
                     <include name="testCreateBuzz"/>
+                    <include name="testEditBuzz"/>
                 </methods>
             </class>
         </classes>
