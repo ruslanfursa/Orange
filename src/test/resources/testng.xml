@@ -70,9 +70,14 @@
                     <include name="testDeleteVacancy"/>
                 </methods>
             </class>
+            <class name="runner.ClaimTest">
+                <methods>
+                    <include name="testAddNewVacancy"/>
+                </methods>
+            </class>
             <class name="runner.DirectoryTest">
                 <methods>
-                    <include name="testSearchJobTitleFilter"/>
+                    <include name="testCreateClaim"/>
                 </methods>
             </class>
         </classes>
