@@ -13,9 +13,21 @@ public class BuzzTest extends BaseTest {
     public void testCreateBuzz() {
         boolean isNewBuzzExist = new DashboardPage(getDriver())
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.BUZZ, new BuzzPage(getDriver()))
-                .fillInBuzzField()
-                .clickPostBtn()
+                .createBuzz()
                 .isNewBuzzCreated();
         Assert.assertTrue(isNewBuzzExist);
+    }
+
+    @Test
+    public void testEditBuzz() {
+        boolean isBuzzEdited = new DashboardPage(getDriver())
+                .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.BUZZ, new BuzzPage(getDriver()))
+                .createBuzz()
+                .clickKebabMenu()
+                .clickEditPostInKebabMenu()
+                .editBuzz()
+                .clickPostBtn()
+                .isNewBuzzEdited();
+        Assert.assertTrue(isBuzzEdited);
     }
 }

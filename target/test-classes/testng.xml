@@ -80,6 +80,12 @@
                     <include name="testCreateClaim"/>
                 </methods>
             </class>
+            <class name="runner.BuzzTest">
+                <methods>
+                    <include name="testCreateBuzz"/>
+                    <include name="testEditBuzz"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
