@@ -5,7 +5,6 @@ import model.base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -22,6 +21,7 @@ public class PimPage extends BasePage {
     private WebElement lastNameField;
     @FindBy(xpath = "//button[@type = 'submit']")
     private WebElement saveBtn;
+
     private final String firstName = new Faker().name().firstName();
     private final String lastName = new Faker().name().lastName();
 
@@ -55,14 +55,19 @@ public class PimPage extends BasePage {
     }
 
     private String getNameFromUserCard() {
-
         return getWait10().until(ExpectedConditions.visibilityOfElementLocated(By
-                .xpath("//div[@class = 'orangehrm-edit-employee-name']//h6"))).getText();
+                .xpath("//*[text() = '" + firstName + " " + lastName + "']"))).getText();
     }
 
+    public String createEmployee() {
+        clickAddBtn();
+        fillInFirstName();
+        fillInLastName();
+        clickSaveBtn();
+        return firstName + " " + lastName;
+    }
 
     public boolean isUserCreated() {
-        new Actions(getDriver()).pause(2000).perform();
         System.out.println((firstName + " " + lastName + "---expected name"));
         String s = getNameFromUserCard();
         System.out.println(s + "---actual name");
