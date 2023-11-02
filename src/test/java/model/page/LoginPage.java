@@ -138,17 +138,10 @@ public class LoginPage extends BasePage {
         return this;
     }
 
-//    public DashboardPage login() {
-//        fillInValidUserName();
-//        fillInValidPassword();
-//        clickLoginBtn();
-//        return new DashboardPage(getDriver());
-//    }
-
     public DashboardPage login(String userName, String password) {
-        fillInValidUserName(userName);
-        fillInValidPassword(password);
-        clickLoginBtn();
+        fillInValidUserName(userName)
+                .fillInValidPassword(password)
+                .clickLoginBtn();
         return new DashboardPage(getDriver());
     }
 }

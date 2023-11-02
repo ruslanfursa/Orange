@@ -37,10 +37,12 @@ public class AdminPage extends BasePage {
     private WebElement confirmPasswordField;
     @FindBy(xpath = "//button[text() = ' Save ']")
     private WebElement saveBtn;
+    @FindBy(xpath = "//label[text() = 'Yes']")
+    private WebElement changePassYesCheckBox;
 
 
     private final String userName = new Faker().name().fullName();
-    private final String password = new Faker().internet().password(8, 14, false);
+    private final String password = new Faker().internet().password(true);
 
     public AdminPage(WebDriver driver) {
         super(driver);
@@ -92,6 +94,7 @@ public class AdminPage extends BasePage {
     }
 
     public AdminPage fillInPassword() {
+        System.out.println(password);
         passwordField.sendKeys(password);
         return this;
     }
@@ -133,7 +136,19 @@ public class AdminPage extends BasePage {
         clickSaveBtn();
         credentials.add(userName);
         credentials.add(password);
-        System.out.println(credentials);
         return credentials;
+    }
+
+    public String changePassword(String employeeName) {
+        String newPassword = new Faker().internet().password(true);
+        getWait10().until(ExpectedConditions.elementToBeClickable(By
+                .xpath("//*[text() = '" + employeeName + "']//..//parent::div//button[2]"))).click();
+        getWait10().until(ExpectedConditions.elementToBeClickable(changePassYesCheckBox)).click();
+        getWait10().until(ExpectedConditions.elementToBeClickable(passwordField)).sendKeys(newPassword);
+        getDriver().findElement(By
+                        .xpath("//label[text() = 'Confirm Password']//..//following::div//input"))
+                .sendKeys(newPassword);
+        saveBtn.click();
+        return newPassword;
     }
 }
