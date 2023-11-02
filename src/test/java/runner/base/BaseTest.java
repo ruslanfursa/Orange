@@ -29,8 +29,8 @@ public class BaseTest {
     }
 
     protected void createDriver() {
-        //driver = new ChromeDriver(new ChromeOptions().addArguments("--headless"));
-        driver = new ChromeDriver(new ChromeOptions().addArguments("--window-size=1920,1080"));
+        driver = new ChromeDriver(new ChromeOptions().addArguments("--headless"));
+        //driver = new ChromeDriver(new ChromeOptions().addArguments("--window-size=1920,1080"));
 
     }
 
