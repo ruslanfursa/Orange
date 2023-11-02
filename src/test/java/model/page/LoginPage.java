@@ -55,6 +55,17 @@ public class LoginPage extends BasePage {
         return this;
     }
 
+    public LoginPage fillInValidUserName(String userName) {
+        getWait10().until(ExpectedConditions.visibilityOf(userNameField));
+        userNameField.sendKeys(userName);
+        return this;
+    }
+
+    public LoginPage fillInValidPassword(String password) {
+        getWait10().until(ExpectedConditions.visibilityOf(passwordField)).sendKeys(password);
+        return this;
+    }
+
     public LoginPage fillInValidPassword() {
         String validPassword = "admin123";
         getWait10().until(ExpectedConditions.visibilityOf(passwordField)).sendKeys(validPassword);
@@ -127,9 +138,16 @@ public class LoginPage extends BasePage {
         return this;
     }
 
-    public DashboardPage login() {
-        fillInValidUserName();
-        fillInValidPassword();
+//    public DashboardPage login() {
+//        fillInValidUserName();
+//        fillInValidPassword();
+//        clickLoginBtn();
+//        return new DashboardPage(getDriver());
+//    }
+
+    public DashboardPage login(String userName, String password) {
+        fillInValidUserName(userName);
+        fillInValidPassword(password);
         clickLoginBtn();
         return new DashboardPage(getDriver());
     }

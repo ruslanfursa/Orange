@@ -97,6 +97,11 @@
                     <include name="testCreateClaim"/>
                 </methods>
             </class>
+            <class name="runner.AdminTest">
+                <methods>
+                    <include name="testCreateNewUser"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

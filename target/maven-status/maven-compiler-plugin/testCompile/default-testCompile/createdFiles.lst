@@ -9,6 +9,7 @@ model/page/RecruitmentPage.class
 runner/DirectoryTest.class
 model/page/PerformancePage.class
 model/page/DirectoryPage.class
+runner/AdminTest.class
 runner/LoginTest.class
 model/page/LeavePage.class
 runner/PimTest.class
