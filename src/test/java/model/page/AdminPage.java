@@ -119,4 +119,21 @@ public class AdminPage extends BasePage {
         System.out.println(names);
         return names;
     }
+
+    public List<String> createNewUser(String employeeName) {
+        List<String> credentials = new ArrayList<>();
+        clickUserRoleArrow();
+        chooseUserRole();
+        clickStatusArrow();
+        chooseUserStatus();
+        fillInEmployeeNameField(employeeName);
+        fillInUsername();
+        fillInPassword();
+        confirmPassword();
+        clickSaveBtn();
+        credentials.add(userName);
+        credentials.add(password);
+        System.out.println(credentials);
+        return credentials;
+    }
 }

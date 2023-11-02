@@ -10,7 +10,7 @@ import runner.base.BaseTest;
 public class MyInfoTest extends BaseTest {
 
     @Test
-    public void testUsernameChange() {
+    public void testChangeUsername() {
         boolean isNewNameDisplayed = new DashboardPage(getDriver())
                 .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.MY_INFO, new MyInfoPage(getDriver()))
                 .clearFirstNameField()
