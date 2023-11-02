@@ -21,9 +21,12 @@ public class PimPage extends BasePage {
     private WebElement lastNameField;
     @FindBy(xpath = "//button[@type = 'submit']")
     private WebElement saveBtn;
+    @FindBy(xpath = "//*[text() = 'Employee Id']//parent::div//following::div//child::input")
+    private WebElement idField;
 
     private final String firstName = new Faker().name().firstName();
     private final String lastName = new Faker().name().lastName();
+    private final Integer userID = new Faker().idNumber().hashCode();
 
     public PimPage(WebDriver driver) {
         super(driver);
@@ -49,6 +52,12 @@ public class PimPage extends BasePage {
         return this;
     }
 
+    public PimPage fillInID() {
+        String us = userID.toString().substring(0, 5);
+        idField.sendKeys(us);
+        return this;
+    }
+
     public PimPage clickSaveBtn() {
         getWait5().until(ExpectedConditions.elementToBeClickable(saveBtn)).click();
         return this;
@@ -63,6 +72,7 @@ public class PimPage extends BasePage {
         clickAddBtn();
         fillInFirstName();
         fillInLastName();
+        fillInID();
         clickSaveBtn();
         return firstName + " " + lastName;
     }
