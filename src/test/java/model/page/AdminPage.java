@@ -39,6 +39,8 @@ public class AdminPage extends BasePage {
     private WebElement saveBtn;
     @FindBy(xpath = "//label[text() = 'Yes']")
     private WebElement changePassYesCheckBox;
+    @FindBy(xpath = "//button[text() = ' Yes, Delete ']")
+    private WebElement yesDeleteBtn;
 
 
     private final String userName = new Faker().name().fullName();
@@ -94,7 +96,6 @@ public class AdminPage extends BasePage {
     }
 
     public AdminPage fillInPassword() {
-        System.out.println(password);
         passwordField.sendKeys(password);
         return this;
     }
@@ -119,7 +120,6 @@ public class AdminPage extends BasePage {
                         .xpath("//div[@class = 'oxd-table-cell oxd-padding-cell'][2]")))
                 .findElements(By.xpath("//div[@class = 'oxd-table-cell oxd-padding-cell'][2]"));
         elements.forEach(element -> names.add(element.getText()));
-        System.out.println(names);
         return names;
     }
 
@@ -150,5 +150,22 @@ public class AdminPage extends BasePage {
                 .sendKeys(newPassword);
         saveBtn.click();
         return newPassword;
+    }
+
+    public AdminPage deleteUser(String employeeName) {
+        clickTrashIcon(employeeName)
+                .clickYesDeleteBtn();
+        return this;
+    }
+
+    private AdminPage clickTrashIcon(String employeeName) {
+        getWait10().until(ExpectedConditions.elementToBeClickable(By
+                .xpath("//*[text() = '" + employeeName + "']//..//parent::div//button[1]"))).click();
+        return this;
+    }
+
+    private AdminPage clickYesDeleteBtn() {
+        getWait10().until(ExpectedConditions.elementToBeClickable(yesDeleteBtn)).click();
+        return this;
     }
 }
