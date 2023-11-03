@@ -100,6 +100,9 @@
             <class name="runner.AdminTest">
                 <methods>
                     <include name="testCreateNewUser"/>
+                    <include name="testLoginNewUser"/>
+                    <include name="testChangePassword"/>
+                    <include name="testDeleteUser"/>
                 </methods>
             </class>
         </classes>

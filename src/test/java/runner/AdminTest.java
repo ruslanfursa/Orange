@@ -67,4 +67,20 @@ public class AdminTest extends BaseTest {
                 .getPageName();
         Assert.assertEquals(pageName, "Dashboard");
     }
+
+    @Test
+    public void testDeleteUser() {
+        String employeeName = new DashboardPage(getDriver())
+                .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.PIM, new PimPage(getDriver()))
+                .createEmployee();
+        List<String> credentials = new PimPage(getDriver())
+                .clickLinkFromSidebarMenu(SideBarMenu.LinkFromSidebarMenu.ADMIN, new AdminPage(getDriver()))
+                .clickAddBtn()
+                .createNewUser(employeeName);
+        new AdminPage(getDriver())
+                .deleteUser(employeeName);
+        boolean isUserPresent = new AdminPage(getDriver())
+                .isUserExist();
+        Assert.assertFalse(isUserPresent);
+    }
 }
